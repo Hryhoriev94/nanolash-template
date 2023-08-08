@@ -1,0 +1,32 @@
+@import '../helpers/_mixins';
+
+.brands {
+    background-color: $black;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1.5rem 0;
+        gap: 3rem;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 25%;
+            bottom: 25%;
+            width: 1px;
+            background-color: $lightGray;
+        }
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+}

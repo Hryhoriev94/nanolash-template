@@ -1,0 +1,285 @@
+.mark {
+    $padding-left: 15%;
+    &__title {
+        font-size: 1.8rem;
+        position: relative;
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+        padding-left: $padding-left;
+        width: max-content;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 10%;
+            height: 3px;
+            background-color: #afafaf;
+        }
+    }
+    &__container {
+        color: #f3f3f3;
+        margin-left: auto;
+        margin-right: 5%;
+        padding-top: 40px;
+        position: relative;
+        padding-bottom: 40px;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #000000;
+            top: 5%;
+            left: 10%;
+            right: -100%;
+            // right: -100vw;
+            bottom: 50%;
+            z-index: -1;
+        }
+    }
+    &__content {
+        margin-left: auto;
+        text-align: justify;
+        padding-left: $padding-left;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__images {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-end;
+        img {
+            max-width: 100px;
+        }
+        .image--one {
+            padding-top: 50px;
+        }
+    }
+    &__icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.25rem;
+        color: #000000;
+        margin-top: 15px;
+        gap: 5px 10px;
+        .icons {
+            &__item {
+                display: grid;
+                grid-template-columns: 12px 1fr;
+                align-items: center;
+                gap: 5px;
+            }
+            &__icon {
+                width: 1.25rem;
+                height: 1.25rem;
+                border: 1px solid #000000;
+            }
+        }
+    }
+}
+
+@include media-up(576px) {
+    .mark {
+        $padding-left: 0;
+        &__title, &__content {
+            padding-left: $padding-left;
+        }
+        &__container {
+            padding-top: 80px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-auto-rows: minmax(50px, auto);
+            gap: 0 15px;
+            &:before {
+                content: none;
+            }
+        }
+        &__text {
+            position: relative;
+            padding: 10px 0;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: #000;
+                top: 0;
+                bottom: 0;
+                left: -100vw;
+                right: -100vw;
+                z-index: -1;
+            }
+        }
+        &__title {
+            margin-bottom: 0;
+            padding: 0;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            align-self: center;
+            &:before {
+                bottom: 0;
+                right: 50%;
+                height: 2px;
+                background-color: #fff;
+            //     content: none
+            }
+        }
+        &__content {
+            align-self: stretch;
+        }
+        &__images {
+            margin-top: unset;
+            grid-column: 2/3;
+            grid-row: 1/3;
+            img {
+                position: relative;
+                display: block;
+                box-shadow: 1px 1px 10px #000;
+            }
+            .image {
+                &--one {
+                    padding-top: unset;
+                    top: 25px;
+                }
+                &--two {
+                    top: -25px;
+                }
+            }
+        }
+        &__icons {
+            margin-top: 5px;
+            font-size: 1.2rem;
+            grid-template-columns: 1fr;
+
+        }
+    }
+}
+
+@include media-up(768px) {
+    .mark {
+        &__title {
+            &:before {
+                left: -10px;
+            }
+        }
+        &__container {
+            margin-right: unset;
+            padding-top: 50px;
+        }
+        &__content {
+            font-size: 1rem;
+        }
+        &__icons {
+            font-size: 1rem;
+            grid-template-columns: 1fr 1fr;
+            .icons {
+                &__icon {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@include media-up(992px) {
+    .mark {
+        &__container {
+            padding-top: 100px;
+            margin-bottom: 60px;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__content {
+            font-size: 1.5rem;
+            text-align: left;
+        }
+        &__title {
+            font-size: 2rem;
+        }
+        &__images {
+            justify-content: center;
+            img {
+                max-width: 220px;
+            }
+            .image {
+                &--one {
+                    padding-top: unset;
+                    top: 30px;
+                }
+                &--two {
+                    top: -70px;
+                }
+            }
+        }
+        &__icons {
+            margin-top: unset;
+            font-size: 1.1rem;
+            align-self: center;
+            .icons {
+                &__item {
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include media-up(1200px) {
+    .mark {
+        &__icons {
+            font-size: 1.25rem;
+            .icons {
+                &__item {
+                    gap: 1rem;
+                }
+                &__icon {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
+        }
+        &__images {
+            img {
+                max-width: 320px;
+            }
+        }
+        &__text {
+            padding-top: 30px;
+        }
+        &__title {
+            font-size: 2.25rem;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            &:before {
+                left: -20px;
+            }
+        }
+        &__content {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+@include media-up(1400px) {
+    .mark {
+        &__title {
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            &:before {
+                height: 3px;
+            }
+        }
+        &__icons {
+            font-size: 1.5rem;
+            gap: 10px 20px;
+        }
+        &__content {
+            font-size: 2rem;
+        }
+    }
+}

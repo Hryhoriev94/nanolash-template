@@ -1,0 +1,719 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" defer src="/assets/scripts/home.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/pages/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+    <nav class="nav" data-js-navbar="">
+	<div class="container">
+		<div class="nav__row row">
+			<div class="nav__hamburger col d-lg-none">
+    <button type="button" class="hamburger hamburger--open" data-js-hamburger-open="" aria-label="Poznaj produkty">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+    </button>
+    <button type="button" class="hamburger hamburger--close" style="display: none" data-js-hamburger-close="">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+    </button>
+</div>			<div class="nav__logo col">
+    <a href="https://nanobrow.pl/">
+        <picture>
+            <source media="(min-width: 320px)" srcset="/assets/img/logo_nanolash.png 1x, /assets/img/logo_nanolash@2x.png 2x" >
+            <img class="logo img-fluid" src="/assets/img/logo_nanolash.png" title="Nanolash Polska" alt="Nanolash Polska" width="125" height="28">
+        </picture>
+
+    </a>
+</div>
+			<div class="nav__products" style="display: none">
+				<button type="button">Poznaj produkty</button>
+			</div>
+
+			<div class="nav__blog" style="display: none">
+				<a class="nav-link" href="#">Blog</a>
+			</div>
+			
+			<div class="nav__flag">
+				<button type="button" title="Nanobrow Polska" class="flag flag--pl">PL</button>
+			</div>
+
+			<div class="nav__cart">
+				<button type="button" aria-label="Koszyk">
+					<span class="nav__cart-badge" style="display: none;">0</span>
+				</button>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="menu" style="display: none" data-js-menu="">
+		<div class="menu__container container">
+
+			<div class="menu__wrapper">
+				<div class="menu__row row">
+
+					<div class="menu__title col-12 d-lg-none">Poznaj produkty</div>
+					<div class="menu__products col-12">
+
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/odzywka-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/eyebrow-serum/nanobrow-eyebrow-serum.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/eyebrow-serum/nanobrow-eyebrow-serum.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/odzywka-do-brwi">Nanobrow <strong>Eyebrow Serum</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/odzywka-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/mydlo-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/styling-soap/nanobrow-styling-soap.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/styling-soap/nanobrow-styling-soap.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/mydlo-do-brwi">Nanobrow <strong>Eyebrow Styling Soap</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/mydlo-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/zel-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/lamination-gel/nanobrow-lamination-gel.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/lamination-gel/nanobrow-lamination-gel.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/zel-do-brwi">Nanobrow <strong>Lamination Gel</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/zel-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/maskara-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/shape-mascara/nanobrow-shape-mascara.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/shape-mascara/nanobrow-shape-mascara.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/maskara-do-brwi">Nanobrow <strong>Shape Mascara</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/maskara-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/zestaw-cieni-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/powder-kit/nanobrow-powder-kit.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/powder-kit/nanobrow-powder-kit.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/zestaw-cieni-do-brwi">Nanobrow <strong>Eyebrow Powder Kit </strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/zestaw-cieni-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/pomada-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/eyebrow-pomade/nanobrow-eyebrow-pomade.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/eyebrow-pomade/nanobrow-eyebrow-pomade.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/pomada-do-brwi">Nanobrow <strong>Eyebrow Pomade</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/pomada-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/pisak-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/microblading-pen/nanobrow-microblading-pen.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/microblading-pen/nanobrow-microblading-pen.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/pisak-do-brwi">Nanobrow <strong>Microblading Pen</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/pisak-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/kredka-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/eyebrow-pencil/nanobrow-eyebrow-pencil.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/eyebrow-pencil/nanobrow-eyebrow-pencil.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/kredka-do-brwi">Nanobrow <strong>Eyebrow Pencil</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/kredka-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/plyn-do-demakijazu-twarzy-i-oczu">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/makeup-remover/nanobrow-makeup-remover.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/makeup-remover/nanobrow-makeup-remover.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/plyn-do-demakijazu-twarzy-i-oczu">Nanobrow <strong>Micellar Makeup Remover</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/plyn-do-demakijazu-twarzy-i-oczu">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/zestaw-do-liftingu-i-laminacji-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/lamination-kit/nanobrow-lamination-kit.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/lamination-kit/nanobrow-lamination-kit.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/zestaw-do-liftingu-i-laminacji-brwi">Nanobrow <strong>Lamination Kit</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/zestaw-do-liftingu-i-laminacji-brwi">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/odzywka-do-rzes">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products/eyelash-serum/nanolash-eyelash-serum.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products/eyelash-serum/nanolash-eyelash-serum.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/odzywka-do-rzes">Nanolash <strong>Eyelash Serum</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/odzywka-do-rzes">Więcej</a></div>
+								</div>
+							</div>
+													<div class="menu-product">
+								<div class="menu-product__image">
+									<a href="https://nanobrow.pl/akcesoria-do-brwi">
+										<picture>
+											<!-- WebP -->
+											<source type="image/webp" srcset="https://cdn.nanobrow.us/site/assets/img/products-groups/accessories/nanobrow-accessories.webp">
+											<!-- IMG -->
+											<img src="https://cdn.nanobrow.us/site/assets/img/products-groups/accessories/nanobrow-accessories.png" loading="lazy" alt="">
+										</picture>
+									</a>
+								</div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/akcesoria-do-brwi">Nanobrow <strong>Akcesoria</strong></a></div>
+									<div class="menu-product__link"><a href="https://nanobrow.pl/akcesoria-do-brwi">Więcej</a></div>
+								</div>
+							</div>
+																			<div class="menu-product d-lg-none">
+								<div class="menu-product__image"></div>
+								<div class="menu-product__details">
+									<div class="menu-product__name"><a href="https://nanobrow.pl/blog">Nanobrow <strong>Blog</strong></a></div>
+								</div>
+							</div>
+											</div>
+				</div>
+			</div>
+
+		</div>
+	</div>    <div class="flags" style="display: none" data-js-flags="">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="https://nanobrow.ae/" class="flag flag--ae">AE</a>
+                <a href="https://nanobrow.at/" class="flag flag--at">AT</a>
+                <a href="https://nanobrow.be/" class="flag flag--be">BE</a>
+                <a href="https://nanobrow.bg/" class="flag flag--bg">BG</a>
+                <a href="https://nanobrow.ch/" class="flag flag--ch">CH</a>
+                <a href="https://nanobrow.co.nz/" class="flag flag--nz">NZ</a>
+                <a href="https://nanobrow.co.uk/" class="flag flag--gb">GB</a>
+                <a href="https://nanobrow.com.au/" class="flag flag--au">AU</a>
+                <a href="https://nanobrow.mt/" class="flag flag--mt">MT</a>
+                <a href="https://nanobrow.com.mx/" class="flag flag--mx">MX</a>
+                <a href="https://nanobrow.cz/" class="flag flag--cz">CZ</a>
+                <a href="https://nanobrow.de/" class="flag flag--de">DE</a>
+                <a href="https://nanobrow.dk/" class="flag flag--dk">DK</a>
+                <a href="https://nanobrow.ee/" class="flag flag--ee">EE</a>
+                <a href="https://nanobrow.es/" class="flag flag--es">ES</a>
+                <a href="https://nanobrow.fi/" class="flag flag--fi">FI</a>
+                <a href="https://nanobrow.fr/" class="flag flag--fr">FR</a>
+                <a href="https://nanobrow.gr/" class="flag flag--gr">GR</a>
+                <a href="https://nanobrow.hu/" class="flag flag--hu">HU</a>
+                <a href="https://nanobrow.ie/" class="flag flag--ie">IE</a>
+                <a href="https://nanobrow.in/" class="flag flag--in">IN</a>
+                <a href="https://nanobrow.it/" class="flag flag--it">IT</a>
+                <a href="https://nanobrow.li/" class="flag flag--li">LI</a>
+                <a href="https://nanobrow.lt/" class="flag flag--lt">LT</a>
+                <a href="https://nanobrow.lv/" class="flag flag--lv">LV</a>
+                <a href="https://nanobrow.nl/" class="flag flag--nl">NL</a>
+                <a href="https://nanobrow.no/" class="flag flag--no">NO</a>
+                <a href="https://nanobrow.pt/" class="flag flag--pt">PT</a>
+                <a href="https://nanobrow.ro/" class="flag flag--ro">RO</a>
+                <a href="https://nanobrow.se/" class="flag flag--se">SE</a>
+                <a href="https://nanobrow.si/" class="flag flag--si">SI</a>
+                <a href="https://nanobrow.sk/" class="flag flag--sk">SK</a>
+                <a href="https://nanobrow.us/" class="flag flag--us">US</a>
+            </div>
+        </div>
+    </div>
+</div>	<div class="nav-cart" style="display: none;">
+    <div class="nav-cart__width-container">
+        <div class="nav-cart__wrapper" style="display: none;">
+            <div class="nav-cart__details">
+                <div class="nav-cart__row nav-cart__row--header">
+                    <div class="nav-cart__cell">Produkty</div>
+                    <div class="nav-cart__cell">Ilość</div>
+                    <div class="nav-cart__cell">Cena</div>
+                    <div class="nav-cart__cell">Usuń</div>
+                </div>
+
+                <div class="nav-cart__row nav-cart__row--footer">
+                    <div class="nav-cart__cell"></div>
+                    <div class="nav-cart__cell">0</div>
+                    <div class="nav-cart__cell">
+                        <div class="old-price" style="display: none;">0</div>
+                        <div class="new-price">0</div>
+                    </div>
+                    <div class="nav-cart__cell"></div>
+                </div>
+
+            </div>
+            <div class="nav-cart__footer">
+                <div class="nav-cart__shipping">Darmowa dostawa od 100 PLN</div>
+                <a href="https://nanobrow.pl/zamow" class="nav-cart__button">Zamawiam</a>
+            </div>
+        </div>
+        <div class="nav-cart__wrapper">
+            <div class="nav-cart__empty">Brak produktów w koszyku</div>
+        </div>
+    </div>
+</div></nav>    <div class="hero"></div>    
+
+<div class="brands">
+    <div class="container">
+        <div class="brands__grid">
+                        <div class="brands__column">
+                <a href="https://nanolash.pl">
+                    <img src="https://placehold.co/230x50" alt="Nanolash" >
+                </a>
+            </div>
+                        <div class="brands__column">
+                <a href="https://nanobrow.pl">
+                    <img src="https://placehold.co/230x50" alt="Nanobrow" >
+                </a>
+            </div>
+                    </div>
+    </div>
+</div>    <main>
+        <div class="container">
+            <h1 class="home__title">JEDEN KROK DO IDEALNYCH RZĘS</h1>
+            <p class="home__description">Naturalne rzęsy zachwycające długością, intensywnym kolorem i spektakularną gęstością? To możliwe! <br> Wystarczy miesiąc, by całkowicie odmienić Twoje spojrzenie.</p>
+            <h2 class="home__subtitle">DLACZEGO NANOLASH?</h2>
+            <p class="home__subdescriotion">bezpieczna formuła potwierdzona badaniami klinicznymi rzęsy wzmocnione i wydłużone już po czterech tygodniach stosowania opinie zadowolonych klientek na całym świecie najlepsze rozwiązanie dla wrażliwych oczu</p>
+        </div>
+        <div class="container">
+            
+
+
+<div class="products__grid">
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+            <div class="products__item">
+            <div class="thumbnail"><img alt="" src="https://placehold.co/100x160" loading="lazy"></div>
+            <h3 class="title">Nanolash Eyelash Serum</h3>
+            <div class="description">Profesjonalna odżywka do brwi</div>
+            <div class="actions">
+                <div class="quantity">
+                    <button class="plus">-</button>
+                    <input value="1" type="text" disabled >
+                    <button class="minus">+</button>
+                </div>
+                <div class="price">9999&nbsp;zł</div>
+                <button class="add-to-cart" type="button">
+                    <span>Dodaj do koszyka</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <div class="mark__section">
+            <div class="container">
+                
+
+    <div class="mark__container">
+        <h2 class="mark__title">Marka NANOLASH</h2>
+        <p class="mark__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+        <div class="mark__images">
+            <img src="/assets/img/mark_1.jpg" alt="" loading="lazy">
+            <img src="/assets/img/mark_2.jpg" alt="" loading="lazy">
+        </div>
+        <div class="mark__icons icons">
+                            <div class="icons__item">
+                    <div class="icons__icon"></div>
+                    <div class="icons__content">Lashes with 25+ Uses</div>
+                </div>
+                            <div class="icons__item">
+                    <div class="icons__icon"></div>
+                    <div class="icons__content">Premium, Innovative Lash Fibres</div>
+                </div>
+                            <div class="icons__item">
+                    <div class="icons__icon"></div>
+                    <div class="icons__content">100% Vegan</div>
+                </div>
+                            <div class="icons__item">
+                    <div class="icons__icon"></div>
+                    <div class="icons__content">100% Recyclable Packaging</div>
+                </div>
+                    </div>
+    </div>
+            </div>
+        </div>
+        <div class="newsletter-section">
+            <div class="container">
+                <div class="newsletter">
+    <div class="newsletter__header"><strong>Zapisz się do newslettera</strong> już teraz i zgarnij rabaty</div>
+    <form class="newsletter__form" data-js-newsletter-form="">
+        <input type="email" class="newsletter__input" placeholder="Wpisz e-mail">
+        <button type="submit" class="newsletter__submit">Zapisz się</button>
+    </form>
+    <div class="newsletter__loader" style="display: none;"></div>
+    <div class="newsletter__message newsletter__message--success" style="display: none;">Dziękujemy, twój adres e-mail został zapisany</div>
+    <div class="newsletter__message newsletter__message--error" style="display: none;">Wystąpił błąd, prosimy spróbować później</div>
+</div>            </div>
+        </div>
+        <div class="container">
+            <div class="follow-us">
+    <h2 class="follow-us__link"><a href="#">#nanolashofficial</a></h2>
+    <h3 class="follow-us__appeal">FOLLOW US ON&nbsp;INSTAGRAM</h3>
+    <h3 class="follow-us__description">STWORZONY DLA <strong>KOBIET</strong> <br> POLECANY PRZEZ <strong>KOBIETY</strong></h3>
+</div>        </div>
+        
+
+<div class="gallery__wrapper">
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-1.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-2.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-3.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-4.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-5.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-6.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-7.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-8.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-9.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-10.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-11.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-12.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-13.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-14.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-15.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-16.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-17.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-18.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-19.jpg alt="">
+        </picture>
+    </div>
+        <div class="gallery__single">
+        <picture>
+            <img src=https://cdn.nanobrow.us/site/assets/img/products/styling-soap/gallery/soap-20.jpg alt="">
+        </picture>
+    </div>
+    </div>        
+
+<div class="faq">
+    <div class="container">
+        <div class="faq__title"><strong>FAQ</strong> WSZYSTKO <br> CO POWINNAŚ WIEDZIEĆ</div>
+                <details class="faq__element">
+            <summary class="faq__question" data-js-faq-question="">Jak używać mydła do brwi Nanobrow?</summary>
+            <div class="faq__answer" data-js-faq-answer="">Nanobrow Eyebrow Styling Soap to prosta aplikacja, która pozwoli w kilka chwil nadać brwiom upragniony kształt. Po prostu nabierz trochę mydła na szczoteczkę. Zaczesuj je tak, jak chcesz. Pozostaw na chwilę, aby efekt się utrwalił. Gotowe! Jeśli chcesz, możesz dodatkowo pomalować brwi ulubionym kosmetykiem kolorowym.</div>
+        </details>
+                <details class="faq__element">
+            <summary class="faq__question" data-js-faq-question="">Jak używać mydła do brwi Nanobrow?</summary>
+            <div class="faq__answer" data-js-faq-answer="">Nanobrow Eyebrow Styling Soap to prosta aplikacja, która pozwoli w kilka chwil nadać brwiom upragniony kształt. Po prostu nabierz trochę mydła na szczoteczkę. Zaczesuj je tak, jak chcesz. Pozostaw na chwilę, aby efekt się utrwalił. Gotowe! Jeśli chcesz, możesz dodatkowo pomalować brwi ulubionym kosmetykiem kolorowym.</div>
+        </details>
+                <details class="faq__element">
+            <summary class="faq__question" data-js-faq-question="">Jak używać mydła do brwi Nanobrow?</summary>
+            <div class="faq__answer" data-js-faq-answer="">Nanobrow Eyebrow Styling Soap to prosta aplikacja, która pozwoli w kilka chwil nadać brwiom upragniony kształt. Po prostu nabierz trochę mydła na szczoteczkę. Zaczesuj je tak, jak chcesz. Pozostaw na chwilę, aby efekt się utrwalił. Gotowe! Jeśli chcesz, możesz dodatkowo pomalować brwi ulubionym kosmetykiem kolorowym.</div>
+        </details>
+                <details class="faq__element">
+            <summary class="faq__question" data-js-faq-question="">Jak używać mydła do brwi Nanobrow?</summary>
+            <div class="faq__answer" data-js-faq-answer="">Nanobrow Eyebrow Styling Soap to prosta aplikacja, która pozwoli w kilka chwil nadać brwiom upragniony kształt. Po prostu nabierz trochę mydła na szczoteczkę. Zaczesuj je tak, jak chcesz. Pozostaw na chwilę, aby efekt się utrwalił. Gotowe! Jeśli chcesz, możesz dodatkowo pomalować brwi ulubionym kosmetykiem kolorowym.</div>
+        </details>
+                <details class="faq__element">
+            <summary class="faq__question" data-js-faq-question="">Jak używać mydła do brwi Nanobrow?</summary>
+            <div class="faq__answer" data-js-faq-answer="">Nanobrow Eyebrow Styling Soap to prosta aplikacja, która pozwoli w kilka chwil nadać brwiom upragniony kształt. Po prostu nabierz trochę mydła na szczoteczkę. Zaczesuj je tak, jak chcesz. Pozostaw na chwilę, aby efekt się utrwalił. Gotowe! Jeśli chcesz, możesz dodatkowo pomalować brwi ulubionym kosmetykiem kolorowym.</div>
+        </details>
+            </div>
+</div>    </main>
+
+</body>
+</html>

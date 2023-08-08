@@ -1,0 +1,7 @@
+<?php 
+    $alias = getAlias();
+    
+?>
+
+
+PRODUCT
