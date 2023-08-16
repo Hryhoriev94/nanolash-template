@@ -1,0 +1,10 @@
+.hero {
+    &__images {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__dot {
+        cursor: pointer;
+    }
+}

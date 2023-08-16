@@ -9,7 +9,7 @@ foreach ($iterator as $info) {
     }
 }
 
-function convertImageToWebP($imagePath, $quality = 80) {
+function convertImageToWebP($imagePath, $quality = 100) {
     $info = getimagesize($imagePath);
 
     if ($info['mime'] === 'image/jpeg') {

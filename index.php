@@ -1,10 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php 
     $config = require 'config.php';
     require 'functions.php';
     
     $url = isset($_GET['url']) ? trim($_GET['url'], '/') : '/';
     
-    // Если URL - это пустая строка, установите его значение на '/'
     if ($url == '') {
         $url = '/';
     }
@@ -17,5 +18,6 @@
     $templateFile = $config['templates'][$templateName];
     require 'templates/' . $templateFile;
 ?>
+</html>
 
 

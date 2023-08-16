@@ -9,6 +9,7 @@ $grid_images = getImages('grid');
 <?php getComponent('head', [
     'title' => $content['meta-title'],
     'description' => $content['meta-description'],
+    'template' => 'home'
 ]) ?>
 
 <body>
@@ -59,4 +60,3 @@ $grid_images = getImages('grid');
     </main>
 
 </body>
-</html>
