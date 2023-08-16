@@ -8,6 +8,7 @@
         &__container {
             &.loading {
                 .loader {
+                    display: block;
                     visibility: visible;
                     display: block;
                     top: 40%;
@@ -25,17 +26,20 @@
         }
         &__block {
             position: relative;
+            img {
+                width: auto !important;
+            }
         }
     }
-
-       
 
     &__dots {
         display: flex;
         flex-direction: column;
         overflow-y: auto;
         scrollbar-width: none;
+        justify-content: space-between;
         max-height: 0;
+        height: 100%;
         gap: 5px;
         &::-webkit-scrollbar {
             width: 0;
@@ -45,6 +49,9 @@
     &__dot {
         cursor: pointer;
         border: 1px solid rgba(#707070, 0.5);
+        max-width: 70px;
+        max-width: 25vw;
+        height: auto;
         &.active {
             border-color: $black;
         }
@@ -62,5 +69,68 @@
     100% { 
         opacity: 1; 
         visibility: visible;
+    }
+}
+
+@include media-up(350px) {
+    .hero {
+        &__dots {
+            
+        }
+        &__dot {
+            max-width: 20vw;
+        }
+    }
+}
+
+@include media-up(400px) {
+    .hero {
+        &__dots {
+            
+        }
+        &__dot {
+            max-width: 15vw;
+        }
+    }
+}
+
+@include media-up(576px) {
+    .hero {
+        &__dots {
+            height: 456px;
+        }
+        &__dot {
+            max-width: 75px;
+        }
+    }
+}
+
+@include media-up(768px) {
+    .hero {
+        &__dots {
+            height: 440px;
+        }
+        &__dot {
+            max-width: 80px;
+        }
+    }
+}
+
+@include media-up(992px) {
+    .hero {
+        &__dots {
+            height: 540px;
+        }
+        &__dot {
+            max-width: 100px;
+        }
+    }
+}
+
+@include media-up(1400px) {
+    .hero {
+        &__dots {
+            height: 570px;
+        }
     }
 }

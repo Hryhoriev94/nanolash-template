@@ -40,7 +40,7 @@ export const heroimage = () => {
             mainImageContainer.classList.remove('loading');
             isLoading = false;
         } else {
-            setTimeout(() => removeLoadingWhenComplete(element), 50);
+            setTimeout(() => removeLoadingWhenComplete(element), 0);
         }
     }
 
@@ -70,6 +70,7 @@ export const heroimage = () => {
 
     function dotsContainerHeightHandler() {
         const visibleElements = parseInt(dotsContainer.getAttribute('data-visible'), 10);
+        
         if (isNaN(visibleElements)) return;
 
         const dotsQuantity = dotsContainer.querySelectorAll('.hero__dot').length;
@@ -78,7 +79,12 @@ export const heroimage = () => {
             if (!dotHeightElem) return;
 
             const dotHeight = dotHeightElem.offsetHeight;
-            dotsContainer.style.maxHeight = visibleElements * dotHeight + 30 + 'px';
+            dotsContainer.style.maxHeight = 'initial';
+            if(window.innerWidth < 576) {
+                dotsContainer.style.maxHeight = visibleElements * dotHeight + 30 + 'px';
+            } else {
+                dotsContainer.style.maxHeight = 'initial';
+            }
         } else {
             dotsContainer.style.maxHeight = 'initial';
             window.removeEventListener('resize', handleResize);
