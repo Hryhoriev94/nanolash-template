@@ -1,5 +1,6 @@
 <div class="hero__image__container">
     <div class="hero__image__block">
+        <span class="loader"></span>
         <picture>
             <!-- WebP -->
             <source media="(min-width: 1400px)" type="image/webp" srcset="<?= $slides[0]['src'] . '@xxl.webp' ?>">

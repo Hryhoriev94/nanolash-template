@@ -1,4 +1,4 @@
-<div class="hero__dots">
+<div class="hero__dots" data-visible="4">
     <?php foreach ($dots as $index => $dot) : ?>
     <?php $class = $index == 0 ? 'hero__dot active' : 'hero__dot' ?>
     <div class="<?= $class ?>" data-slide="<?= $index ?>">

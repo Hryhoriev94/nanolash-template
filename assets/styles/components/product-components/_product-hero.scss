@@ -4,7 +4,63 @@
         align-items: center;
         gap: 5px;
     }
+    &__image {
+        &__container {
+            &.loading {
+                .loader {
+                    visibility: visible;
+                    display: block;
+                    top: 40%;
+                    left: 50%;
+                    z-index: 10;
+                    opacity: 0;
+                    animation: fadeIn 0.5s forwards 0.5s, mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+                }
+                .hero__image__block {
+                    img {
+                        filter: blur(5px);
+                    }
+                }
+            }
+        }
+        &__block {
+            position: relative;
+        }
+    }
+
+       
+
+    &__dots {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        scrollbar-width: none;
+        max-height: 0;
+        gap: 5px;
+        &::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+    }
     &__dot {
         cursor: pointer;
+        border: 1px solid rgba(#707070, 0.5);
+        &.active {
+            border-color: $black;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+        visibility: hidden;
+    }
+    1% {
+        visibility: visible;
+    }
+    100% { 
+        opacity: 1; 
+        visibility: visible;
     }
 }
