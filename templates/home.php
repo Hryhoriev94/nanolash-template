@@ -3,7 +3,7 @@
 $alias = getAlias();
 $content = getContent($alias);
 $faq_content = $content['faq'];
-$grid_images = getImages('grid');
+$images = getImages('home');
 ?>
 
 <?php getComponent('head', [
@@ -31,7 +31,7 @@ $grid_images = getImages('grid');
         <div class="container">
             <?php getComponent('products-grid', [
                 'products' => $content['grid'],
-                'images' => $grid_images,
+                'images' => $images['grid'],
                 'routing' => $config['routing']
             ]) ?>
         </div>
@@ -44,11 +44,11 @@ $grid_images = getImages('grid');
         </div>
         <div class="newsletter-section">
             <div class="container">
-                <?php getComponent('newsletter') ?>
+                <?php getComponent('newsletter'); ?>
             </div>
         </div>
         <div class="container">
-            <?php getComponent('follow') ?>
+            <?php getComponent('follow'); ?>
         </div>
         <?php getComponent('gallery', [
             'alias' => $alias

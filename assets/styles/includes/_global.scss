@@ -1,50 +1,46 @@
 @import "../helpers/_mixins";
 @import '../helpers/_normalize';
+@import './fonts';
 
-@import './_flag';
+@include generate-display-classes;
 
-@include display-classes(none, flex, block, grid);
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 10px;
-    overflow-x: hidden;
-}
-
-body {
-    overflow-x: hidden;
-    background: transparent linear-gradient(180deg, rgba(228, 228, 228, 1) 0%, rgba(255, 255, 255, 1) 100%) 0% 0% no-repeat padding-box;
-    font-family: Lato;
-    padding-bottom: 20px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    @include make-container();
-    @include media-between(0px, sm) {
-        width: calc(100vw - 1.5rem);
-    }
-}
-
-h1, h2, h3, h4, h5, h6, p {
+.hr {
+    display: block;
     margin: 0;
+    width: 100%;
+    height: 2px;
+    padding: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000000 20%, #000000 80%, rgba(0, 0, 0, 0) 100%);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+.section {
+    &-title {
+        font-size: 2.5rem;
+        font-weight: 100;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        color: #0F0F0F;
+        strong {
+            font-weight: 700;
+        }
+        span {
+            display: block;
+        }
+    }
+    &-subtitle {
+        font-size: 1.5rem;
+        font-weight: 100;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        color: #0F0F0F;
+        font-weight: 700;
+        strong {
+            font-weight: 700;
+        }
+        span {
+            display: block;
+        }
+    }
+
 }
 
-p {
-    font-weight: 300;
-}
-
-@include media-up(768px) {
-    html {font-size: 15px}
-}

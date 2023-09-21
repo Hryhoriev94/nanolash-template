@@ -21,13 +21,18 @@
             'payment-success' => ['template' => 'result', 'alias' => 'payment-success'],
             '404' => ['template' => 'error', 'alias' => '404'],
                 
-            'nanolash-eyelash-serum' => ['template' => 'product', 'alias' => 'nanolash-es'],
-            'nanolash-primer-mascara' => ['template' => 'product', 'alias' => 'nanolash-pm'],
-            'nanolash-volume-up-mascara' => ['template' => 'product', 'alias' => 'nanolash-vm'], 
-            'nanolash-lenght-and-curl-mascara' => ['template' => 'product', 'alias' => 'nanolash-lcm'], 
-            'nanolash-lash and-brow-shampoo' => ['template' => 'product', 'alias' => 'nanolash-lbs'], 
-            'nanolash-hydrogel-eye-patches' => ['template' => 'product', 'alias' => 'nanolash-hyp']
+            'eyelash-serum' => ['template' => 'product', 'alias' => 'nanolash-es'],
+            'primer-mascara' => ['template' => 'product', 'alias' => 'nanolash-pm'],
+            'volume-up-mascara' => ['template' => 'product', 'alias' => 'nanolash-vm'], 
+            'lenght-and-curl-mascara' => ['template' => 'product', 'alias' => 'nanolash-lcm'], 
+            'lash-and-brow-shampoo' => ['template' => 'product', 'alias' => 'nanolash-lbs'], 
+            'hydrogel-eye-patches' => ['template' => 'product', 'alias' => 'nanolash-hyp'],
+
+
         ],
+
+        'dev_mode' => true,
+        'cdn' => false,
     ];
 
 

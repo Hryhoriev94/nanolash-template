@@ -1,0 +1,26 @@
+@include media-up(768px) {
+    .gallery {
+        &__wrapper {
+            grid-template-columns: repeat(10, 1fr);
+        }
+    }
+}
+
+@include media-up(992px) {
+    .gallery {
+        &__wrapper {
+            
+        }
+    }
+}
+
+@include media-up(1400px) {
+    .gallery {
+        &__wrapper {
+            width: 100%;
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

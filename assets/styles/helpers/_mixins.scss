@@ -127,3 +127,23 @@
       left: 0;
   }
 }
+
+@mixin generate-display-classes {
+  $values: (none, inline, inline-block, grid, block, table, table-cell, table-row, flex, inline-flex);
+
+  @each $value in $values {
+    .d-#{$value} {
+      display: $value !important;
+    }
+  }
+
+  @each $breakpoint, $point in $breakpoints {
+    @media (min-width: $point) {
+      @each $value in $values {
+        .d-#{$breakpoint}-#{$value} {
+          display: $value !important;
+        }
+      }
+    }
+  }
+}

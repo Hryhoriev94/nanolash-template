@@ -2,7 +2,9 @@
 
     $img = [
         'one' => '/assets/img/home/nanolash-main-mark-1',
-        'two' => '/assets/img/home/nanolash-main-mark-2'
+        'one-small' => '/assets/img/home/nanolash-main-mark-sm-1',
+        'two' => '/assets/img/home/nanolash-main-mark-2',
+        'two-small' => '/assets/img/home/nanolash-main-mark-sm-2',
     ];
     $icons = [
         [
@@ -32,12 +34,16 @@
         </div>
         <div class="mark__images">
             <picture>
-                    <source type="image/webp" srcset="<?=$img['one'] .'.webp' ?>" />
-                    <img src="<?=$img['one'] ?>.jpg" alt="" loading="lazy" class="image--one">
+                    <source media="(min-width: 576px)" type="image/webp" srcset="<?=$img['two'] .'.webp' ?>" />
+                    <source media="(min-width: 576px)" srcset="<?=$img['one'] .'.jpg' ?>" />
+                    <source type="image/webp" srcset="<?=$img['one-small'] .'.webp' ?>" />
+                    <img src="<?=$img['one-small'] ?>.jpg" alt="" loading="lazy" class="image--one" width="135" height="293">
             </picture>
             <picture>
-                    <source type="image/webp" srcset="<?=$img['two'] .'.webp' ?>" />
-                    <img src="<?=$img['two'] ?>.jpg" alt="" loading="lazy" class="image--two">
+                    <source media="(min-width: 576px)" type="image/webp" srcset="<?=$img['two'] .'.webp' ?>" />
+                    <source media="(min-width: 576px)" srcset="<?=$img['two'] .'.jpg' ?>" />
+                    <source type="image/webp" srcset="<?=$img['two-small'] .'.webp' ?>" />
+                    <img src="<?=$img['two-small'] ?>.jpg" alt="" loading="lazy" class="image--two" width="135" height="293">
             </picture>
         </div>
         <div class="mark__icons icons">

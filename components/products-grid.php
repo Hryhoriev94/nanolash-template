@@ -7,8 +7,9 @@
             <div class="thumbnail">
                 <a href="<?= $productURL ?>">
                     <picture>
-                        <source type="image/webp" srcset="<?= '/assets/img/products/' . $thumb . '.webp' ?>" />
-                        <img alt="" src="<?= '/assets/img/products/' . $thumb . '.png' ?>" loading="lazy">
+                        <?php $path = "/assets/img/products/$thumb"; ?>
+                        <source type="image/webp" srcset="<?=  getFullPath($path,'webp') ?>" />
+                        <img alt="" src='<?= getFullPath($path,'png') ?>' loading="lazy" width="100" height="158">
                     </picture>
                 </a>
             </div>

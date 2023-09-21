@@ -20,7 +20,7 @@
             <?php foreach ($brands as $value) :?>
                 <a href="<?= $value['url']?>" class="brands__column">
                     <source type="image/webp" srcset="<?='/assets/img/' .  $value['img'] . '.webp' ?>" />
-                    <img src="<?='/assets/img/' .  $value['img'] . '.png' ?>" alt="<?= $value['name']?>" >
+                    <img src="<?='/assets/img/' .  $value['img'] . '.png' ?>" alt="<?= $value['name']?>" width="230" height="50">
                 </a>
             <?php endforeach; ?>
         </div>

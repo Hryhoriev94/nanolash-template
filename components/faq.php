@@ -1,4 +1,4 @@
-<div class="faq">
+<section class="faq">
     <div class="container">
         <div class="faq__title"><?= $title ?></div>
         <?php foreach($faq_list as $faq): ?>
@@ -8,4 +8,4 @@
         </details>
         <?php endforeach; ?>
     </div>
-</div>
+</section>

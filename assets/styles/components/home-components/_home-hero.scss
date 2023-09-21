@@ -1,6 +1,26 @@
+:root {
+    --hero-image: url('/assets/img/mobile-main.png');
+    @include media-up(992px) {
+        :root {
+            --hero-image: url('/assets/img/main.png')
+        }
+    }
+}
+
+@supports (background-image: url('data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA')) {
+    :root {
+        --hero-image: url('/assets/img/mobile-main.webp');
+        @include media-up(992px) {
+            --hero-image: url('/assets/img/main.webp');
+        }
+    }
+
+}
+
+
 .hero {
     min-height: 240px;
-    background-image: url('../../img/mobile-main.png');
+    background-image: var(--hero-image);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position-y: 100%;
@@ -17,21 +37,3 @@
     // background-color: #fff;
 }
 
-@include media-up(768px) {
-    .hero {
-        background-image: url('../../img/mobile-main.png');
-        background-color: $halfGray;
-        display: flex;
-        align-items: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-}
-
-@include media-up(992px) {
-    .hero {
-        background-image: url('../../img/main.png');
-        background-position: calc(50% + 100px) bottom;
-        background-color: $halfGray;
-    }
-}

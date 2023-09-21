@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=function(){var e=document.querySelector("#home-page-title");window.innerWidth>=768?document.querySelector(".hero").prepend(e):document.querySelector("main").prepend(e)};window.addEventListener("load",(function(){e(),window.addEventListener("resize",(function(){e()}))}))})();

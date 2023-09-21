@@ -1,26 +1,32 @@
 @import "../helpers/_mixins.scss";
 
 .gallery {
+    padding: 3rem 0;
     &__wrapper {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         max-width: 100vw;
-        margin: 20px auto 0;
         gap: 0;
     }
     &__single {
         overflow: hidden;
+        width: 80px;
+        height: auto;
         img {
             width: 100%;
             max-width: 100%;
             height: auto;
             display: block;
             transition: 500ms;
-            transform: scale(1.02);
+            // transform: scale(1.02);
             &:hover {
                 transform: scale(1.2) rotate(3deg);
             }
         }
+    }
+    &__description {
+        text-align: center;
+        width: 80%;
+        margin: 3rem auto 0;
     }
 }
 
@@ -29,32 +35,8 @@
         &__wrapper {
             grid-template-columns: repeat(5, 1fr);
         }
-    }
-}
-
-@include media-up(768px) {
-    .gallery {
-        &__wrapper {
-            grid-template-columns: repeat(10, 1fr);
-        }
-    }
-}
-
-@include media-up(992px) {
-    .gallery {
-        &__wrapper {
-            
-        }
-    }
-}
-
-@include media-up(1400px) {
-    .gallery {
-        &__wrapper {
-            width: 100%;
-            max-width: 1920px;
-            margin-left: auto;
-            margin-right: auto;
+        &__single {
+            width: auto;
         }
     }
 }

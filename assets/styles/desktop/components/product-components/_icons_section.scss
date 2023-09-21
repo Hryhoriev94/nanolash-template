@@ -1,0 +1,41 @@
+@include media-up(768px) {
+    .product-icons {
+        &__wrapper {
+            gap: 1px 30px;
+        }
+
+        &__image {
+            min-width: unset;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        &__description {
+            font-size: 1.1rem;
+
+            span {
+                display: block;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@include media-up(1200px) {
+    .product-icons {
+        &__wrapper {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        &__description {
+            font-size: 1.2rem;
+
+            span {
+                width: unset;
+            }
+        }
+    }
+}

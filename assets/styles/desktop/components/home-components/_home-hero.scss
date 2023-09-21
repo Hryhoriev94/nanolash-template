@@ -1,0 +1,16 @@
+@include media-up(768px) {
+    .hero {
+        background-color: $halfGray;
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@include media-up(992px) {
+    .hero {
+        background-position: calc(50% + 100px) bottom;
+        background-color: $halfGray;
+    }
+}

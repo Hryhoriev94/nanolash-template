@@ -1,0 +1,51 @@
+@include media-up(768px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        &__dots {
+            height: 440px;
+        }
+        &__dot {
+
+            max-width: 80px;
+        }
+    }
+}
+
+@include media-up(992px) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        &__dots {
+            height: 540px;
+        }
+        &__dot {
+            max-width: 100px;
+        }
+    }
+}
+
+@include media-up(1200px) {
+    .hero {
+        &__description {
+            width: 85%;
+            .mark_name {
+                strong {
+                    font-size: 3.75rem;
+                    margin-top: 0.5rem;
+                    padding-top: 10px;
+                }
+            }
+            .variants {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+}
+
+@include media-up(1400px) {
+    .hero {
+        &__dots {
+            height: 570px;
+        }
+    }
+}

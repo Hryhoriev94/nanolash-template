@@ -1,0 +1,49 @@
+@font-face { /*Roboto 900*/
+	font-family: 'Roboto';
+	src: url('#{$assets_path}fonts/roboto/roboto-900.woff2') format('woff2'),
+	     url('#{$assets_path}fonts/roboto/roboto-900.woff') format('woff'),
+	     url('#{$assets_path}fonts/roboto/roboto-900.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face { /*Roboto 700*/
+	font-family: 'Roboto';
+	src: url('#{$assets_path}fonts/roboto/roboto-700.woff2') format('woff2'),
+	     url('#{$assets_path}fonts/roboto/roboto-700.woff') format('woff'),
+	     url('#{$assets_path}fonts/roboto/roboto-700.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face { /*Roboto 400*/
+	font-family: 'Roboto';
+	src: url('#{$assets_path}fonts/roboto/roboto-400.woff2') format('woff2'),
+	     url('#{$assets_path}fonts/roboto/roboto-400.woff') format('woff'),
+	     url('#{$assets_path}fonts/roboto/roboto-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face { /*Roboto 300*/
+	font-family: 'Roboto';
+	src: url('#{$assets_path}fonts/roboto/roboto-300.woff2') format('woff2'),
+	     url('#{$assets_path}fonts/roboto/roboto-300.woff') format('woff'),
+	     url('#{$assets_path}fonts/roboto/roboto-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face { /*Roboto 100*/
+	font-family: 'Roboto';
+	src: url('#{$assets_path}fonts/roboto/roboto-100.woff2') format('woff2'),
+	     url('#{$assets_path}fonts/roboto/roboto-100.woff') format('woff'),
+	     url('#{$assets_path}fonts/roboto/roboto-100.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}

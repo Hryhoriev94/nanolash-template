@@ -1,0 +1,53 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+@include media-up(768px) {
+    html {font-size: 15px}
+}
+
+body {
+    overflow-x: hidden;
+    background: transparent linear-gradient(180deg, rgba(228, 228, 228, 1) 0%, rgba(255, 255, 255, 1) 100%) 0% 0% no-repeat padding-box;
+    padding-bottom: 20px;
+    padding-top: 32px;
+    margin: 0;
+    font-family: Roboto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    @include make-container();
+    @include media-between(0px, sm) {
+        width: calc(100vw - 1.5rem);
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: $black;
+    font-family: 'Roboto';
+}
+
+.blur {
+    filter: blur(10px);
+}

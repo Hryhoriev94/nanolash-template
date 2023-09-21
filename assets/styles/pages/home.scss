@@ -1,8 +1,6 @@
-@import '../includes/_global';
-@import '../components/_navbar';
-@import '../components/home-components/home-hero';
-@import '../components/_brand-navigation';
-@import '../components/_products-grid';
+@import '../includes/_flag';
+@import '../includes/global';
+@import '../helpers/mixins';
 @import '../components/_mark';
 @import '../components/_newsletter';
 @import '../components/_follow';
@@ -12,7 +10,7 @@
 .home {
     &-page-title {
         span, strong {
-            white-space: nowrap;
+            // white-space: nowrap;
         }
         strong {
             font-weight: inherit;
@@ -39,42 +37,5 @@
     }
 }
 
-@include media-up(768px) {
 
-
-    .home {
-        &-page-title {
-            max-width: 60%;
-        }
-        &__title {
-            width: auto;
-            font-weight: 100;
-            font-size: 2.5rem;
-            padding: 0;
-            margin: 1rem 0;
-            color: #fff;
-            @include beforeTitleHome();
-        }
-        &__description {
-            color: $white;
-            font-size: 1rem;
-            line-height: 1.2rem;
-        }
-        &__subtitle {
-            display: block;
-            font-size: 2.5rem;
-            padding: 0;
-            margin: 1rem 0;
-            font-weight: 100;
-            color: #fff;
-            @include beforeTitleHome();
-        }
-        &__subdescriotion {
-            display: inline;
-            color: $white;
-            font-size: 1rem;
-            line-height: 1.2rem;
-        }
-    }
-}
 
