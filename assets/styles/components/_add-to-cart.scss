@@ -158,4 +158,13 @@
             }
         }
     }
+
+    &__summary {
+        font-size: var(--summary-size);
+        display: flex;
+        justify-content: end;
+        font-weight: 700;
+        grid-area: price;
+        align-items: center;
+    }
 }

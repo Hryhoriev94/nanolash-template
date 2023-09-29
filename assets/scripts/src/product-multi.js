@@ -1,17 +1,15 @@
 import { heroimage } from './modules/heroimage.js'
-import { Slider } from './modules/customers-opinions.js';
+// import { Slider } from './modules/customers-opinions.js';
 import { adjustFontSize } from './modules/adjustFontSize.js';
-import { effectBeforeAfterHandler } from './modules/effectBeforeAfter.js';
+// import { effectBeforeAfterHandler } from './modules/effectBeforeAfter.js';
 import { parallax } from './modules/parallax.js';
-import cart from './modules/cart.js';
 
 window.addEventListener('load', () => {
     heroimage();
-    const sliders = document.querySelectorAll('.customers-opinions');
-    sliders.forEach(sliderElement => {
-        new Slider(sliderElement);
-    });
-    cart();
+    // const sliders = document.querySelectorAll('.customers-opinions');
+    // sliders.forEach(sliderElement => {
+    //     new Slider(sliderElement);
+    // });
 
     adjustFontSize();
     window.addEventListener('resize', () => {
@@ -19,7 +17,7 @@ window.addEventListener('load', () => {
         parallax();
     });
 
-    effectBeforeAfterHandler();
+    // effectBeforeAfterHandler();
     window.addEventListener('scroll', () => {
         parallax();
     }, {passive: true});

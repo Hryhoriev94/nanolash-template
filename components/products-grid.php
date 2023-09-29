@@ -1,7 +1,7 @@
 
 <div class="products__grid">
     <?php foreach($products as $alias => $content): ?>
-        <?php $thumb = $images[$alias]['thumb']; ?>
+        <?php $thumb = @$images[$alias]['thumb']; ?>
         <?php $productURL = getRouteByAlias($alias, $routing); ?>
         <div class="products__item">
             <div class="thumbnail">

@@ -18,7 +18,7 @@
                     'title' => 'Nanolash Eyelash Serum',
                     'description' => 'Profesjonalna odżywka do brwi',
                 ],
-                'nanolash-pm' => [
+                'nanolash-pv' => [
                     'title' => 'Nanolash Primer Mascara',
                     'description' => 'Tusz do Rzęs Zwiększający Objętość',
                 ],
@@ -46,7 +46,7 @@
                         'title' => 'Nanolash Eyelash Serum',
                         'description' => 'Profesjonalna odżywka do brwi',
                     ],
-                    'nanolash-pm' => [
+                    'nanolash-pv' => [
                         'title' => 'Nanolash Primer Mascara',
                         'description' => 'Tusz do Rzęs Zwiększający Objętość',
                     ],
@@ -115,7 +115,7 @@
                         'olejek rycynowy wzmacnia i nadaje połysku'
                     ],
                 ],
-                'prodcut_effects' => [
+                'product_effects' => [
                     'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
                     'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
                     <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
@@ -165,10 +165,97 @@
                             'answer' => 'Za każde zamówienie możesz zapłacić szybko i bezpiecznie przelewem lub kartą przez wybrany system online. Zamówione produkty zostaną do Ciebie wysłane w ciągu 24 godzin od zaksięgowania wpłaty na naszym koncie. Możesz też wybrać płatność przy odbiorze. Wówczas produkty wyślemy niezwłocznie po złożeniu zamówienia, a należną kwotę przekażesz kurierowi, odbierając przesyłkę.',
                         ],
                     ]
-                ]
+                ],
+                    
 
             ],
-            'nanolash-pm' => [],
+            'nanolash-pv' => [
+                'title' => 'Najlepsze kępki do rzęs',
+                'description' => 'Poznaj najlepsze kępki do rzęs w całym Radomiu - Nanolash',
+                'slogan' => 'Najlepsze kępki do rzęs',
+                'mark_name' => 'Nanolash',
+                'product_name' => 'RZĘSY DO PRZEDŁUŻANIA',
+                'product_variants' => [
+                    [
+                        'key' => 'skręt', 'values' => ['C' => 'C', 'D' => 'D', 'DD' => 'DD']
+                    ],
+                    [
+                        'key' => 'grubość', 'values' => ['015' => '0.15', '018' => '0.18', '020' => '0.20', '025' => '0.25']
+                    ],
+                    [
+                        'key' => 'długość', 
+                        'values' => [
+                            '0609M' => '6mm-9mm - Mixed', 
+                            '1012M' => '10mm-12mm - Mixed', 
+                            '1316M' => '13mm-16mm - Mixed', 
+                            '08' => '8mm', 
+                            '09' => '9mm', 
+                            '10' => '10mm', 
+                            '11' => '11mm', 
+                            '12' => '12mm', 
+                            '13' => '13mm', 
+                            '14' => '14mm'
+                        ]
+                    ],
+                ],
+                'icons_section' => [
+                    'title' => 'NANOLASH <strong>RZĘSY DO PRZEDŁUŻANIA</strong>',
+                    'icons' => [
+                        'Wysoka temperatura od 70 ℃ do 100 ℃',
+                        'Miękkie i lekkie',
+                        'Głęboka czerń z matowym wykończeniem',
+                        'Grubość od 0,05 do 0,2 mm'
+                    ],
+                ],
+                'product_effects' => [
+                    'title' => '<span>LOREM IPSUM</span> <strong>DOLOR SIT AMET, CONSECTETUR</strong>',
+                    'content' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>'
+                ],
+                'customers__opinions' => [
+                    [
+                        'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
+                        'author' => 'Sabina, 27 lat'
+                    ],
+                    [
+                        'comment' => 'Używam Nanobrow od kilku miesięcy i jestem zachwycona efektami! Moje brwi są teraz pełniejsze i bardziej wyraziste. Polecam każdej kobiecie, która chce poprawić wygląd swoich brwi.',
+                        'author' => 'Magdalena, 32 lata'
+                    ],
+                    [
+                        'comment' => 'Nanobrow to prawdziwy game changer w mojej codziennej rutynie pielęgnacyjnej. Moje brwi wyglądają teraz znacznie lepiej, a ja czuję się pewniejsza siebie. Dziękuję!',
+                        'author' => 'Katarzyna, 29 lat'
+                    ],
+                    [
+                        'comment' => 'Zawsze miałam problem z cienkimi brwiami. Dzięki Nanobrow moje brwi stały się gęstsze i ciemniejsze. Jestem bardzo zadowolona z rezultatów i na pewno będę kontynuować stosowanie.',
+                        'author' => 'Anna, 35 lat'
+                    ],
+                ],
+                'faq' => [
+                    'title' => '',
+                    'questions' => [
+                        [
+                            'question' => 'Czy Nanolash mogą stosować osoby noszące szkła kontaktowe?',
+                            'answer' => 'Produkty Nanolash mogą być stosowane przez osoby noszące soczewki kontaktowe. Można stosować je bez obaw, ponieważ ich skład został przebadany przez ekspertów',
+                        ],
+                        [
+                            'question' => 'Mam bardzo wrażliwe oczy. Czy mogę używać kosmetyków Nanolash?',
+                            'answer' => 'Wszystkie kosmetyki do rzęs Nanolash to gwarancja bezpieczeństwa. Ich działanie jest łagodne dla oczu i skóry, a jednocześnie dają spektakularne efekty.',
+                        ],
+                        [
+                            'question' => 'Ile trwa realizacja zamówienia?',
+                            'answer' => 'Produkt dostarczany jest za pośrednictwem firmy kurierskiej. Standardowy czas realizacji zamówienia to dwa dni robocze, ale może się on wydłużyć w wyjątkowych przypadkach.',
+                        ],
+                        [
+                            'question' => 'Czy mogę złożyć zamówienie, mieszkając za granicą?',
+                            'answer' => 'Tak, produkty Nanobrow sprzedajemy nie tylko w Polsce, ale także w wielu krajach na całym świecie. Koszt wysyłki i szacowany czas dostawy zależy od kraju dostawy. W razie potrzeby wybierz odpowiednią wersję językową dla swojego kraju, klikając na przycisk z flagą w menu strony.',
+                        ],
+                        [
+                            'question' => 'Jakie są sposoby płatności za zamówienie?',
+                            'answer' => 'Za każde zamówienie możesz zapłacić szybko i bezpiecznie przelewem lub kartą przez wybrany system online. Zamówione produkty zostaną do Ciebie wysłane w ciągu 24 godzin od zaksięgowania wpłaty na naszym koncie. Możesz też wybrać płatność przy odbiorze. Wówczas produkty wyślemy niezwłocznie po złożeniu zamówienia, a należną kwotę przekażesz kurierowi, odbierając przesyłkę.',
+                        ],
+                    ]
+                ],
+            ],
             'nanolash-vm' => [],
             'nanolash-lcm' => [],
             'nanolash-dle' => [],
@@ -178,6 +265,9 @@
             'nanolash-hyp' => [],
         ],
         'global' => [
+            'cart' => [
+                'add_to_cart' => 'Dodaj do koszyka',
+            ],
             'slider' => [
                 'next' => 'Następny slide',
                 'prev' => 'Poprzedni slide',

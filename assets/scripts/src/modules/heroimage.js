@@ -14,25 +14,25 @@ export const heroimage = () => {
 
     const handleResize = debounce(dotsContainerHeightHandler, 150);
 
-    function replaceSrc(element, newSrcBase) {
-        if (!element) return;
-
+    function replaceSrc(element, newSrcBase, extension) {
+        if (!element || !extension) return;
+    
         const isSrcset = element.hasAttribute('srcset');
         const isSrc = element.hasAttribute('src');
-
+    
         if (!isSrcset && !isSrc) return;
-
+    
         const attributeType = isSrcset ? 'srcset' : 'src';
         const currentValue = element.getAttribute(attributeType);
-        const updatedValue = currentValue.replace(/^(.*?)(@.*)$/, `${newSrcBase}$2`);
+        const updatedValue = currentValue.replace(/^(.*?)(@\w+\.\w+)$/, `${newSrcBase}$2`).replace(/\.\w+$/, `.${extension}`);
         const imgLoader = new Image();
-
+    
         imgLoader.onload = () => {
             element.setAttribute(attributeType, updatedValue);
             removeLoadingWhenComplete(element);
         }
-
-        imgLoader.src = updatedValue.split(' ')[0];
+    
+        imgLoader.src = `${newSrcBase}@xs.${extension}`;
         isLoading = true;
         mainImageContainer.classList.add('loading');
     }
@@ -49,22 +49,23 @@ export const heroimage = () => {
     function changeImageByIndex(dot) {
         const currentIndex = dot.getAttribute('data-slide');
         if (!currentIndex) return;
-
+    
         const image = mainImageContainer.querySelector('.hero__image__block picture');
         if (!image) return;
-
+    
         const sources = image.querySelectorAll('source');
         const newSrcBaseElem = slides.querySelector(`[data-slides="${currentIndex}"]`);
         if (!newSrcBaseElem) return;
-
+    
         const newSrcBase = newSrcBaseElem.getAttribute('data-src');
-        if (!newSrcBase) return;
-
-        sources.forEach(source => replaceSrc(source, newSrcBase));
-
+        const newExtension = newSrcBaseElem.getAttribute('data-extension');
+        if (!newSrcBase || !newExtension) return;
+    
+        sources.forEach(source => replaceSrc(source, newSrcBase, newExtension));
+    
         const imgElement = image.querySelector('img');
         if (imgElement) {
-            replaceSrc(imgElement, newSrcBase);
+            replaceSrc(imgElement, newSrcBase, newExtension);
         }
     }
 

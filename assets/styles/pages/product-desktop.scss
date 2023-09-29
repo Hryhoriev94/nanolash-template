@@ -37,15 +37,13 @@
             &__title {
                 grid-column: 1/2;
             }
-            &__slider {
+            &__media {
                 grid-row: 1/3;
                 grid-column: 2/3;
-
                 margin-left: auto;
             }
         }
         &-order {
-
             &__content {
                 width: 80%;
             }
@@ -82,5 +80,31 @@
                 }
             }
         }
+    }
+}
+
+@include media-up(1200px) {
+    .product {
+        &-order {
+            display: flex;
+            min-height: 370px;
+            align-items: stretch;
+            &__bg-image {
+                height: 100%;
+                opacity: 1;
+                display: flex;
+                align-items: stretch;
+                img {
+                    position: relative;
+                    left: -25%;
+                }
+            }
+            &.right {
+                .product-order__bg-image {
+                    justify-content: flex-start;
+                }
+            }
+        }
+
     }
 }

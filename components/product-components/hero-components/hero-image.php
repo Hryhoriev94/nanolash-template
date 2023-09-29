@@ -3,7 +3,7 @@
         <span class="loader"></span>
         <picture>
             <!-- WebP -->
-            <source media="(min-width: 0px) and max-width(575.98px)" type="image/webp" srcset="<?= $slides[0]['src'] . '@xs.webp' ?>">
+            <source media="(min-width: 0px) and (max-width: 575.98px)" type="image/webp" srcset="<?= $slides[0]['src'] . '@xs.webp' ?>">
             <source media="(min-width: 576px) and (max-width: 767.98px)" type="image/webp" srcset="<?= $slides[0]['src'] . '@sm.webp' ?>">
             <source media="(min-width: 768px) and (max-width: 991.98px)" type="image/webp" srcset="<?= $slides[0]['src'] . '@md.webp' ?>">
             <source media="(min-width: 992px) and (max-width: 1399.98px)" type="image/webp" srcset="<?= $slides[0]['src'] . '@lg.webp' ?>">
@@ -22,7 +22,7 @@
     </div>
     <div class="slides" style="display: none">
         <?php foreach($slides as $index => $slide): ?>
-            <span data-slides="<?= $index ?>" 
+            <span data-slides="<?= $index ?>"
                 <?php foreach($slide as $slideKey => $slideValue) {
                     echo "data-$slideKey='$slideValue'";
                 }?>

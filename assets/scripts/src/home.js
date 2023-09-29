@@ -13,9 +13,7 @@ const homePageTileHandler = () => {
 window.addEventListener('load', () => {
     faq();
     homePageTileHandler();
-    
     window.addEventListener('resize', () => {
         homePageTileHandler();
     });
 });
-

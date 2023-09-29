@@ -21,8 +21,8 @@
             'payment-success' => ['template' => 'result', 'alias' => 'payment-success'],
             '404' => ['template' => 'error', 'alias' => '404'],
                 
-            'eyelash-serum' => ['template' => 'product', 'alias' => 'nanolash-es'],
-            'primer-mascara' => ['template' => 'product', 'alias' => 'nanolash-pm'],
+            'eyelash-serum' => ['template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-es'],
+            'perfect-volume' => ['template' => 'product', 'type' => 'multi', 'alias' => 'nanolash-pv'],
             'volume-up-mascara' => ['template' => 'product', 'alias' => 'nanolash-vm'], 
             'lenght-and-curl-mascara' => ['template' => 'product', 'alias' => 'nanolash-lcm'], 
             'lash-and-brow-shampoo' => ['template' => 'product', 'alias' => 'nanolash-lbs'], 
@@ -30,7 +30,6 @@
 
 
         ],
-
         'dev_mode' => true,
         'cdn' => false,
     ];

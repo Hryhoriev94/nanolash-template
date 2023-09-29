@@ -2,7 +2,7 @@
     return [
         'prices' => [
             'nanolash-es' => 240,
-            'nanolash-pm' => 0,
+            'nanolash-pv' => 0,
             'nanolash-vm' => 0,
             'nanolash-lcm' => 0,
             'nanolash-dle' => 0,

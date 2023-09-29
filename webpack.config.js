@@ -1,5 +1,5 @@
 const path = require('path');
-const glob = require('glob');
+const {glob} = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const entryArray = glob.sync('./assets/scripts/src/*.js');

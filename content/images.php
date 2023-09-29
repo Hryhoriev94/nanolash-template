@@ -9,8 +9,8 @@ return [
             'nanolash-es' => [
                 'thumb' => 'eyelash-serum/nanolash-eyelash-serum-grid-thumb',
             ],
-            'nanolash-pm' => [
-                'thumb' => 'primer-mascara/nanolash-primer-mascara-grid-thumb',
+            'nanolash-pv' => [
+                'thumb' => 'perfect-volume/nanolash-perfect-volume-grid-thumb',
             ],
             'nanolash-vm' => [
                 'thumb' => 'volume-up-mascara/nanolash-volume-up-mascara-grid-thumb',
@@ -30,39 +30,51 @@ return [
 
     'nanolash-es' => [
 
-        'critical' => "<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/1/nanolash-eyelash-serum-header@xs.webp\" media=\"(min-width: 0px) and (max-width: 575.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/1/nanolash-eyelash-serum-header@sm.webp\" media=\"(min-width: 576px) and (max-width: 767.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/1/nanolash-eyelash-serum-header@md.webp\" media=\"(min-width: 768px) and (max-width: 991.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/1/nanolash-eyelash-serum-header@lg.webp\" media=\"(min-width: 992px) and (max-width: 1399.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/1/nanolash-eyelash-serum-header@xxl.webp\" media=\"(min-width: 1400px)\">",
+        'critical' => "<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@xs.webp\" media=\"(min-width: 0px) and (max-width: 575.98px)\">
+        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@sm.webp\" media=\"(min-width: 576px) and (max-width: 767.98px)\">
+        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@md.webp\" media=\"(min-width: 768px) and (max-width: 991.98px)\">
+        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@lg.webp\" media=\"(min-width: 992px) and (max-width: 1399.98px)\">
+        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@xxl.webp\" media=\"(min-width: 1400px)\">",
 
         'hero' => [
             'dots' => [
-                '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1', 
-                '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2', 
-                '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3', 
-                '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4',
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                ],
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                ],
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                ],
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                ],
             ],
 
             'slides' => [
                 [
                     'alt' => 'test1',
-                    'type' => 'image',
+                    'extension' => 'png',
                     'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
                 ],
                 [
                     'alt' => 'test2',
-                    'type' => 'image',
+                    'extension' => 'png',
                     'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
                 ],
                 [
                     'alt' => 'test3',
-                    'type' => 'image',
+                    'extension' => 'png',
                     'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
                 ],
                 [
                     'alt' => 'test4',
-                    'type' => 'image',
+                    'extension' => 'png',
                     'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
                 ],
             ],
@@ -70,10 +82,10 @@ return [
         ],
 
         'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1.svg',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2.svg',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3.svg',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4.svg',
+            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
+            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
+            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
+            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
         ],
         'first_order_section' => [
             'background' => [
@@ -97,6 +109,155 @@ return [
                 'src' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-order-bg',
                 'extension' => 'jpg'
             ],
+        ],
+        'product_effects' => [
+            'type' => 'slider',
+            'before' => [
+                'src' => '/assets/img/products/eyelash-serum/effects/nanolash-eyelash-serum-effects-before',
+                'alt' => 'effect before'
+            ],
+            'after' => [
+                'src' => '/assets/img/products/eyelash-serum/effects/nanolash-eyelash-serum-effects-after',
+                'alt' => 'effect after'
+            ]
+        ]
+    ],
+    'nanolash-pv' => [
+        'critical' => "<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/perfect-volume/hero/slides/slide-1/nanolash-volume-lashes-header.webp\" media=\"(min-width: 1400px)\">",
+
+        'hero' => [
+            'dots' => [
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-1'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-2'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-3'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-4'
+                ], 
+                [
+                    'type' => 'gif',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-5'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-1'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-2'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-3'
+                ], 
+                [
+                    'type' => 'image',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-4'
+                ], 
+                [
+                    'type' => 'gif',
+                    'src' => '/assets/img/products/perfect-volume/hero/dots/nanolash-volume-lashes-header-5'
+                ], 
+            ],
+
+            'slides' => [
+                [
+                    'alt' => 'test1',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-1/nanolash-volume-lashes-header'
+                ],
+                [
+                    'alt' => 'test2',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-2/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test3',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-3/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test4',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-4/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test4',
+                    'extension' => 'gif',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-5/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test1',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-1/nanolash-volume-lashes-header'
+                ],
+                [
+                    'alt' => 'test2',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-2/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test3',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-3/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test4',
+                    'extension' => 'png',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-4/nanolash-perfect-volume-header'
+                ],
+                [
+                    'alt' => 'test4',
+                    'extension' => 'gif',
+                    'src' => '/assets/img/products/perfect-volume/hero/slides/slide-5/nanolash-perfect-volume-header'
+                ],
+            ],
+
+        ],
+
+        'icons' => [
+            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
+            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
+            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
+            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        ],
+        'first_order_section' => [
+            'background' => [
+                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
+                'extension' => 'png'
+            ],
+            'parallax' => [
+                'front' => [
+                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
+                    'extension' => 'png'
+                ],
+                'back' => [
+                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
+                    'extension' => 'png'
+                ],
+            ],
+        ],
+        'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
+        'second_order_section' => [
+            'background' => [
+                'src' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-order-bg',
+                'extension' => 'jpg'
+            ],
+        ],
+        'product_effects' => [
+            'type' => 'video',
+            'src' => '/assets/img/products/primer-mascara/effects/effect',
+            'thumbnail' => '/assets/img/products/primer-mascara/effects/effect-thumbnail',
+            'alt' => ''
         ]
     ],
 ]

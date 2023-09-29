@@ -9,119 +9,28 @@ getComponent('head', [
 ]); ?>
 
 <body>
-<?php getComponent('navbar') ?>
-<?php getComponent('product-components/product-hero', [
+<?php 
+getComponent('navbar');
+getComponent('product-components/product-hero', [
     'images' => $images['hero'],
     'content' => $content
-]); ?>
-<?php getComponent('product-components/section-icons', [
+]); 
+getComponent('product-components/section-icons', [
     'images' => $images['icons'],
     'content' => $content['icons_section']
-]); ?>
-
-<section class="product-effects container">
-        <h2 class="section-title product-effects__title"><?= $content['prodcut_effects']['title']?></h2>
-        <div class="product-effects__content"><?= $content['prodcut_effects']['content'] ?></div>				
-            <div class="product-effects__slider">
-                <div class="product-effects__before">
-                    <picture>
-                        <source type="image/webp" srcset="/assets/img/products/eyelash-serum/nanolash-eyelash-serum-effects-before.webp">
-                        <img class="d-block" src="/assets/img/products/eyelash-serum/nanolash-eyelash-serum-effects-before.jpg" alt="" width="386" height="267" loading="lazy">
-                    </picture>
-                </div>
-                <div class="product-effects__after">
-                    <picture>
-                        <source type="image/webp" srcset="/assets/img/products/eyelash-serum/nanolash-eyelash-serum-effects-after.webp">
-                        <img class="d-block" src="/assets/img/products/eyelash-serum/nanolash-eyelash-serum-effects-after.jpg" alt="" width="386" height="267" loading="lazy">
-                    </picture>
-                </div>
-                <div class="product-effects__controls">
-                    <div class="product-effects__handler"></div>
-                </div>
-            </div>
-        </div>
-</section>
-
-<!-- ORDER -->
-
-<section class="product-order left">
-
-    <?php $background = $images['first_order_section']['background']; ?>
-    <div class="product-order__bg-image d-block d-lg-none">
-        <?php if (isset($background) && isset($background['src']) && !empty($background['src']) && isset($background['extension']) && !empty($background['extension'])): ?>
-        <picture>
-            <!-- WebP -->
-            <source type="image/webp" srcset="<?= $background['src'] . '.webp' ?>">
-            <!-- IMG -->
-            <img src="<?= $background['src'] . '.' . $background['extension'] ?>" alt="<?= isset($background['alt']) ? $background['alt'] : '' ?>" loading="lazy" width="233" height="198">
-        </picture>
-        <?php endif; ?>
-    </div>
-
-    <div class="container d-grid">
-        <div class="product-order__content">
-            <h3 class="product-order__title">Nanobrow Eyebrow Serum</h3>
-            <div class="product-order__actions">
-                <div class="add-to-cart add-to-cart--white">
-                    <div class="add-to-cart__quantity">
-                        <div class="qnt-counter qnt-counter--btn-small qnt-counter--relative">
-                            <button type="button" aria-label="minus" class="add-to-cart__quantity__button add-to-cart__minus" disabled="disabled">-</button>
-                            <input aria-label="counter" type="text" class="qnt-counter__input" value="1">
-                            <button type="button" aria-label="plus" class="add-to-cart__quantity__button add-to-cart__plus">+</button>
-                        </div>
-                    </div>
-                    <div class="add-to-cart__price">
-                        <div class="old-price" style="display: none;">214&nbsp;zł</div>
-                        <div class="new-price">214&nbsp;zł</div>
-                    </div>
-                    <div class="add-to-cart__button-block">
-                        <span style="display: none;"></span>
-                        <button type="button" class="add-to-cart__button" data-id="13" data-quantity="1" title="">Do koszyka</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <?php 
-        if (isset($images['first_order_section']['parallax'])) {
-            $parallax = $images['first_order_section']['parallax'];
-        }
-
-        if (!empty($parallax)): ?>
-        <div class="parallax product-order__image">
-            <?php if (isset($parallax['front']) && !empty($parallax['front'])): ?>
-            <?php $front = $parallax['front']; ?>
-            <div class="parallax__layer parallax__layer--front" data-parallax-speed="-50">
-                <?php for ($i = 0; $i < 3; $i++): ?>
-                <picture>
-                    <!-- WebP -->
-                    <source type="image/webp" srcset="<?= $front['src'] . '.webp' ?>">
-                    <!-- IMG -->
-                    <img src="<?= $front['src'] . '.' . $front['extension'] ?>" class="img-fluid" loading="lazy" alt="<?= isset($front['alt']) ? $front['alt'] : '' ?>" width="480" height="408">
-                </picture>
-                <?php endfor; ?>
-            </div>
-            <?php endif; ?>
-
-            <?php if (isset($parallax['back']) && !empty($parallax['back'])): ?>
-            <?php $back = $parallax['back']?>
-            <div class="parallax__layer parallax__layer--back" data-parallax-speed="-20">
-                <?php for ($i = 0; $i < 3; $i++): ?>
-                <picture>
-                    <!-- WebP -->
-                    <source type="image/webp" srcset="<?= $back['src'] . '.webp' ?>">
-                    <!-- IMG -->
-                    <img src="<?= $back['src'] . '.' . $back['extension'] ?>" class="img-fluid" loading="lazy" alt="<?= isset($back['alt']) ? $back['alt'] : '' ?>" width="480" height="408">
-                </picture>
-                <?php endfor; ?>
-            </div>
-            <?php endif; ?>
-        </div>
-        <?php endif; ?>
-    </div>
-</section>
-
-<!-- ORDER END -->
+]); 
+getComponent('product-components/product-effects', [
+    'content' => $content['product_effects'],
+    'media' => $images['product_effects']
+]);
+getComponent('product-components/product-order', [
+    'classes' => [
+        'align' => 'left',
+        'white' => true
+    ],
+    'parallax' => $images['first_order_section']['parallax'] ?? null,
+]);
+?>
 
 <!-- CONTENT -->
 
@@ -155,59 +64,17 @@ getComponent('head', [
 <?php 
     getComponent('product-components/customers-opinions', ['content' => $content]);
     getComponent('gallery');
+    getComponent('product-components/product-order', [
+        'background' => $images['second_order_section']['background'],
+        'classes' => [
+            'white' => true
+        ]
+    ]);
 ?>
 
-<!-- ORDER -->
 
-<section class="product-order right">
-    <?php $background = $images['second_order_section']['background']; ?>
-	<div class="product-order__bg-image">
-		<?php if(isset($background) && isset($background['src']) && !empty($background['src']) && !empty($background['extension'])):?>
-		<picture>
-			<!-- WebP -->
-			<source type="image/webp" srcset="<?= $background['src'] . '.webp' ?>">
-			<!-- IMG -->
-			<img src="<?= $background['src'] . '.' . $background['extension'] ?>" alt="<?= isset($background['alt']) ? $background['alt'] : '' ?>" loading="lazy">
-		</picture>
-		<?php ?>
-	</div>
-	<?php endif; ?>
-	<div class="container d-grid">
-		<div class="product-order__content">
-			<h3 class="product-order__title">Nanobrow Eyebrow Serum</h3>
-			<div class="product-order__actions">
-				<div class="add-to-cart add-to-cart--white">
-					<!-- <div class="add-to-cart__packs">
-						<div class="add-to-cart__packs-label">Nanobrow Eyebrow Serum</div>
-						<div class="add-to-cart__packs-list">
-							<div class="add-to-cart__pack-button variant-color--white active" data-title="Nanobrow Eyebrow Serum" data-img-path="default" data-quantity="1">x1</div>
-							<div class="add-to-cart__pack-button variant-color--white" data-title="Nanobrow Eyebrow Serum 2-Pack" data-img-path="nanobrow-es-2" data-quantity="2">x2</div>
-							<div class="add-to-cart__pack-button variant-color--white" data-title="Nanobrow Eyebrow Serum 3-Pack" data-img-path="nanobrow-es-3" data-quantity="3">x3</div>
-							<div class="add-to-cart__pack-button many variant-color--white" data-title="Więcej" data-img-path="more" data-quantity="4" data-pack-quantity-more="">+</div>
-						</div>
-					</div> -->
-					<div class="add-to-cart__quantity">
-						<div class="qnt-counter qnt-counter--btn-small qnt-counter--relative">
-							<button type="button" arai-label="minus" class="add-to-cart__quantity__button add-to-cart__minus" disabled="disabled">-</button>
-							<input aria-label="counter" type="text" class="qnt-counter__input" value="1">
-							<button type="button" label="plus" class="add-to-cart__quantity__button add-to-cart__plus">+</button>
-						</div>
-					</div>
-					<div class="add-to-cart__price">
-						<div class="old-price" style="display: none;">214&nbsp;zł</div>
-						<div class="new-price">214&nbsp;zł</div>
-					</div>
-					<div class="add-to-cart__button-block">
-						<span style="display: none;"></span>
-						<button tyle="button" class="add-to-cart__button " data-id="13" data-quantity="1" title="">Do koszyka</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
-<!-- ORDER END -->
+
 
 <!-- CONTENT -->
 
@@ -239,82 +106,11 @@ getComponent('head', [
 
 <!-- NEWSLETTER -->
 
-<section class="product-order left">
-
-    <?php $background = $images['first_order_section']['background']; ?>
-    <div class="product-order__bg-image d-block d-lg-none">
-        <?php if (isset($background) && isset($background['src']) && !empty($background['src']) && isset($background['extension']) && !empty($background['extension'])): ?>
-        <picture>
-            <!-- WebP -->
-            <source type="image/webp" srcset="<?= $background['src'] . '.webp' ?>">
-            <!-- IMG -->
-            <img src="<?= $background['src'] . '.' . $background['extension'] ?>" alt="<?= isset($background['alt']) ? $background['alt'] : '' ?>" loading="lazy" width="233" height="198">
-        </picture>
-        <?php endif; ?>
+<div class="newsletter-section">
+    <div class="container">
+        <?php getComponent('newsletter'); ?>
     </div>
-
-    <div class="container d-grid">
-        <div class="product-order__content">
-            <h3 class="product-order__title">Nanobrow Eyebrow Serum</h3>
-            <div class="product-order__actions">
-                <div class="add-to-cart add-to-cart--white">
-                    <div class="add-to-cart__quantity">
-                        <div class="qnt-counter qnt-counter--btn-small qnt-counter--relative">
-                            <button type="button" aria-label="minus" class="add-to-cart__quantity__button add-to-cart__minus" disabled="disabled">-</button>
-                            <input aria-label="counter" type="text" class="qnt-counter__input" value="1">
-                            <button type="button" aria-label="plus" class="add-to-cart__quantity__button add-to-cart__plus">+</button>
-                        </div>
-                    </div>
-                    <div class="add-to-cart__price">
-                        <div class="old-price" style="display: none;">214&nbsp;zł</div>
-                        <div class="new-price">214&nbsp;zł</div>
-                    </div>
-                    <div class="add-to-cart__button-block">
-                        <span style="display: none;"></span>
-                        <button type="button" class="add-to-cart__button" data-id="13" data-quantity="1" title="">Do koszyka</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <?php 
-        if (isset($images['first_order_section']['parallax'])) {
-            $parallax = $images['first_order_section']['parallax'];
-        }
-
-        if (!empty($parallax)): ?>
-        <div class="parallax product-order__image">
-            <?php if (isset($parallax['front']) && !empty($parallax['front'])): ?>
-            <?php $front = $parallax['front']; ?>
-            <div class="parallax__layer parallax__layer--front">
-                <?php for ($i = 0; $i < 3; $i++): ?>
-                <picture>
-                    <!-- WebP -->
-                    <source type="image/webp" srcset="<?= $front['src'] . '.webp' ?>">
-                    <!-- IMG -->
-                    <img src="<?= $front['src'] . '.' . $front['extension'] ?>" class="img-fluid" loading="lazy" alt="<?= isset($front['alt']) ? $front['alt'] : '' ?>" width="480" height="408">
-                </picture>
-                <?php endfor; ?>
-            </div>
-            <?php endif; ?>
-
-            <?php if (isset($parallax['back']) && !empty($parallax['back'])): ?>
-            <?php $back = $parallax['back']?>
-            <div class="parallax__layer parallax__layer--back">
-                <?php for ($i = 0; $i < 3; $i++): ?>
-                <picture>
-                    <!-- WebP -->
-                    <source type="image/webp" srcset="<?= $back['src'] . '.webp' ?>">
-                    <!-- IMG -->
-                    <img src="<?= $back['src'] . '.' . $back['extension'] ?>" class="img-fluid" loading="lazy" alt="<?= isset($back['alt']) ? $back['alt'] : '' ?>" width="480" height="408">
-                </picture>
-                <?php endfor; ?>
-            </div>
-            <?php endif; ?>
-        </div>
-        <?php endif; ?>
-    </div>
-</section>
+</div>
 
 <!-- NEWSLETTER END -->
 

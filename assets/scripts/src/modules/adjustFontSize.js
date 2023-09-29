@@ -3,7 +3,7 @@ export const adjustFontSize = () => {
     priceDiv.style.display = 'none';
     const windowWidth = window.innerWidth;
     const contentLength = priceDiv.textContent.length;
-
+    const root = document.documentElement;
     const fontSettings = [
         { maxWidth: 768, sizes: {8: '3.5rem', 10: '3rem', 11: '2.25rem', 13: '2rem', 'default': '1.75rem'} },
         { maxWidth: 992, sizes: {8: '2.5rem', 10: '2.25rem', 11: '2rem', 13: '1.65rem', 'default': '1.35rem'} },
@@ -25,7 +25,7 @@ export const adjustFontSize = () => {
             break;
         }
     }
-
+    root.style.setProperty('--summary-size', fontSize);
     priceDiv.style.fontSize = fontSize;
     priceDiv.style.display = '';
 }

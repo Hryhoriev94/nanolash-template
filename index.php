@@ -37,7 +37,7 @@ if(!$dev_mode) {
     if (!array_key_exists($url, $config['routing'])) {
         $url = '404';
     }
-    
+
     $templateName = $config['routing'][$url]['template'];
     $templateFile = $config['templates'][$templateName];
     require 'templates/' . $templateFile;
