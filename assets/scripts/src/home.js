@@ -1,5 +1,5 @@
 import { faq } from './modules/faq.js'
-
+import cart from './modules/cart.js';
 const homePageTileHandler = () => {
     const titleSection = document.querySelector('#home-page-title');
     const width = window.innerWidth;
@@ -11,6 +11,7 @@ const homePageTileHandler = () => {
 }
 
 window.addEventListener('load', () => {
+    cart();
     faq();
     homePageTileHandler();
     window.addEventListener('resize', () => {

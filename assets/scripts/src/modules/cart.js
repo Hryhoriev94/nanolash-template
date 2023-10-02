@@ -2,6 +2,17 @@ export default () => {
     changeInputValueHandler();
 }
 
+const cartButtonHandler = () => {
+    const cartButton = document.querySelector('[data-cart__button]');
+    const cartComponent = document.querySelector('.nav__cart');
+    console.log(cartButton);
+    cartButton.addEventListener('click', () => {
+        cartComponent.classList.toggle('d-flex');
+    })
+}
+
+
+
 const getCurrency = () => {
     return new Promise((resolve, reject) => {
         const sendData = window.location.hostname.split('.').slice(-2).join('.');
@@ -29,6 +40,7 @@ const getCurrency = () => {
 let currencyPromise = getCurrency();
 
 const changeInputValueHandler = () => {
+    cartButtonHandler();
     currencyPromise.then(currency => {
         const productForms = document.querySelectorAll('.product-form');
         
@@ -66,6 +78,7 @@ class AddToCartForm {
         this.newPrice = this.addToCartBlock.querySelector('.new-price .sum');
         this.oldPrice = this.addToCartBlock.querySelector('.old-price .sum');
         this.currency = currency;
+        this.name = this.add
         this.variantForm = variantForm;
         
         this.init();

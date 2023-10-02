@@ -32,16 +32,18 @@
             background-color: transparent;
         }
     }
-    &__cart {
+    &__cart--button {
         display: flex;
         align-items: start;
         button {
+            cursor: pointer;
             margin-left: auto;
             position: relative;
             width: 26px;
             height: 26px;
             background-color: transparent;
             border: none;
+            background-color: red;
             &:before {
                 content: url('/assets/img/cart.svg');
                 position: absolute;
@@ -52,6 +54,70 @@
             }
         }
 
+    }
+    &__cart {
+        position: absolute;
+        top: 100%;
+        bottom: calc(-100vh + 100%);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 0;
+        height: auto !important;
+        overflow: visible !important;
+        color: #000;
+        line-height: 1;
+        font-weight: 300;
+        left: calc(100% - 23px);
+        font-size: 12px;
+        display: none;
+        &__width-container {
+            max-width: 46px;
+            max-height: 100%;
+            overflow: visible;
+            height: auto;
+            align-items: flex-end;
+            flex-direction: column;
+            display: flex;
+        }
+        &__wrapper {
+            width: 100vw;
+            min-width: 0;
+            max-height: 100%;
+            background-color: #e8e8e8;
+            overflow-y: auto;
+        }
+        &__details {
+            display: table;
+            min-width: 100%;
+            text-transform: uppercase;
+        }
+        &__row {
+            display: table-row;
+            &--header {
+                background-color: $halfGray;
+            }
+            &:first-child {
+                .nav__cart__cell {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &__cell {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 7px 5px;
+            text-align: center;
+            width: 15%;
+            &:first-child {
+                padding-left: 10px;
+                text-align: left;
+                white-space: normal;
+                width: unset;
+            }
+        }
     }
     .hamburger {
         width: 26px;
