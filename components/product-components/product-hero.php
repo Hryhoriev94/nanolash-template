@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container padding-top-element">
     <div class="hero">
         <div class="hero__images">
             <?php 

@@ -1,11 +1,33 @@
 @import '../helpers/mixins';
 @import '../desktop/components/add-to-cart';
+@import '../desktop/components/navbar';
 @import '../desktop/components/gallery';
 @import '../desktop/components/product-components/icons_section';
 @import '../desktop/components/product-components/product-hero';
 
 @include media-up(768px) {
     .product {
+        &-order {
+            &.left {
+                .product-order__content {
+                    grid-column: 1/2;
+                }
+                .product-order__image {
+                    grid-column: 2/3;
+                }
+            } 
+            &.right {
+                .product-order__content {
+                    grid-column: 2/3;
+                }
+                .product-order__image {
+                    grid-column: 1/2;
+                }
+                .product-order__bg-image {
+                 justify-content: flex-start;   
+                }
+            }
+        }
         &-content {
             &__wrapper {
                 grid-template-columns: 7fr 5fr;

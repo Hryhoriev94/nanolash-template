@@ -24,6 +24,9 @@ $products = [
 $domains = [
     'nanolash.loc' => [
         'currency' => 'pln'
+    ],
+    'dev.nanolash.pl' => [
+        'currency' => 'pln'
     ]
 ];
 

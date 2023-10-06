@@ -1,5 +1,14 @@
 @import '../helpers/_mixins';
 
+.brand {
+    &__title {
+        color: #E1DFDF;
+        text-decoration: none;
+        font-size: 13px;
+        padding-bottom: 18px;
+    }
+}
+
 .brands {
     background-color: $black;
     &__grid {
@@ -25,8 +34,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: initial;
+        text-decoration: none;
+        &:hover {
+            img {
+                filter: brightness(1);
+            }
+        }
         img {
             max-width: 100%;
+            filter: brightness(0.5);
+            transition: filter 300ms ease-out;
+            margin-top: auto;
+        }
+        &.current {
+            img {
+                filter: brightness(1);
+            }
         }
     }
 }

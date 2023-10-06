@@ -1,6 +1,7 @@
 import { faq } from './modules/faq.js'
 import cart from './modules/cart.js';
-const homePageTileHandler = () => {
+import navbarActions from './modules/navbarActions.js';
+const homePageTitleHandler = () => {
     const titleSection = document.querySelector('#home-page-title');
     const width = window.innerWidth;
     if(width >= 768) {
@@ -13,8 +14,9 @@ const homePageTileHandler = () => {
 window.addEventListener('load', () => {
     cart();
     faq();
-    homePageTileHandler();
+    navbarActions();
+    homePageTitleHandler();
     window.addEventListener('resize', () => {
-        homePageTileHandler();
+        homePageTitleHandler();
     });
 });

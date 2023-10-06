@@ -4,8 +4,10 @@ import { adjustFontSize } from './modules/adjustFontSize.js';
 import { effectBeforeAfterHandler } from './modules/effectBeforeAfter.js';
 import { parallax } from './modules/parallax.js';
 import cart from './modules/cart.js';
+import navbarActions from './modules/navbarActions.js';
 
 window.addEventListener('load', () => {
+    navbarActions();
     heroimage();
     const sliders = document.querySelectorAll('.customers-opinions');
     sliders.forEach(sliderElement => {

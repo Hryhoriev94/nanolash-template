@@ -1,13 +1,11 @@
 <section class="product-order <?= $classes['align']?>">
 	<div class="product-order__bg-image">
 		<?php if(isset($background) && isset($background['src']) && !empty($background['src']) && !empty($background['extension'])):?>
-		<picture>
+		<picture style="height: 100%">
 			<!-- WebP -->
-            <source type="image/webp" media="(max-width: 767.98px)" srcset="<?= $background['src'] . '--mobile.webp' ?>">
-			<source type="image/webp" media="(min-width: 768px)" srcset="<?= $background['src'] . '.webp' ?>">
+			<source type="image/webp" srcset="<?= $background['src'] . '.webp' ?>">
             <!-- PNG -->
-            <source media="(max-width: 767.98px)" srcset="<?= $background['src'] . '--mobile.png' ?>">
-            <source media="(min-width: 768px)" srcset="<?= $background['src'] . '.png' ?>">
+            <source srcset="<?= $background['src'] . '.png' ?>">
 			<!-- IMG -->
 			<img src="<?= $background['src'] . '.' . $background['extension'] ?>" alt="<?= isset($background['alt']) ? $background['alt'] : '' ?>" loading="lazy" width="233" height="198">
 		</picture>

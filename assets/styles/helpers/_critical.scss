@@ -1,3 +1,11 @@
+:root {
+    --body-padding: 32px;
+    @include media-up(768px) {
+        --body-padding: 75px;
+        --nav-padding: 15px;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -18,10 +26,9 @@ html {
 body {
     overflow-x: hidden;
     background: transparent linear-gradient(180deg, rgba(228, 228, 228, 1) 0%, rgba(255, 255, 255, 1) 100%) 0% 0% no-repeat padding-box;
-    padding-bottom: 20px;
-    padding-top: 32px;
     margin: 0;
     font-family: Roboto;
+    transition: padding-top 300ms;
     &.bf {
         .old-price {
             display: block;
@@ -57,4 +64,9 @@ p {
 
 .blur {
     filter: blur(10px);
+}
+
+.padding-top-element {
+    padding-top: var(--body-padding) !important;
+    transition: padding-top 300ms ease-out;
 }

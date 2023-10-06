@@ -30,11 +30,7 @@ return [
 
     'nanolash-es' => [
 
-        'critical' => "<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@xs.webp\" media=\"(min-width: 0px) and (max-width: 575.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@sm.webp\" media=\"(min-width: 576px) and (max-width: 767.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@md.webp\" media=\"(min-width: 768px) and (max-width: 991.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@lg.webp\" media=\"(min-width: 992px) and (max-width: 1399.98px)\">
-        <link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header@xxl.webp\" media=\"(min-width: 1400px)\">",
+        'critical' => "",
 
         'hero' => [
             'dots' => [
@@ -77,6 +73,7 @@ return [
                     'extension' => 'png',
                     'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
                 ],
+
             ],
 
         ],

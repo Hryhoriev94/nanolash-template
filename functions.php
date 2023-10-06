@@ -89,5 +89,33 @@ function getPreloadImages() {
     return $criticalImages;
 }
 
+function getCurrentMarkName() {
+    if (isset($_SERVER['HTTP_HOST'])) {
+        $host = $_SERVER['HTTP_HOST'];
+        $hostParts = explode('.', $host);
+        if (count($hostParts) > 1) {
+            $domainName = $hostParts[count($hostParts) - 2];
+            return $domainName;
+        }
+    }
+}
+
+function getMarkNameByUrl($url) {
+    $parsedUrl = parse_url($url);
+
+    if (isset($parsedUrl['host'])) {
+        $host = $parsedUrl['host'];
+        $hostParts = explode('.', $host);
+        if (count($hostParts) > 1) {
+            $domainName = $hostParts[count($hostParts) - 2];
+            return $domainName;
+        }
+    }
+}
+
+function isCurrentMark($url) {
+    return getCurrentMarkName() === getMarkNameByUrl($url) ? true : false;
+}
+
 
 

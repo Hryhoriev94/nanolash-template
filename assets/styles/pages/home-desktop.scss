@@ -1,18 +1,16 @@
 @import "../helpers/_mixins";
-// @import '../desktop/components/_navbar';
+@import '../desktop/components/navbar';
 @import '../desktop/components/home-components/home-hero';
 @import '../desktop/components/_products-grid';
 @import '../desktop/components/_mark';
-// @import '../desktop/components/_newsletter';
 @import '../desktop/components/_follow';
 @import '../desktop/components/_gallery';
-// @import '../desktop/components/_faq';
 
 
 @include media-up(768px) {
     .home {
         &-page-title {
-            max-width: 60%;
+            max-width: 50%;
         }
         &__title {
             width: auto;

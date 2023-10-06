@@ -67,7 +67,8 @@ getComponent('product-components/product-order', [
     getComponent('product-components/product-order', [
         'background' => $images['second_order_section']['background'],
         'classes' => [
-            'white' => true
+            'white' => true,
+            'align' => 'right'
         ]
     ]);
 ?>
