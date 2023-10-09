@@ -25,7 +25,39 @@ return [
                 'thumb' => 'hydrogel-eye-patches/nanolash-hydrogel-eye-patches-grid-thumb',
             ],
         ],
-        'gallery' => '/assets/img/home/gallery/gallery'
+        'gallery' => '/assets/img/home/gallery/gallery',
+        'social_wall' => [
+            0 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-1',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-1',
+            ],
+            1 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-2',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-2',
+            ],
+            2 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-3',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-3',
+            ],
+            3 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-4',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-4',
+            ],
+        ]
+    ],
+    'global' => [
+        'brand_navigation' => [
+            'nanolash' => '/assets/img/nanolash-logo.svg',
+            'nanobrow' => '/assets/img/nanobrow-logo.svg',
+        ]
     ],
 
     'nanolash-es' => [

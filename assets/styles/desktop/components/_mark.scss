@@ -22,6 +22,11 @@
                 }
             }
         }
+        &__images {
+            img {
+                max-width: 180px;
+            }
+        }
     }
 }
 

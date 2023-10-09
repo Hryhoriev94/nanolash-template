@@ -1,6 +1,7 @@
 import { faq } from './modules/faq.js'
 import cart from './modules/cart.js';
 import navbarActions from './modules/navbarActions.js';
+import { SocialSlider } from './modules/socialsSlider.js';
 const homePageTitleHandler = () => {
     const titleSection = document.querySelector('#home-page-title');
     const width = window.innerWidth;
@@ -16,6 +17,7 @@ window.addEventListener('load', () => {
     faq();
     navbarActions();
     homePageTitleHandler();
+    new SocialSlider();
     window.addEventListener('resize', () => {
         homePageTitleHandler();
     });

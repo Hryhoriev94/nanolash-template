@@ -5,13 +5,33 @@
             'meta-title' => 'Nanolash strona główna title',
             'meta-description' => 'Nanolash strona główna description',
 
-            'title' => 'NANOLASH – EKSPERT W DZIEDZINIE <strong>PIĘKNYCH RZĘS</strong>',
-            'description' => 'Idealne rzęsy to marzenie wielu kobiet na całym świecie. Teraz może się ziścić! Profesjonalne kosmetyki do rzęs Nanolash to doskonała pielęgnacja, łatwa stylizacja i piękny makijaż. Poznaj świetnej jakości <strong>produkty do przedłużania i pielęgnacji rzęs oraz akcesoria do ich stylizacji</strong>. Dzięki nim rzęsy w Twoim wykonaniu osiągną profesjonalny poziom, bez wysiłku.',
-            'subtitle' => 'STYLIZACJA RZĘS <strong>NIGDY NIE BYŁA ŁATWIEJSZA</strong>',
-            'subdescriotion' => 'W ofercie Nanolash znajdziesz produkty do <strong>samodzielnej stylizacji i pielęgnacji rzęs, oraz te dedykowane zawodowcom, idealne do salonów</strong>. Zostań najlepszą stylistką dla swoich własnych rzęs. Znajdziesz tu sztuczne rzęsy, doklejane kępki oraz produkty specjalistyczne, przeznaczone do przedłużania rzęs w salonie.To profesjonalne kosmetyki do gabinetu kosmetycznego i pielęgnacja rzęs na najwyższym poziomie!',
-            'mark' => [
-                'title' => 'MARKA NANOLASH',
-                'content' => '<p>Poznaj luksusową serię produktów do rzęs Nanolash. Wybierz doskonałej jakości sztuczne rzęsy, kosmetyki do przedłużania i pielęgnacji, akcesoria do stylizacji, a także makijażu rzęs. W naszej ofercie znajdują się preparaty do pielęgnacji, laminacji i liftingu oraz malowania, a także kultowa już odżywka na porost i wzmocnienie rzęs. </p>',
+            'title' => 'EKSPERT W DZIEDZINIE <br><strong>PIĘKNYCH RZĘS</strong>',
+            'description' => 'Poznaj świetnej jakości produkty do przedłużania i pielęgnacji rzęs oraz akcesoria do ich stylizacji.',
+            'subtitle' => '<span>DLACZEGO</span> NANOLASH?',
+            'subdescriotion' => '<span class="shadow">Naturalne rzęsy zachwycające długością, intensywnym kolorem i spektakularną gęstością? To możliwe! Wystarczy miesiąc, by całkowicie odmienić Twoje spojrzenie.</span>',
+            'brands' => [
+                'nanolash' => [
+                    'classes' => 'left dark',
+                    'title' => 'Marka NANOLASH',
+                    'content' => '<p>Poznaj luksusową serię produktów do rzęs Nanolash. Wybierz doskonałej jakości sztuczne rzęsy, kosmetyki do przedłużania i pielęgnacji, akcesoria do stylizacji, a także makijażu rzęs. W naszej ofercie znajdują się preparaty do pielęgnacji, laminacji i liftingu oraz malowania, a także kultowa już odżywka na porost i wzmocnienie rzęs. </p>',
+                    'icons' => [
+                        0 => 'Lashes with 25+ Uses',
+                        1 => 'Premium, Innovative Lash Fibres',
+                        2 => '100% Vegan',
+                        3 => '100% Recyclable Packaging'
+                    ]
+                ],
+                'nanobrow' => [
+                    'classes' => 'right light',
+                    'title' => 'Marka NANOBROW',
+                    'content' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>',
+                    'icons' => [
+                        0 => 'Lashes with 25+ Uses',
+                        1 => 'Premium, Innovative Lash Fibres',
+                        2 => '100% Vegan',
+                        3 => '100% Recyclable Packaging'
+                    ]
+                ]
             ],
             'grid' => [
                 'nanolash-es' => [
@@ -39,7 +59,6 @@
                     'description' => 'Kępki do makijażu',
                 ],
             ],
-
             'details' => [
                 'products' => [
                     'nanolash-es' => [
@@ -259,6 +278,19 @@
             'nanolash-hyp' => [],
         ],
         'global' => [
+            'brand_navigation' => [
+                'nanolash' => [
+                    'title' => 'POZNAJ NASZE PRODUKTY DO RZĘS',
+                    'url' => 'https://nanolash.pl',
+                    'alt' => 'nanolash',
+                    
+                ],
+                'nanobrow' => [
+                    'title' => 'POZNAJ NASZE PRODUKTY DO BRWI',
+                    'url' => 'https://nanobrow.pl',
+                    'alt' => 'nanobrow',
+                ]
+            ],
             'cart' => [
                 'add_to_cart' => 'Dodaj do koszyka',
             ],

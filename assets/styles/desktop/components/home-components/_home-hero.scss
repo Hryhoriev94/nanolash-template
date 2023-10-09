@@ -5,6 +5,7 @@
         align-items: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        min-height: 450px;
     }
 }
 
@@ -12,5 +13,6 @@
     .hero {
         background-position: calc(50% + 100px) bottom;
         background-color: $halfGray;
+        min-height: 450px;
     }
 }

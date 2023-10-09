@@ -37,8 +37,8 @@ $images = getImages('home');
         </div>
         <div class="mark__section">
             <div class="container">
-                <?php getComponent('mark', [
-                    'content' => $content
+                <?php getComponent('brands', [
+                    'content' => $content['brands']
                 ]) ?>
             </div>
         </div>
@@ -53,6 +53,7 @@ $images = getImages('home');
         <?php getComponent('gallery', [
             'alias' => $alias
         ]) ?>
+        <?php getComponent('socials')?>
         <?php getComponent('faq', [
             'title' => $faq_content['title'],
             'faq_list' => $faq_content['questions']

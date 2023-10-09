@@ -102,7 +102,6 @@ function getCurrentMarkName() {
 
 function getMarkNameByUrl($url) {
     $parsedUrl = parse_url($url);
-
     if (isset($parsedUrl['host'])) {
         $host = $parsedUrl['host'];
         $hostParts = explode('.', $host);
@@ -117,5 +116,12 @@ function isCurrentMark($url) {
     return getCurrentMarkName() === getMarkNameByUrl($url) ? true : false;
 }
 
+function isCDN() {
+    return CONFIG['cdn'];
+}
+
+function getImage($url) {
+    return isCDN() ? CONFIG['cdn_url'] . $url : $url;
+}
 
 
