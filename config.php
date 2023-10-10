@@ -25,7 +25,7 @@
             'perfect-volume' => ['template' => 'product', 'type' => 'multi', 'alias' => 'nanolash-pv'],
             'diy-eyelash-extension' => [
                 'template' => 'category',
-                'alias' => 'diy-eyelash-extension',
+                'alias' => 'nanolash-diy',
                 'products' => [
                     'nanolash-diy-eyelash-extension-heartbreaker' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-heartbreaker'

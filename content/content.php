@@ -279,7 +279,7 @@
         ],
 
         'categories' => [
-            'diy-eyelash-extension' => [
+            'nanolash-diy' => [
                 'meta-title' => 'Nanolash DIY Eyelash Extensions title',
                 'meta-description' => 'Nanolash DIY Eyelash Extensions description',
                 'grid' => [

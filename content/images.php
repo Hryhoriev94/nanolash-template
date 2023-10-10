@@ -64,7 +64,7 @@ return [
     ],
 
     'categories' => [
-        'diy-eyelash-extension' => [
+        'nanolash-diy' => [
             "grid" => [
                 "nanolash-diy-charm" => [
                     'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
