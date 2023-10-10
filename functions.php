@@ -124,4 +124,7 @@ function getImage($url) {
     return isCDN() ? CONFIG['cdn_url'] . $url : $url;
 }
 
+function getTypeByAlias($alias) {
+    return CONFIG['products'][$alias]['type'];
+}
 

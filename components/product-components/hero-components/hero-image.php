@@ -17,7 +17,7 @@
             <source media="(min-width: 1400px)" srcset="<?= $slides[0]['src'] . '@xxl.png' ?>">
 
             <!-- IMG -->
-            <img class="img-fluid" src="<?= $slides[0]['src'] . '@xs.png' ?>" alt="" width="300" height="342">
+            <img class="img-fluid" src="<?= $slides[0]['src'] . '@xs.png' ?>" alt="" width="300" height="342" fetchpriority="high">
         </picture>
     </div>
     <div class="slides" style="display: none">

@@ -1,25 +1,8 @@
 <?php 
 
-$products = [
-    'nanolash-es' => [
-        'id' => '11',
-        'type' => 'product',
-        'price' => [
-            'pln' => 214,
-            'usd' => 69,
-            'eur' => 52
-        ],
-    ],
-    'nanolash-pv' => [
-        'id' => '12',
-        'type' => 'product-variant',
-        'price' => [
-            'pln' => 189,
-            'usd' => 59,
-            'eur' => 45
-        ]
-    ]
-];
+$config = include 'config.php';
+$products = $config['products'];
+
 
 $domains = [
     'nanolash.loc' => [

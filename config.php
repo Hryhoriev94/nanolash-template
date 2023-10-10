@@ -3,7 +3,7 @@
         'templates' => [
             'home'    => 'home.php',
             'order'   => 'order.php',
-            'products-group' => 'products-group.php',
+            'category' => 'category.php',
             'product' => 'product.php',
             'contact' => 'contact.php',
             'result'  => 'result.php',
@@ -25,7 +25,7 @@
             'perfect-volume' => ['template' => 'product', 'type' => 'multi', 'alias' => 'nanolash-pv'],
             'diy-eyelash-extension' => [
                 'template' => 'category',
-                'alias' => 'nanolash-diy',
+                'alias' => 'diy-eyelash-extension',
                 'products' => [
                     'nanolash-diy-eyelash-extension-heartbreaker' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-heartbreaker'
@@ -60,6 +60,62 @@
         ],
         'dev_mode' => true,
         'cdn' => false,
+        'products' => [
+            'nanolash-es' => [
+                'id' => '11',
+                'type' => 'product',
+                'price' => [
+                    'pln' => 214,
+                    'usd' => 69,
+                    'eur' => 52
+                ],
+            ],
+            'nanolash-pv' => [
+                'id' => '12',
+                'type' => 'product-variant',
+                'price' => [
+                    'pln' => 189,
+                    'usd' => 59,
+                    'eur' => 45
+                ]
+            ],
+            'nanolash-vm' => [
+                'id' => '11',
+                'type' => 'product-colors',
+                'price' => [
+                    'pln' => 214,
+                    'usd' => 69,
+                    'eur' => 52
+                ],
+            ],
+            'nanolash-lcm' => [
+                'id' => '12',
+                'type' => 'product-group-category',
+                'price' => [
+                    'pln' => 189,
+                    'usd' => 59,
+                    'eur' => 45
+                ]
+            ],
+            'nanolash-lbs' => [
+                'id' => '11',
+                'type' => 'product',
+                'price' => [
+                    'pln' => 214,
+                    'usd' => 69,
+                    'eur' => 52
+                ],
+            ],
+            'nanolash-hyp' => [
+                'id' => '12',
+                'type' => 'product-variant',
+                'price' => [
+                    'pln' => 189,
+                    'usd' => 59,
+                    'eur' => 45
+                ]
+            ],
+        ]
     ];
 
 

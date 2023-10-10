@@ -1,3 +1,4 @@
+import { AjaxHelper } from './ajaxHelper.js';
 export default () => {
     changeInputValueHandler();
 }
@@ -151,19 +152,12 @@ class AddToCartForm {
     async getData() {
         const variantId = this.variantForm ? this.variantForm.variantId : null;
         try {
-            const response = await fetch('/getData.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `alias=${this.alias}`
-            });
-            const data = await response.json();
-            if (data.error) {
-                console.error('Product not found');
-                return null;
+            const data = await AjaxHelper.fetchData('/getData.php', { alias: this.alias });
+            if (data && !data.error) {
+                return data.product;
             } else {
-                return data.product; 
+                console.error('Product not found', data.error);
+                return null;
             }
         } catch (error) {
             console.error('Error:', error);
@@ -402,4 +396,4 @@ class Cart {
     }
 }
 
-const cartInstance = new Cart();
+export const cartInstance = new Cart();

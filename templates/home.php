@@ -3,13 +3,13 @@
 $alias = getAlias();
 $content = getContent($alias);
 $faq_content = $content['faq'];
-$images = getImages('home');
+$images = getImages($alias);
 ?>
 
 <?php getComponent('head', [
     'title' => $content['meta-title'],
     'description' => $content['meta-description'],
-    'template' => 'home'
+    'template' => $alias
 ]) ?>
 
 <body>
@@ -28,13 +28,11 @@ $images = getImages('home');
             <p class="home__subdescriotion"><?= $content['subdescriotion'] ?></p>
             </div>
         </div>
-        <div class="container">
-            <?php getComponent('products-grid', [
-                'products' => $content['grid'],
-                'images' => $images['grid'],
-                'routing' => $config['routing']
-            ]) ?>
-        </div>
+        <?php getComponent('products-grid', [
+            'products' => $content['grid'],
+            'images' => $images['grid'],
+            'routing' => $config['routing']
+        ]) ?>
         <div class="mark__section">
             <div class="container">
                 <?php getComponent('brands', [

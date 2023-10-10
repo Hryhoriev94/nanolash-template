@@ -42,8 +42,8 @@
                     'title' => 'Nanolash Primer Mascara',
                     'description' => 'Tusz do Rzęs Zwiększający Objętość',
                 ],
-                'nanolash-vm' => [
-                    'title' => 'Nanolash Volume Up Mascara',
+                'nanolash-diy' => [
+                    'title' => 'DIY Eyelash Extensions',
                     'description' => 'Tusz do Rzęs Zwiększający Objętość',
                 ],
                 'nanolash-lcm' => [
@@ -277,6 +277,44 @@
             'nanolash-lbs' => [],
             'nanolash-hyp' => [],
         ],
+
+        'categories' => [
+            'diy-eyelash-extension' => [
+                'meta-title' => 'Nanolash DIY Eyelash Extensions title',
+                'meta-description' => 'Nanolash DIY Eyelash Extensions description',
+                'grid' => [
+                    "nanolash-diy-charm" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Heartbreaker',
+                    ],
+                    "nanolash-diy-innocent" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Charm',
+                    ],
+                    "nanolash-diy-fantasy" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Innocent',
+                    ],
+                    "nanolash-diy-classy" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Fantasy',
+                    ],
+                    "nanolash-diy-devine" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Classy',
+                    ],
+                    "nanolash-diy-harmony" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Devine',
+                    ],
+                    "nanolash-diy-flirty" => [
+                        'title' => 'DIY Eyelash Extensions',
+                        'description' => 'Flirty',
+                    ],
+                ],
+            ]
+        ],
+
         'global' => [
             'brand_navigation' => [
                 'nanolash' => [
@@ -300,6 +338,7 @@
                 'dot' => 'Przejdź do slajdu',
                 'nav' => 'Nawigacja po slajdach'
             ],
+            'more' => 'Dowiedź się więcej'
 
             
         ],

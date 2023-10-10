@@ -3,7 +3,6 @@ $config = require 'config.php';
 define('CONFIG', $config);
 $dev_mode = $config['dev_mode'];
 require 'functions.php';
-
 $cacheFile = 'cache/' . md5($_SERVER['REQUEST_URI']) . '.html';
 $cacheTime = 1800; 
 

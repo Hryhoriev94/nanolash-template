@@ -1,0 +1,28 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($black, 0.5);
+    top: 0;
+    left: auto;
+    z-index: 100;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    &-content {
+        position: relative;
+        height: 80%;
+        display: block;
+        background-color: $lightGray;
+    }
+    .close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &.show {
+        display: flex;
+    }
+}
+

@@ -7,22 +7,25 @@ return [
         <link rel=\"preload\" as=\"image\" media=\"(min-width: 992px)\" type=\"image/webp\" href=\"/assets/img/main.webp\">",
         'grid' => [
             'nanolash-es' => [
-                'thumb' => 'eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
             ],
             'nanolash-pv' => [
-                'thumb' => 'perfect-volume/nanolash-perfect-volume-grid-thumb',
+                'thumb' => '/assets/img/products/perfect-volume/nanolash-perfect-volume-grid-thumb',
+            ],
+            'nanolash-diy' => [
+                'thumb' => '/assets/img/products/diy-eyelash-extensions/diy-eyelash-extensions-thumb'
             ],
             'nanolash-vm' => [
-                'thumb' => 'volume-up-mascara/nanolash-volume-up-mascara-grid-thumb',
+                'thumb' => '/assets/img/products/volume-up-mascara/nanolash-volume-up-mascara-grid-thumb',
             ],
             'nanolash-lcm' => [
-                'thumb' => 'lenght-curl-mascara/nanolash-length-curl-mascara-grid-thumb',
+                'thumb' => '/assets/img/products/lenght-curl-mascara/nanolash-length-curl-mascara-grid-thumb',
             ],
             'nanolash-lbs' => [
-                'thumb' => 'lash-brow-shampoo/nanolash-lash-brow-shampoo-grid-thumb',
+                'thumb' => '/assets/img/products/lash-brow-shampoo/nanolash-lash-brow-shampoo-grid-thumb',
             ],
             'nanolash-hyp' => [
-                'thumb' => 'hydrogel-eye-patches/nanolash-hydrogel-eye-patches-grid-thumb',
+                'thumb' => '/assets/img/products/hydrogel-eye-patches/nanolash-hydrogel-eye-patches-grid-thumb',
             ],
         ],
         'gallery' => '/assets/img/home/gallery/gallery',
@@ -58,6 +61,34 @@ return [
             'nanolash' => '/assets/img/nanolash-logo.svg',
             'nanobrow' => '/assets/img/nanobrow-logo.svg',
         ]
+    ],
+
+    'categories' => [
+        'diy-eyelash-extension' => [
+            "grid" => [
+                "nanolash-diy-charm" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+                "nanolash-diy-innocent" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+                "nanolash-diy-fantasy" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+                "nanolash-diy-classy" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+                "nanolash-diy-devine" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+                "nanolash-diy-harmony" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+                "nanolash-diy-flirty" => [
+                    'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+            ]
+        ],
     ],
 
     'nanolash-es' => [
