@@ -1,6 +1,6 @@
 // файл grid.js
 import { AjaxHelper } from './ajaxHelper.js';
-import { Modal } from './modal.js';
+// import { Modal } from './modal.js';
 import cartInstance from './cart.js';
 
 export class Grid {
@@ -9,49 +9,53 @@ export class Grid {
     constructor() {
         this.gridElement = document.querySelector('.products__grid');
         this.initEventListeners();
-        this.modal = new Modal();
+        // this.modal = new Modal();
         this.init();
     }
 
     initEventListeners() {
-        // Событие клика на кнопку добавления в корзину
+        // Слушатель для кнопок плюс и минус
         this.gridElement.addEventListener('click', (event) => {
             const target = event.target;
             const productItem = target.closest('.products__item');
             if (!productItem) return;
-
+    
             const alias = productItem.dataset.type;
             if (target.matches('.plus')) {
                 this.changeQuantity(alias, 1);
             } else if (target.matches('.minus')) {
                 this.changeQuantity(alias, -1);
             }
-
-            this.gridElement.addEventListener('click', (event) => {
-                if (event.target.closest('.add-to-cart')) {
-                    const productItem = event.target.closest('.products__item');
-                    const alias = productItem.dataset.type;
-                    this.showProductModal(alias);  // Вызов нового метода
-                }
-            });
+        });
+    
+        // Отдельный слушатель для добавления в корзину
+        this.gridElement.addEventListener('click', (event) => {
+            if (event.target.closest('.add-to-cart')) {
+                const productItem = event.target.closest('.products__item');
+                if (!productItem) return;  // Добавлена проверка
+    
+                const alias = productItem.dataset.type;
+                // this.showProductModal(alias);
+            }
         });
     }
+    
 
-    showProductModal(alias) {
-        const productInfo = this.getProductInfo(alias);
-        if (!productInfo) {
-            console.error('Product info not found:', alias);
-            return;
-        }
+    // showProductModal(alias) {
+    //     const productInfo = this.getProductInfo(alias);
+    //     if (!productInfo) {
+    //         console.error('Product info not found:', alias);
+    //         return;
+    //     }
 
-        const contentStructure = [
-            { tag: 'h1', text: productInfo.name },
-            { tag: 'p', text: `Price: ${productInfo.price} ${productInfo.currency}` },
-            { tag: 'p', text: `Quantity: ${productInfo.quantity}` },
-        ];
+    //     const contentStructure = [
+    //         { tag: 'h1', text: productInfo.name },
+    //         { tag: 'p', text: `Price: ${productInfo.price} ${productInfo.currency}` },
+    //         { tag: 'p', text: `Quantity: ${productInfo.quantity}` },
+    //     ];
 
-        this.modal.open(contentStructure);
-    }
+    //     this.modal.open(contentStructure);
+    // }
 
     fetchProductData(alias, domain, productItem) {
         AjaxHelper.fetchData('/getData.php', { alias, domain })
@@ -160,7 +164,9 @@ export class Grid {
         // Запрос данных для каждого продукта
         productItems.forEach(productItem => {
             const alias = productItem.dataset.type;
-            this.fetchProductData(alias, domain, productItem);
+            if(productItem.querySelector('.price')) {
+                this.fetchProductData(alias, domain, productItem);
+            }
         });
     }
 }

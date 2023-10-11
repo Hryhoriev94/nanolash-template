@@ -22,41 +22,70 @@
             '404' => ['template' => 'error', 'alias' => '404'],
                 
             'eyelash-serum' => ['template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-es'],
-            'perfect-volume' => ['template' => 'product', 'type' => 'multi', 'alias' => 'nanolash-pv'],
+            'mascara-primer' => ['template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-mp'],
+            'mascara' => [
+                'template' => 'category',
+                'alias' => 'nanolash-maskara',
+                'products' => [
+                    'length-and-curl-mascara' => [
+                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-lacm'
+                    ],
+                    'volume-up-mascara' => [
+                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-vum'
+                    ],
+                ]
+            ],
+            'lash-and-brow-shampoo' => [
+                'template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-labs'
+            ],
             'diy-eyelash-extension' => [
                 'template' => 'category',
                 'alias' => 'nanolash-diy',
                 'products' => [
-                    'nanolash-diy-eyelash-extension-heartbreaker' => [
+                    'diy-eyelash-extension-heartbreaker' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-heartbreaker'
                     ],
-                    'nanolash-diy-eyelash-extension-charm' => [
+                    'diy-eyelash-extension-charm' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-charm'
                     ],
-                    'nanolash-diy-eyelash-extension-innocent' => [
+                    'diy-eyelash-extension-innocent' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-innocent'
                     ],
-                    'nanolash-diy-eyelash-extension-fantasy' => [
+                    'diy-eyelash-extension-fantasy' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-fantasy'
                     ],
-                    'nanolash-diy-eyelash-extension-classy' => [
+                    'diy-eyelash-extension-classy' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-classy'
                     ],
-                    'nanolash-diy-eyelash-extension-devine' => [
+                    'diy-eyelash-extension-devine' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-devine'
                     ],
-                    'nanolash-diy-eyelash-extension-harmony' => [
+                    'diy-eyelash-extension-harmony' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-harmony'
                     ],
-                    'nanolash-diy-eyelash-extension-flirty' => [
+                    'diy-eyelash-extension-flirty' => [
                         'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-flirty'
                     ],
                 ],
             ],
-            'volume-up-mascara' => ['template' => 'product', 'alias' => 'nanolash-vm'], 
-            'lenght-and-curl-mascara' => ['template' => 'product', 'alias' => 'nanolash-lcm'], 
-            'lash-and-brow-shampoo' => ['template' => 'product', 'alias' => 'nanolash-lbs'], 
-            'hydrogel-eye-patches' => ['template' => 'product', 'alias' => 'nanolash-hyp'],
+            'lash-lift-kit' => [
+                'template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-llk'
+            ],
+            'volume-lashes' => [
+                'template' => 'product', 'type' => 'multi', 'alias' => 'nanolash-vl'
+            ],
+            'hydrogel-eye-pathes' => [
+                'template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-hep'
+            ],
+            'disposable-mascara-wands' => [
+                'template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-dmw'
+            ],
+            'microbrush-and-applicators' => [
+                'template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-maa'
+            ],
+            'lint-free-applicaotrs' => [
+                'template' => 'product', 'type' => 'normal', 'alias' => 'nanolash-lfa'
+            ],
         ],
         'dev_mode' => true,
         'cdn' => false,
@@ -70,7 +99,7 @@
                     'eur' => 52
                 ],
             ],
-            'nanolash-pv' => [
+            'nanolash-vl' => [
                 'id' => '12',
                 'type' => 'product-variant',
                 'price' => [

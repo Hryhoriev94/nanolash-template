@@ -47,7 +47,7 @@
                 </div>
                 <?php else: ?>
                 <div class="add-to-cart">
-                    <?= getContent('global')['cart']['add_to_cart'];?>
+                    <a href="<?= $productURL ?>"><?= getContent('global')['more'];?></a>
                 </div>
                 <?php endif; ?>
             </div>

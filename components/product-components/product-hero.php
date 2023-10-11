@@ -2,21 +2,29 @@
     <div class="hero">
         <div class="hero__images">
             <?php 
-                getComponent('product-components/hero-components/dots', [
-                    'dots' => $images['dots'],
-                ]);
-                getComponent('product-components/hero-components/hero-image', [
-                    'slides' => $images['slides']
-                ]);
+                if(isset($images['dots']) && $images['dots']) {
+                    getComponent('product-components/hero-components/dots', [
+                        'dots' => $images['dots'],
+                    ]);
+                }
+                if(isset($images['slides']) && $images['slides']) {
+                    getComponent('product-components/hero-components/hero-image', [
+                        'slides' => $images['slides']
+                    ]);
+                }
             ?>
         </div>
         <div class="hero__description">
             <h1 class="slogan"><?= $content['slogan']; ?></h1>
             <h2 class="mark_name">
-                <span><?= @$content['mark_name']; ?></span> <strong><?= @strtoupper($content['product_name']); ?></strong>
+                <span><?= $content['mark_name']; ?></span> <strong><?= mb_strtoupper($content['product_name']); ?></strong>
             </h2>
-            <?php if(isset($content['capacity']) && isset($content['capacity_value'])) : ?>
-                <p class="capacity"><strong><?= @$content['capacity']; ?></strong> <?= @$content['capacity_value']?></p>
+            <?php if(isset($content['product_data'])) : ?>
+                <?php foreach($content['product_data'] as $key => $value): ?>
+                    <?php foreach($value as $key_value => $value_value) :?>
+                        <p class="capacity"><strong><?= $key_value; ?></strong> <?= $value_value ?></p>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
             <?php endif; ?>
             <div class="product-form">
                 <?php if (isset($content['product_variants'])): ?>

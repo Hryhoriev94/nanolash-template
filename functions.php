@@ -38,7 +38,8 @@ function getContent($alias) {
     }
 
     $json = file_get_contents($filename);
-    $data = json_decode($json, true);
+    $data =  preg_replace('/\s+/', ' ', $json);
+    $data = json_decode($data, true);
 
     return $data;
 }
@@ -51,7 +52,6 @@ function getImages($key) {
 
     $json = file_get_contents($filename);
     $data = json_decode($json, true);
-
     return $data;
 }
 

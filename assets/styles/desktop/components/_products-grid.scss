@@ -38,6 +38,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(3, auto);
             gap: 10px;
+            text-align: left;
             grid-template-areas: 
             "thumbnail title"
             "thumbnail description"

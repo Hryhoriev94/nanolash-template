@@ -34,7 +34,7 @@
     .mark {
         &__container {
             padding-top: 100px;
-            margin-bottom: 60px;
+            margin-bottom: 20px;
             grid-template-columns: 1fr 1fr;
         }
         &__content {
@@ -61,10 +61,17 @@
         }
         &__icons {
             margin-top: unset;
-            font-size: 1.1rem;
             align-self: center;
+            width: 50%;
+            &.left {
+                margin-right: auto;
+            }
+            &.right {
+                margin-left: auto;
+            }
             .icons {
                 &__item {
+                    font-size: 20px;
                     gap: 10px;
                 }
             }
@@ -76,6 +83,7 @@
     .mark {
         &__icons {
             font-size: 1.25rem;
+            width: 40%;
             .icons {
                 &__item {
                     gap: 1rem;
@@ -103,13 +111,22 @@
             }
         }
         &__content {
-            font-size: 1.75rem;
+            font-size: 30px;
+            line-height: 35px;
+            font-weight: 300;
+            * {
+                font-size: inherit;
+                line-height: inherit;
+            }
         }
     }
 }
 
 @include media-up(1400px) {
     .mark {
+        &__icons {
+            width: 50%;
+        }
         &__title {
             padding-bottom: 20px;
             margin-bottom: 30px;
@@ -122,8 +139,23 @@
             font-size: 1.5rem;
             gap: 10px 20px;
         }
-        &__content {
-            font-size: 2rem;
+    }
+}
+
+@include media-up(1600px) {
+    .mark {
+        &__section {
+            .container {
+                max-width: 1540px;
+            }
+        } 
+        &__container {
+            &.left {
+                padding-left: 100px;
+            }
+            &.right {
+                padding-right: 100px;
+            }
         }
     }
 }

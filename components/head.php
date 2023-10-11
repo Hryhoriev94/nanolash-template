@@ -1,5 +1,5 @@
-<head>
-    <script defer src=<?="/assets/scripts/dist/$template.js" ?>></script>
+<head>    
+<script defer src=<?="/assets/scripts/dist/$template.js" ?>></script>
     <link rel="preload" href=<?="/assets/styles/pages/$template.css" ?> as="style" media='all'>
     <link rel="preload" href=<?="/assets/styles/pages/$template-desktop.css" ?> as="style" media='screen and (min-width: 768px)'>
     <?= getPreloadImages(); ?> 
@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <style>
         <?php 
             $rootDir = $_SERVER['DOCUMENT_ROOT'];

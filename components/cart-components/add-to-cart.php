@@ -1,7 +1,7 @@
 <?php 
 $alias = getAlias();
 $data = require 'data.php'; 
-$price = $data['prices'][$alias];
+$price = $data['prices'][$alias] ?? 0;
 $currency = $data['currency'];
 if(isset($white) && $white) {
     $white = 'add-to-cart--white';

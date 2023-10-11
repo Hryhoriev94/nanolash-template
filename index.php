@@ -14,7 +14,12 @@ if (file_exists($cacheFile) && time() - $cacheTime < filemtime($cacheFile) && !$
     exit;
 }
 
-ob_start(); 
+$dev_mode ? ob_start() : ob_start(function($buffer) {
+    $buffer = preg_replace('~<!--(?!<!)[^\[>].*?-->~s', '', $buffer);
+    $buffer = preg_replace('/\s+/s', ' ', $buffer);
+    return $buffer;
+});
+
 if(!$dev_mode) {
     header("Cache-Control: private, max-age=3600, pre-check=3600");
     header("Pragma: private");
@@ -53,8 +58,3 @@ file_put_contents($cacheFile, ob_get_contents());
 
 ob_end_flush();
 ?>
-
-
-
-
-

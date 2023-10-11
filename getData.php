@@ -10,6 +10,12 @@ $domains = [
     ],
     'dev.nanolash.pl' => [
         'currency' => 'pln'
+    ],
+    'nanolash.hryhoriev.website' => [
+        'currency' => 'pln'
+    ],
+    'nanolash.test' => [
+        'currency' => 'pln'
     ]
 ];
 

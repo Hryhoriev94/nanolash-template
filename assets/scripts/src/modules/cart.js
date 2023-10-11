@@ -67,6 +67,7 @@ const changeInputValueHandler = () => {
 
 class AddToCartForm {
     constructor(addToCartBlock, currency, variantForm) {
+        this.eventsAttached = false;
         this.addToCartBlock = addToCartBlock;
         this.alias = this.addToCartBlock.getAttribute('data-alias');
         this.plus = this.addToCartBlock.querySelector('.add-to-cart__plus');
@@ -75,6 +76,7 @@ class AddToCartForm {
         this.addToCartBlock.querySelector('input.add-to-cart__quantity');
         this.newPrice = this.addToCartBlock.querySelector('.new-price .sum');
         this.oldPrice = this.addToCartBlock.querySelector('.old-price .sum');
+        this.productName = document.querySelector('[data-product-name]').getAttribute('data-product-name');
         this.currency = currency;
         this.name = this.add
         this.variantForm = variantForm;
@@ -115,6 +117,7 @@ class AddToCartForm {
 
     initPrice() {
         this.newPrice.textContent = this.getQuantity() * this.price;
+        this.oldPrice.textContent = this.getQuantity() * this.price * 1.2;
     }
 
     calculateSum() {
@@ -127,22 +130,36 @@ class AddToCartForm {
     }
 
     listeners() {
+        if (this.eventsAttached) return;
         this.plus.addEventListener('click', this.plusHandler.bind(this));
         this.minus.addEventListener('click', this.minusHandler.bind(this));
         this.quantity.addEventListener('input', this.inputHandler.bind(this));
 
         const addToCartButton = this.addToCartBlock.querySelector('.add-to-cart__button');
         addToCartButton.addEventListener('click', this.addToCartHandler.bind(this));
+
+        this.eventsAttached = true;
     }
 
     addToCartHandler() {
-        const variantId = this.variantForm ? this.variantForm.variantId : null;
-        const comboid = variantId ? `${this.productId}-${variantId}` : this.productId;
+        let variantId = this.variantForm ? this.variantForm.variantId : null;
+        let comboid = variantId ? `${this.productId}-${variantId}` : this.productId;
+        let name = '';
+        if(!this.variantForm) {
+            variantId = null;
+            comboid = this.productId;
+            name = `<span class="product-name"><strong>${this.productName}</strong><span>`;
+            
+        } else {
+            variantId = this.variantForm.variantId;
+            comboid = `${this.productId}-${variantId}`;
+            name = `<span class="product-name-margin"><strong>${this.productName}</strong><span>`;
+            name += ' ' + `<small>${this.variantForm.variantName}</small>`
+        }
 
-        // Здесь добавляем продукт в корзину
         cartInstance.addProduct({
             id: comboid,
-            name: 'Product Name',  // Здесь можно использовать реальное имя продукта
+            name: name,
             price: this.price,
             quantity: this.getQuantity(),
         });
@@ -173,6 +190,7 @@ class VariantForm {
         this.variants = this.form.querySelectorAll('.product__variant__block');
         this._variantId = null;
         this._activeVariants = [];
+        this.variantName = '';
         this.init();
 
     }
@@ -216,16 +234,34 @@ class VariantForm {
         }
     }
 
+    updateProductName(name) {
+        let newName = ''
+        name.forEach(option => {
+            let title = option.type;
+            newName+= `${title.charAt(0).toUpperCase() + title.slice(1).toLowerCase()}:&nbsp;${option.value} `;
+        });
+
+        this.variantName = newName;
+    }
+
     searchActiveVariants() {
         const arr = [];
+        const name = [];
         this.rows.forEach(row => {
             const active = row.querySelector('.product__variant__block.active');
             if (active) {
+                name.push({
+                    type: row.previousElementSibling.textContent,
+                    value: active.textContent
+                });
                 arr.push(active);
             }
         });
+        this.updateProductName(name);
         this.activeVariants = arr;
     }
+
+
 
     get variantId() {
         return this._variantId;

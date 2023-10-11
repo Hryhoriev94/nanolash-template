@@ -1,3 +1,4 @@
+<?php $alias = getAlias(); ?>
 <section class="product-order <?= $classes['align']?>">
 	<div class="product-order__bg-image">
 		<?php if(isset($background) && isset($background['src']) && !empty($background['src']) && !empty($background['extension'])):?>
@@ -12,8 +13,8 @@
 		<?php endif; ?>
 	</div>
 	<div class="container d-grid">
-		<div class="product-order__content">
-			<h3 class="product-order__title">Nanobrow Eyebrow Serum</h3>
+		<div class="product-order__content product-form">
+			<h3 class="product-order__title"><?= getContent($alias)['mark_name'] . ' ' . getContent($alias)['product_name']; ?></h3>
 			<div class="product-order__actions">
 				<?php getComponent('cart-components/add-to-cart', [
                     'white' => @$classes['white']
