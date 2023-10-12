@@ -31,6 +31,7 @@ $media = getImages(getAlias())['social_wall'];
                     <?php $socials = getContent('global')['socials']; ?>
                     <?php $socials_images = getImages('global')['socials']; ?>
                     <?php foreach($socials as $social_name => $social_value): ?>
+
                         <a href="<?=$social_value['src'] ?>"><img src="<?= getImage($socials_images[$social_name]) ?>" alt="<?=$social_value['alt'] ?>" /></a>
                     <?php endforeach; ?>
                 </div>
