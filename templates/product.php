@@ -40,6 +40,7 @@ getComponent('product-components/product-order', [
 <?php getComponent('content', [
     'content' =>  $content_content,
     'image' => $images['content_1'],
+    "border" => true
 ]) ?>
 
 
@@ -71,6 +72,7 @@ getComponent('product-components/product-order', [
 <?php getComponent('content', [
     'content' =>  $content_content,
     'image' => $images['content_2'],
+    "border" => true
 ]) ?>
 
 

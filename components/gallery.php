@@ -2,9 +2,9 @@
     $gallery = range(1, 20);
     $alias = getAlias();
     $image_name = getImages($alias)['gallery'];
-    $description = '';
-    if(isset(getContent($alias)['gallery'])) {
-        $description = getContent($alias)['gallery'];
+    $extra = '';
+    if(isset(getContent($alias)['gallery']['extra'])) {
+        $extra = getContent($alias)['gallery']['extra'];
     }
 ?>
 <section class="gallery">
@@ -19,10 +19,10 @@
         </div>
         <?php endforeach; ?>
     </div>
-    <?php if($description) :?>
+    <?php if($extra) :?>
         <div class="container">
             <div class="gallery__description">
-                <?= $description ?>
+                <?= $extra ?>
             </div>
             <div class="hr"></div>
         </div>

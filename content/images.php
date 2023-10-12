@@ -93,6 +93,13 @@ return [
         'brand_navigation' => [
             'nanolash' => '/assets/img/nanolash-logo.svg',
             'nanobrow' => '/assets/img/nanobrow-logo.svg',
+        ],
+        'socials' => [
+            'facebook' => '/assets/img/nc-facebook.svg',
+            'instagram' => '/assets/img/nc-instagram.svg',
+            'pinterest' => '/assets/img/nc-pinterest.svg',
+            'tiktok' => '/assets/img/nc-tiktok.svg',
+            'youtube' => '/assets/img/nc-youtube.svg'
         ]
     ],
 
@@ -119,6 +126,16 @@ return [
                 ],
                 "nanolash-diy-flirty" => [
                     'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
+                ],
+            ]
+        ],
+        'nanolash-maskara' => [
+            'grid' => [
+                'nanolash-lacm' => [
+                    'thumb' => '/assets/img/products/lenght-curl-mascara/nanolash-length-curl-mascara-grid-thumb',
+                ],
+                'nanolash-vum' => [
+                    'thumb' => '/assets/img/products/volume-up-mascara/nanolash-volume-up-mascara-grid-thumb',
                 ],
             ]
         ],
@@ -372,12 +389,6 @@ return [
     ],
     'nanolash-mp' => [
         'critical' => "",
-        'content_1' => [
-            'src' => '/assets/img/products/eyelash-serum/content-bg',
-            'extension' => 'png',
-            'width' => "640",
-            'height' => "535"
-        ],
         'hero' => [
             'slides' => [
                 [
@@ -393,6 +404,24 @@ return [
             1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
             2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
             3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        ],
+        'product_effects' => [
+            'type' => 'slider',
+            'before' => [
+                'src' => '/assets/img/products/eyelash-serum/effects/nanolash-eyelash-serum-effects-before',
+                'alt' => 'effect before'
+            ],
+            'after' => [
+                'src' => '/assets/img/products/eyelash-serum/effects/nanolash-eyelash-serum-effects-after',
+                'alt' => 'effect after'
+            ]
+        ],
+
+        'content_1' => [
+            'src' => '/assets/img/products/eyelash-serum/content-bg',
+            'extension' => 'png',
+            'width' => "640",
+            'height' => "535"
         ],
         'first_order_section' => [
             'background' => [
@@ -417,17 +446,21 @@ return [
                 'extension' => 'jpg'
             ],
         ],
-        'product_effects' => [
-            'type' => 'slider',
-            'before' => [
-                'src' => '/assets/img/products/eyelash-serum/effects/nanolash-eyelash-serum-effects-before',
-                'alt' => 'effect before'
-            ],
-            'after' => [
-                'src' => '/assets/img/products/eyelash-serum/effects/nanolash-eyelash-serum-effects-after',
-                'alt' => 'effect after'
-            ]
-        ]
+        'content_2' => [
+            'wrapper' => 'product-content__image circle border center',
+            'src' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-content-img-1',
+            'extension' => 'gif',
+            'width' => "376",
+            'height' => "376"
+        ],
+        'content_3' => [
+            'wrapper' => 'product-content__image circle center',
+            'src' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-content-img-2',
+            'extension' => 'jpg',
+            'width' => "376",
+            'height' => "376"
+        ],
+
     ],
     'nanolash-lacm' => [
         'critical' => "",

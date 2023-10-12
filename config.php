@@ -108,41 +108,32 @@
                     'eur' => 45
                 ]
             ],
-            'nanolash-vm' => [
-                'id' => '11',
-                'type' => 'product-colors',
-                'price' => [
-                    'pln' => 214,
-                    'usd' => 69,
-                    'eur' => 52
-                ],
-            ],
-            'nanolash-lcm' => [
-                'id' => '12',
-                'type' => 'product-group-category',
-                'price' => [
-                    'pln' => 189,
-                    'usd' => 59,
-                    'eur' => 45
-                ]
-            ],
-            'nanolash-lbs' => [
-                'id' => '11',
+            'nanolash-mp' => [
+                'id' => '13',
                 'type' => 'product',
                 'price' => [
-                    'pln' => 214,
-                    'usd' => 69,
-                    'eur' => 52
+                    'pln' => 115,
+                    'usd' => 22,
+                    'eur' => 19
                 ],
             ],
-            'nanolash-hyp' => [
-                'id' => '12',
-                'type' => 'product-variant',
+            'nanolash-lacm' => [
+                'id' => '14',
+                'type' => 'product',
                 'price' => [
-                    'pln' => 189,
-                    'usd' => 59,
-                    'eur' => 45
-                ]
+                    'pln' => 115,
+                    'usd' => 22,
+                    'eur' => 19
+                ],
+            ],
+            'nanolash-vum' => [
+                'id' => '15',
+                'type' => 'product',
+                'price' => [
+                    'pln' => 168,
+                    'usd' => 22,
+                    'eur' => 19
+                ],
             ],
         ]
     ];

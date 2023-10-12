@@ -2,6 +2,7 @@
     $hasContentClasses = isset($content['content_classes']) && $content['content_classes'];
     $hasImage = isset($image['src']) && $image['src'];
     $hasWrapper = isset($image['wrapper']) && $image['wrapper'];
+    $isBorder = isset($border) && $border;
 ?>
 
 <section class="<?= $content['section_classes'] ?>">
@@ -25,5 +26,7 @@
     <?php endif; ?>
     
     <?= $content['content_1_2']; ?>
+    <?php if($isBorder) : ?>
     <div class="hr full"></div>
+    <?php endif; ?>
 </section>

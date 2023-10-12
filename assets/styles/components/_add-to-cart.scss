@@ -31,14 +31,11 @@
 }
 
 .add-to-cart {
-
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
     gap: 0.5rem 1rem;
     grid-template-areas:
-        // "packs packs"
-        // "colors colors"
         "quantity price"
         "button button";
     font-size: 1rem;
@@ -178,7 +175,10 @@
         display: inline-flex;
     }
     &--small {
-        font-size: 14px;
+        font-size: 14px !important;
+    }
+    &--medium {
+        font-size: 2rem !important;
     }
     &__button {
         &[disabled] {

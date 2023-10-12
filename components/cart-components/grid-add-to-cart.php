@@ -17,10 +17,10 @@ if(isset($white) && $white) {
 ?>
 
 <div class="add-to-cart <?= $white ?>" data-alias="<?= $alias ?>">
-    <div class="add-to-cart__quantity">
-        <button class="add-to-cart__quantity__button add-to-cart__minus" disabled>-</button>
-        <input class="add-to-cart__quantity" value="1">
-        <button class="add-to-cart__quantity__button add-to-cart__plus">+</button>
+    <div class="add-to-cart__quantity qnt-counter qnt-counter--medium">
+        <button class="qnt-counter__button add-to-cart__minus" disabled>-</button>
+        <input class="add-to-cart__quantity qnt-counter__input qnt-counter--medium" value="1">
+        <button class="qnt-counter__button add-to-cart__plus">+</button>
     </div>
     <div class="add-to-cart__summary" price="">
         <div class="old-price">

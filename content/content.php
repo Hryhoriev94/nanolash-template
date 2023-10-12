@@ -4,7 +4,6 @@
         'home' => [
             'meta-title' => 'Nanolash strona główna title',
             'meta-description' => 'Nanolash strona główna description',
-
             'title' => 'EKSPERT W DZIEDZINIE <br><strong>PIĘKNYCH RZĘS</strong>',
             'description' => 'Poznaj świetnej jakości produkty do przedłużania i pielęgnacji rzęs oraz akcesoria do ich stylizacji.',
             'subtitle' => '<span>DLACZEGO</span> NANOLASH?',
@@ -189,7 +188,9 @@
                         'author' => 'Anna, 35 lat'
                     ],
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
+                ],
                 'content_2' => [
                     'img_alt' => 'test gif alt',
                     'section_classes' => 'product-content product-content__wrapper container d-grid',
@@ -373,6 +374,9 @@
                             <p>Regularnie stosowana baza pod tusz do rzęs Nanolash skutecznie działa jako aktywator wzrostu rzęs, realnie przekładająca się na ich wzmocnienie i wydłużenie.</p>
                         </div>
                     ' 
+                ],
+                'gallery' => [
+                    'extra' => '',
                 ],
                 'customers__opinions' => [
                     [
@@ -1685,16 +1689,27 @@
                 ],
             ],
             'nanolash-maskara' => [
+                'meta-title' => 'meta title do kategorii maskar',
+                'meta-description' => 'meta description do kategorii maskar',
+                'title' => 'Nanolash Mascara',
                 'grid' => [
                     'nanolash-lacm' => [
-                        'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Heartbreaker',
+                        'title' => 'LENGHT&CURL MASCARA',
+                        'description' => 'cos tam cos tam mascara',
                     ],
                     'nanolash-vum' => [
-                        'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Heartbreaker',
+                        'title' => 'VOLUME UP MASCARA',
+                        'description' => 'cos tam cos tam mascara',
                     ],
                 ],
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'product-content container mt',
+                    'content_classes' => '',
+                    'content_1_1' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ]
             ]
         ],
         'global' => [
@@ -1720,7 +1735,29 @@
                 'dot' => 'Przejdź do slajdu',
                 'nav' => 'Nawigacja po slajdach'
             ],
-            'more' => 'Dowiedź się więcej'
+            'more' => 'Dowiedź się więcej',
+            'socials' => [
+                'facebook' => [
+                    'alt' => 'facebook',
+                    'link' => 'https://facebook.com',
+                ],
+                'instagram' => [
+                    'alt' => 'instagram',
+                    'link' => 'https://instagram.com',
+                ],
+                'pinterest' => [
+                    'alt' => 'pinterest',
+                    'link' => 'https://pinterest.com',
+                ],
+                'tiktok' => [
+                    'alt' => 'tiktok',
+                    'link' => 'https://tiktok.com',
+                ],
+                'youtube' => [
+                    'alt' => 'youtube',
+                    'link' => 'https://youtube.com',
+                ],
+            ],
 
             
         ],

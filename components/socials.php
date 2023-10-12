@@ -28,11 +28,11 @@ $media = getImages(getAlias())['social_wall'];
                 <img src="<?= getImage('/assets/img/follow_us.svg') ?>" alt="" />
                 </div>
                 <div class="socials__links__links">
-                    <a href=""><img src="<?= getImage('/assets/img/nc-facebook.svg') ?>" alt="" /></a>
-                    <a href=""><img src="<?= getImage('/assets/img/nc-instagram.svg') ?>" alt="" /></a>
-                    <a href=""><img src="<?= getImage('/assets/img/nc-pinterest.svg') ?>" alt="" /></a>
-                    <a href=""><img src="<?= getImage('/assets/img/nc-tiktok.svg') ?>" alt="" /></a>
-                    <a href=""><img src="<?= getImage('/assets/img/nc-youtube.svg') ?>" alt="" /></a>
+                    <?php $socials = getContent('global')['socials']; ?>
+                    <?php $socials_images = getImages('global')['socials']; ?>
+                    <?php foreach($socials as $social_name => $social_value): ?>
+                        <a href="<?=$social_value['src'] ?>"><img src="<?= getImage($socials_images[$social_name]) ?>" alt="<?=$social_value['alt'] ?>" /></a>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>

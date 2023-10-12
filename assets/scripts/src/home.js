@@ -1,5 +1,5 @@
 import { faq } from './modules/faq.js'
-import cart from './modules/cart.js';
+import { cart } from './modules/cartManager.js';
 import navbarActions from './modules/navbarActions.js';
 import { SocialSlider } from './modules/socialsSlider.js';
 import { Grid } from './modules/gridData.js';

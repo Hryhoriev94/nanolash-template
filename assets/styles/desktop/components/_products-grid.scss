@@ -5,6 +5,8 @@
             gap: 2rem 3rem;
             &.two {
                 grid-template-columns: 1fr 1fr;
+                width: 75%;
+                margin: auto;
             }
         }
         &__item {

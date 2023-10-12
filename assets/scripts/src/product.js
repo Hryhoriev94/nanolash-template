@@ -3,7 +3,7 @@ import { Slider } from './modules/customers-opinions.js';
 import { adjustFontSize } from './modules/adjustFontSize.js';
 import { effectBeforeAfterHandler } from './modules/effectBeforeAfter.js';
 import { parallax } from './modules/parallax.js';
-import cart from './modules/cart.js';
+import { cart } from './modules/cartManager.js';
 import navbarActions from './modules/navbarActions.js';
 
 window.addEventListener('load', () => {
