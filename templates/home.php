@@ -52,6 +52,9 @@ $images = getImages($alias);
             'alias' => $alias
         ]) ?>
         <?php getComponent('socials')?>
+        <?php getComponent('brand-navigation', [
+            'productsImg' => true
+        ]) ?>
         <?php getComponent('faq', [
             'title' => $faq_content['title'],
             'faq_list' => $faq_content['questions']

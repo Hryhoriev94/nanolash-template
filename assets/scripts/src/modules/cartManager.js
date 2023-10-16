@@ -1,5 +1,5 @@
 import { AjaxHelper } from './ajaxHelper.js';
-
+import { CustomSelect } from './customSelect.js';
 let cartInstance;
 
 class CurrencyManager {
@@ -93,19 +93,29 @@ class AddToCartForm {
     constructor(addToCartBlock, currency, variantForm) {
         this.eventsAttached = false;
         this.addToCartBlock = addToCartBlock;
-        this.alias = this.addToCartBlock.getAttribute('data-alias') || 
-        this.addToCartBlock.querySelector('[data-alias]').getAttribute('data-alias');
         this.plus = this.addToCartBlock.querySelector('.add-to-cart__plus');
         this.minus = this.addToCartBlock.querySelector('.add-to-cart__minus');
         this.quantity = this.addToCartBlock.querySelector('.qnt-counter__input') || 
         this.addToCartBlock.querySelector('input.add-to-cart__quantity');
+        this.customSelect = addToCartBlock.querySelector('.add-to-cart__select');
         this.newPrice = this.addToCartBlock.querySelector('.new-price .sum');
         this.oldPrice = this.addToCartBlock.querySelector('.old-price .sum');
-        if(document.querySelector('[data-product-name]')) {
-            this.productName = document.querySelector('[data-product-name]').getAttribute('data-product-name')
+        this.customSelectClass = null;
+        if(!this.customSelect) {
+            this.alias = this.addToCartBlock.getAttribute('data-alias') || 
+            this.addToCartBlock.querySelector('[data-alias]').getAttribute('data-alias');
+            if(document.querySelector('[data-product-name]')) {
+                this.productName = document.querySelector('[data-product-name]').getAttribute('data-product-name')
+            } else {
+                this.productName = this.addToCartBlock.closest('.products__item').getAttribute('data-product-name-current');
+            }
         } else {
-            this.productName = this.addToCartBlock.closest('.products__item').getAttribute('data-product-name-current');
-        }        
+            this.alias = [];
+            this.customSelect.querySelectorAll('.option').forEach(option => {
+                this.alias.push(option.getAttribute('data-alias'));
+            })
+            this.productName = this.customSelect.querySelector('.current').textContent
+        }       
         this.currency = currency;
         this.name = this.add
         this.variantForm = variantForm;
@@ -114,11 +124,34 @@ class AddToCartForm {
     }
 
     async init() {
-        this.product = await this.getData();
-        this.price = this.product['price'][this.currency];
-        this.productId = this.product['id'];  // Получаем ID продукта
-        this.listeners();
-        this.initPrice();
+        if (this.customSelect) {
+            this.alias = this.alias[0]
+            this.customSelectInstance = new CustomSelect(this.customSelect);
+            this.updatePriceBasedOnSelect();
+            this.customSelectInstance.options.forEach(option => {
+                option.addEventListener('click', () => {
+                    this.updatePriceBasedOnSelect();
+                });
+            });
+        } else {
+            this.product = await this.getData();
+            this.price = this.product['price'][this.currency];
+            this.productId = this.product['id'];
+            this.listeners();
+            this.initPrice();
+        }
+    }
+    
+
+    async updatePriceBasedOnSelect() {
+        if (!this.customSelect) return;
+            this.alias = this.customSelectInstance.activeOption.getAttribute('data-alias');
+            this.product = await this.getData();
+            this.productName = this.customSelectInstance.activeOption.textContent;
+            this.price = this.product['price'][this.currency];
+            this.productId = this.product['id'];
+            this.listeners();
+            this.initPrice();
     }
 
     plusHandler() {
@@ -140,6 +173,9 @@ class AddToCartForm {
         if(this.getQuantity() <= 1 || !this.getQuantity()) {
             this.quantity.value = 1;
             this.minus.disabled = true;
+        } 
+        if(this.getQuantity() > 1) {
+            this.minus.disabled = false;
         }
         this.calculateSum();
     }

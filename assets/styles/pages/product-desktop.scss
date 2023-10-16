@@ -4,6 +4,7 @@
 @import '../desktop/components/gallery';
 @import '../desktop/components/product-components/icons_section';
 @import '../desktop/components/product-components/product-hero';
+@import '../desktop/components/socials';
 
 @include media-up(768px) {
     .product {

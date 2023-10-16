@@ -4,6 +4,30 @@
         margin-top: 1rem;
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem 1.5rem;
+        &.two {
+            grid-template-columns: 1fr;
+            width: 100%;
+            .products__item {
+                align-items: unset;
+                .thumbnail {
+                    img {
+                        width: auto;
+                        max-width: unset;
+                    }
+                }
+                .title {
+                    text-align: left;
+                    font-weight: 100;
+                    font-size: 32px;
+                    line-height: 33px;
+                }
+                .description {
+                    text-align: left;
+                    padding: 0;
+                    font-weight: 900;
+                }
+            }
+        }
         .currency {
             text-transform: uppercase;
         }
@@ -29,7 +53,6 @@
             margin-top: auto;
             align-items: center;
             width: 100%;
-            height: 100%;
             a {
                 display: block;
                 padding: 10px 10px;
@@ -64,7 +87,6 @@
             .quantity {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                // background-color: rgba($deepBlack, 0.05);
                 padding: 0.6rem 0.7rem;
                 input {
                     width: 3rem;
@@ -79,7 +101,6 @@
                 }
             }
             .price {
-                // background-color: rgba($deepBlack, 0.05);
                 padding: 0.6rem 0.7rem;
                 text-align: right;
             }

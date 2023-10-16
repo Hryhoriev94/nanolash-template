@@ -1,6 +1,9 @@
 <?php $sliderContent = getContent('global')['slider']; ?>
+<?php $title = isset(getContent(getAlias())['customers__opinions__title']) ? getContent(getAlias())['customers__opinions__title'] : '' ?>
 <section class="customers-opinions" data-autoplay="true" data-iteration="10" data-nav-text="<?= $sliderContent['dot'] ?>" data-draggable="true">
-    <h2 class="section-title customers-opinions__title">Zaufaj opinii <strong>tysięcy kobiet!</strong></h2>
+    <?php if($title): ?>
+    <h2 class="section-title customers-opinions__title"><?= $title ?></h2>
+    <?php endif; ?>
     <div class="customers-opinions__content">
         <div class="container">
             <div class="customers-opinions__arrows">

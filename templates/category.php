@@ -44,12 +44,26 @@ getComponent('products-grid', [
     'content' =>  $content_content,
     "border" => true
 ]) ?>
-<?php getComponent('socials')?>
-
-
-
 <!-- CONTENT END -->
 <?php endif; ?>
+
+<?php getComponent('socials');
+if(isset(getImages('categories')[$alias]['first_order']['background'])) {
+    getComponent('product-components/product-order', [
+        'products' => $content['grid'],
+        'background' => getImages('categories')[$alias]['first_order']['background'],
+        'classes' => [
+            'align' => 'right',
+            'white' => true
+        ],
+    ]);
+}
+getComponent('gallery', [
+    'alias' => $alias,
+    'category' => true,
+]);
+?>
+
 
 
 </body>

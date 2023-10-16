@@ -3,6 +3,7 @@
     $hasImage = isset($image['src']) && $image['src'];
     $hasWrapper = isset($image['wrapper']) && $image['wrapper'];
     $isBorder = isset($border) && $border;
+    $imageContent = '';
 ?>
 
 <section class="<?= $content['section_classes'] ?>">

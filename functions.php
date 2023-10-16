@@ -1,14 +1,31 @@
 <?php
 
-function getAlias() { 
-    $url = trim($_SERVER['REQUEST_URI'], '/');
-    if ($url == '') {
-        $url = '/';
+function getAlias($url = null, $routing = null) {
+    if ($url === null) {
+        $url = trim($_SERVER['REQUEST_URI'], '/');
+        if ($url == '') {
+            $url = '/';
+        }
     }
-    if (!array_key_exists($url, CONFIG['routing'])) {
-        return null;
+
+    if ($routing === null) {
+        $routing = CONFIG['routing'];
     }
-    return CONFIG['routing'][$url]['alias'];
+
+    if (array_key_exists($url, $routing)) {
+        return $routing[$url]['alias'];
+    } else {
+        foreach ($routing as $route => $config) {
+            if (isset($config['products'])) {
+                $alias = getAlias($url, $config['products']);
+                if ($alias !== null) {
+                    return $alias;
+                }
+            }
+        }
+    }
+
+    return null;
 }
 
 function getTemplate() {
@@ -57,8 +74,35 @@ function getImages($key) {
 
 function getRouteByAlias($alias, $routing) {
     foreach ($routing as $route => $info) {
+        // Проверка алиаса для текущего маршрута
         if (isset($info['alias']) && $info['alias'] === $alias) {
             return "/" . $route;
+        }
+        
+        // Проверка наличия вложенных продуктов
+        if (isset($info['products'])) {
+            foreach ($info['products'] as $productRoute => $productInfo) {
+                if (isset($productInfo['alias']) && $productInfo['alias'] === $alias) {
+                    return "/" . $productRoute;
+                }
+            }
+        }
+    }
+    return false;
+}
+
+function findRoute($url, $routing) {
+    foreach ($routing as $route => $info) {
+        if ($url === $route) {
+            return $info;
+        }
+        
+        if (isset($info['products'])) {
+            foreach ($info['products'] as $productRoute => $productInfo) {
+                if ($url === $productRoute) {
+                    return $productInfo;
+                }
+            }
         }
     }
     return false;

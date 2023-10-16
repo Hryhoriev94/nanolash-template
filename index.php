@@ -31,21 +31,28 @@ if(!$dev_mode) {
 <html lang="en">
 <?php 
 
-    
-    $url = isset($_GET['url']) ? trim($_GET['url'], '/') : '/';
-    
-    if ($url == '') {
-        $url = '/';
-    }
-    
-    if (!array_key_exists($url, $config['routing'])) {
-        $url = '404';
-    }
+$url = isset($_GET['url']) ? trim($_GET['url'], '/') : '/';
 
-    $templateName = $config['routing'][$url]['template'];
-    $templateFile = $config['templates'][$templateName];
-    require 'templates/' . $templateFile;
+if ($url == '') {
+    $url = '/';
+}
+
+$routeInfo = findRoute($url, $config['routing']);
+
+if ($routeInfo === false) {
+    $url = '404';
+    $routeInfo = $config['routing'][$url];
+}
+
+$templateName = $routeInfo['template'];
+$templateFile = $config['templates'][$templateName];
+
+require 'templates/' . $templateFile;
+
 ?>
+<div style="display: none" id="products-name">
+    <?= json_encode(getContent('products_names')); ?>
+</div>
 </html>
 <?php
 if(!$dev_mode) {

@@ -126,9 +126,10 @@
 
         ],
         'products' => [
+            // Nanolash Eyelash Serum
             'nanolash-es' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
                 'product_name' => 'Eyelash Serum',
@@ -249,6 +250,7 @@
                     
 
             ],
+            // Nanolash Volume Lashes
             'nanolash-vl' => [
                 'title' => 'Najlepsze kępki do rzęs',
                 'description' => 'Poznaj najlepsze kępki do rzęs w całym Radomiu',
@@ -330,6 +332,7 @@
                     ]
                 ],
             ],
+            // Nanolash Mascara Primer
             'nanolash-mp' => [
                 'title' => 'title Mascara Primer',
                 'description' => 'description Mascara Primer',
@@ -483,16 +486,17 @@
                     
 
             ],
+            // Nanolash Length And Curl Mascara
             'nanolash-lacm' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'product_name' => 'Length And Curl Mascara',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
-                'capacity' => 'Pojemność: ',
-                'capacity_value' => '5ml / 0.17 fl oz',
-
+                'product_data' => [
+                    'capacity' => ['Pojemność: ' => '5ml / 0.17 fl oz']
+                ],
                 'icons_section' => [
                     'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
                     'icons' => [
@@ -507,8 +511,26 @@
                     'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
                     <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'product-content container d-md-grid',
+                    'content_classes' => 'product-content__bg-image d-none d-md-block',
+                    'content_1_1' => '
+                        <h2 class="section-title full">Podkreśl swoje<br>
+                        <strong>naturalne piękno!</strong></h2>
+                        <div class="first">
+                            <p>Naturalnie <strong>gęste brwi</strong> w <strong>niecały miesiąc</strong>? To możliwe! Odżywka na porost brwi Nanobrow ma wszystko, czego potrzebują Twoje brwi, by rosnąć szybciej i wyglądać piękniej.</p>
+                            <h3 class="section-subtitle">Jak to możliwe?</h3>
+                            <p>Nanobrow podkreśla naturalne brwi, przyspiesza ich wzrost i hamuje nadmierne wypadanie, dzięki czemu łuk brwiowy <strong>wygląda perfekcyjnie nawet bez makijażu</strong>. Odżywka do brwi działa podobnie jak w przypadku rzęs. Rozwiązuje problem cienkich, rzadkich i niewyraźnych brwi u źródła, czyli dostarczając <strong>wszystko to, co jest niezbędne do regeneracji i zachowania pięknego wyglądu</strong>.</p>
+                        </div>',
+                    'content_1_2' => '
+                        <div class="full">
+                            <h3 class="section-subtitle">Nanobrow Eyebrow Serum — najlepszy wybór</h3>
+                            <p>Nanobrow to odżywka, którą pokochały kobiety! Łatwa aplikacja, lekka formuła, która nie obciąża brwi i <strong>zjawiskowe efekty</strong> – to wszystko sprawia, że Nanobrow zbiera <strong>pozytywne recenzje</strong>.</p>
+                            <p>Ty też możesz dołączyć do grona tych kobiet, które oddały swoje brwi pod opiekę Nanobrow. <strong>Sprawdź, jak piękne mogą być Twoje brwi</strong> i zyskaj więcej pewności siebie dzięki <strong>idealnie podkreślonemu spojrzeniu</strong>. 
+                            </p>
+                        </div>' 
+                ],
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -527,7 +549,39 @@
                         'author' => 'Anna, 35 lat'
                     ],
                 ],
-
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
+                ],
+                'content_2' => [
+                    'img_alt' => 'test gif alt',
+                    'section_classes' => 'product-content product-content__wrapper container d-grid',
+                    'content_1_1' => '
+                    <h2 class="product-content__title section-title"><span><strong>Stylizacja brwi</strong></span> prostsza niż myślisz</h2>
+                    <div class="product-content__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore vel consequuntur, temporibus voluptatem recusandae quia nobis libero minus asperiores quas saepe sint perspiciatis accusantium voluptate laboriosam placeat tenetur nesciunt.</p>
+                        <h3 class="section-subtitle">Jak to możliwe?</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea earum doloremque aspernatur libero. Provident autem alias molestiae esse necessitatibus, illo cupiditate exercitationem facere culpa, explicabo corporis. Ipsum voluptatem excepturi praesentium? Harum commodi itaque, ea dolores sint cum sed. Aperiam deserunt magnam quaerat modi fugiat ipsa eos corrupti in qui eligendi, iure doloribus laborum sunt aut harum voluptates tenetur quas quam.</p>
+                    </div>',
+                    'content_1_2' => '
+                        <div class="product-content__extra">
+                            <h3 class="section-subtitle">Nanobrow Eyebrow Serum — Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi quaerat illum assumenda, deleniti eligendi saepe accusantium provident dicta rem quasi. Inventore quo deserunt ea iste perferendis, harum obcaecati nobis molestiae, praesentium commodi quaerat, blanditiis exercitationem voluptatibus facere eligendi ex.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere debitis impedit, labore minus quasi numquam in soluta eos itaque.</p>
+                        </div>
+                    ',
+                ],
+                'content_3' => [
+                    'img_alt' => 'test gif alt',
+                    'section_classes' => 'product-content product-content__wrapper--reverse container d-grid',
+                    'content_1_1' => '
+                        <h2 class="product-content__title section-title"><span><strong>Stylizacja brwi</strong></span> prostsza niż myślisz</h2>
+                        <div class="product-content__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore vel consequuntur, temporibus voluptatem recusandae quia nobis libero minus asperiores quas saepe sint perspiciatis accusantium voluptate laboriosam placeat tenetur nesciunt.</p>
+                            <h3 class="section-subtitle">Jak to możliwe?</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea earum doloremque aspernatur libero. Provident autem alias molestiae esse necessitatibus, illo cupiditate exercitationem facere culpa, explicabo corporis. Ipsum voluptatem excepturi praesentium? Harum commodi itaque, ea dolores sint cum sed. Aperiam deserunt magnam quaerat modi fugiat ipsa eos corrupti in qui eligendi, iure doloribus laborum sunt aut harum voluptates tenetur quas quam.</p>
+                        </div>',
+                    'content_1_2' => '',
+                ],
                 'faq' => [
                     'title' => '',
                     'questions' => [
@@ -556,16 +610,17 @@
                     
 
             ],
+            // Nanolash Volume Up Mascara
             'nanolash-vum' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'product_name' => 'Volume Up Mascara',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
-                'capacity' => 'Pojemność: ',
-                'capacity_value' => '5ml / 0.17 fl oz',
-
+                'product_data' => [
+                    'capacity' => ['Pojemność: ' => '5ml / 0.17 fl oz']
+                ],
                 'icons_section' => [
                     'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
                     'icons' => [
@@ -580,8 +635,26 @@
                     'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
                     <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'product-content container d-md-grid',
+                    'content_classes' => 'product-content__bg-image d-none d-md-block',
+                    'content_1_1' => '
+                        <h2 class="section-title full">Podkreśl swoje<br>
+                        <strong>naturalne piękno!</strong></h2>
+                        <div class="first">
+                            <p>Naturalnie <strong>gęste brwi</strong> w <strong>niecały miesiąc</strong>? To możliwe! Odżywka na porost brwi Nanobrow ma wszystko, czego potrzebują Twoje brwi, by rosnąć szybciej i wyglądać piękniej.</p>
+                            <h3 class="section-subtitle">Jak to możliwe?</h3>
+                            <p>Nanobrow podkreśla naturalne brwi, przyspiesza ich wzrost i hamuje nadmierne wypadanie, dzięki czemu łuk brwiowy <strong>wygląda perfekcyjnie nawet bez makijażu</strong>. Odżywka do brwi działa podobnie jak w przypadku rzęs. Rozwiązuje problem cienkich, rzadkich i niewyraźnych brwi u źródła, czyli dostarczając <strong>wszystko to, co jest niezbędne do regeneracji i zachowania pięknego wyglądu</strong>.</p>
+                        </div>',
+                    'content_1_2' => '
+                        <div class="full">
+                            <h3 class="section-subtitle">Nanobrow Eyebrow Serum — najlepszy wybór</h3>
+                            <p>Nanobrow to odżywka, którą pokochały kobiety! Łatwa aplikacja, lekka formuła, która nie obciąża brwi i <strong>zjawiskowe efekty</strong> – to wszystko sprawia, że Nanobrow zbiera <strong>pozytywne recenzje</strong>.</p>
+                            <p>Ty też możesz dołączyć do grona tych kobiet, które oddały swoje brwi pod opiekę Nanobrow. <strong>Sprawdź, jak piękne mogą być Twoje brwi</strong> i zyskaj więcej pewności siebie dzięki <strong>idealnie podkreślonemu spojrzeniu</strong>. 
+                            </p>
+                        </div>' 
+                ],
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -600,7 +673,39 @@
                         'author' => 'Anna, 35 lat'
                     ],
                 ],
-
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
+                ],
+                'content_2' => [
+                    'img_alt' => 'test gif alt',
+                    'section_classes' => 'product-content product-content__wrapper container d-grid',
+                    'content_1_1' => '
+                    <h2 class="product-content__title section-title"><span><strong>Stylizacja brwi</strong></span> prostsza niż myślisz</h2>
+                    <div class="product-content__content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore vel consequuntur, temporibus voluptatem recusandae quia nobis libero minus asperiores quas saepe sint perspiciatis accusantium voluptate laboriosam placeat tenetur nesciunt.</p>
+                        <h3 class="section-subtitle">Jak to możliwe?</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea earum doloremque aspernatur libero. Provident autem alias molestiae esse necessitatibus, illo cupiditate exercitationem facere culpa, explicabo corporis. Ipsum voluptatem excepturi praesentium? Harum commodi itaque, ea dolores sint cum sed. Aperiam deserunt magnam quaerat modi fugiat ipsa eos corrupti in qui eligendi, iure doloribus laborum sunt aut harum voluptates tenetur quas quam.</p>
+                    </div>',
+                    'content_1_2' => '
+                        <div class="product-content__extra">
+                            <h3 class="section-subtitle">Nanobrow Eyebrow Serum — Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi quaerat illum assumenda, deleniti eligendi saepe accusantium provident dicta rem quasi. Inventore quo deserunt ea iste perferendis, harum obcaecati nobis molestiae, praesentium commodi quaerat, blanditiis exercitationem voluptatibus facere eligendi ex.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti facere debitis impedit, labore minus quasi numquam in soluta eos itaque.</p>
+                        </div>
+                    ',
+                ],
+                'content_3' => [
+                    'img_alt' => 'test gif alt',
+                    'section_classes' => 'product-content product-content__wrapper--reverse container d-grid',
+                    'content_1_1' => '
+                        <h2 class="product-content__title section-title"><span><strong>Stylizacja brwi</strong></span> prostsza niż myślisz</h2>
+                        <div class="product-content__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore vel consequuntur, temporibus voluptatem recusandae quia nobis libero minus asperiores quas saepe sint perspiciatis accusantium voluptate laboriosam placeat tenetur nesciunt.</p>
+                            <h3 class="section-subtitle">Jak to możliwe?</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea earum doloremque aspernatur libero. Provident autem alias molestiae esse necessitatibus, illo cupiditate exercitationem facere culpa, explicabo corporis. Ipsum voluptatem excepturi praesentium? Harum commodi itaque, ea dolores sint cum sed. Aperiam deserunt magnam quaerat modi fugiat ipsa eos corrupti in qui eligendi, iure doloribus laborum sunt aut harum voluptates tenetur quas quam.</p>
+                        </div>',
+                    'content_1_2' => '',
+                ],
                 'faq' => [
                     'title' => '',
                     'questions' => [
@@ -629,32 +734,64 @@
                     
 
             ],
+            // Nanolash Lash and Brow Shampoo
             'nanolash-labs' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => ' Classy',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -702,32 +839,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension Heartbreaker
             'nanolash-diy-heartbreaker' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => 'Heartbreaker',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -775,32 +944,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension charm
             'nanolash-diy-charm' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => 'Charm',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -848,32 +1049,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension innocent
             'nanolash-diy-innocent' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => 'Innocent',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -921,32 +1154,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension fantasy
             'nanolash-diy-fantasy' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => ' Fantasy',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -994,32 +1259,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension classy
             'nanolash-diy-classy' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => ' Classy',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -1067,32 +1364,64 @@
                     
 
             ],
-            'nanolash-diy-devine' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+            // Nanolash Diy Eyelash Extension devine
+            'nanolash-diy-divine' => [
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => 'Divine',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -1140,32 +1469,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension harmony
             'nanolash-diy-harmony' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => ' Harmony',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -1213,32 +1574,64 @@
                     
 
             ],
+            // Nanolash Diy Eyelash Extension flirty
             'nanolash-diy-flirty' => [
-                'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'title' => 'Nanolash Diy Eyelash Extension classy',
+                'description' => 'Nanolash Diy Eyelash Extension classy ',
 
-                'mark_name' => 'Nanolash',
-                'product_name' => 'Eyelash Serum',
+                'mark_name' => 'DIY Eyelash Extension',
+                'product_name' => 'Flirty',
                 'slogan' => 'Profesjonalna odżywka do rzęs',
                 'capacity' => 'Pojemność: ',
                 'capacity_value' => '5ml / 0.17 fl oz',
+                'content_1' => [
+                    'img_alt' => 'test alt',
+                    'section_classes' => 'container',
+                    'content_classes' => '',
+                    'content_1_1' => '
+                    <div class="hr mt"></div>
+                    <div class="mt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <div class="content-images">
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-1.png" alt=""/>
+                            </picture>
+                            <picture>
+                                <source type="image/webp" srcset="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.webp">
+                                <img src="/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-banner-2.png" alt=""/>
+                            </picture>
+                        </div>
+                    </div>
 
-                'icons_section' => [
-                    'title' => '<span><strong>Jak działa</strong> Nanolash</span> Eyelash Serum?',
-                    'icons' => [
-                        'stylizuje i podkreśla naturalny kształt brwi',
-                        'delikatnie maluje i uwydatnia piękno Twoich brwi',
-                        'dyscyplinuje i utrwala włoski przez 24 h',
-                        'olejek rycynowy wzmacnia i nadaje połysku'
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
+                    'content_1_2' => '',
+                ],
+                'steps' => [
+                    'title' => '<span>Aplikacja rzęs DIY w </span><strong>4 krokach</strong>',
+                    'steps' => [
+                        0 => [
+                            'title' => 'NAŁÓŻ <strong>BONDER</strong>',
+                            'description' => 'umieść cienką warstwę bondera u nasady rzęs',
+                        ],
+                        1 => [
+                            'title' => 'ZAŁÓŻ <strong>RZĘSY</strong>',
+                            'description' => 'delikatnie umieść kępki pod naturalnymi rzęsami',
+                        ],
+                        2 => [
+                            'title' => '<strong>ŚCIŚNIJ</strong>',
+                            'description' => 'połącz razem doczepiane i naturalne rzęsy za pomocą aplikatora',
+                        ],
+                        3 => [
+                            'title' => 'WYKOŃCZ <strong>SEALEREM</strong>',
+                            'description' => 'nałóż cienką warstwę sealera, aby uzyskać długotrwałe rezultaty',
+                        ],
                     ],
                 ],
-                'product_effects' => [
-                    'title' => '<span>Odżywka Nanolash –</span> <strong>długie, gęste i piękne rzęsy!</strong>',
-                    'content' => '<p>Jeśli pragniesz ułożonych, zadbanych, a przy tym naturalnie wyglądających brwi, Nanobrow Stylist Gel jest dla Ciebie! Jego dopracowana formuła w połączeniu z wygodnym aplikatorem sprawiają, że brwi są dobrze ułożone i wyglądają nenagannie przez cały dzień.</p>
-                    <p>Nanobrow Stylist Gel jest trwały i precyzyjny: z łatwością modeluje i utrwala nawet najbardziej niesforne włoski! Olejek rycynowy działa na brwi odżywczo: wzmacnia i chroni przed niszczeniem. Jest wiele sposobów na piękne brwi, ale tylko jeden działa tak świetnie!</p>',
+                'gallery' => [
+                    'extra' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>'
                 ],
-                'gallery' => '<p>Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.</p>',
-
+                'customers__opinions__title' => 'NATURALNA I BEZPIECZNA ODŻYWKA DO RZĘS',
                 'customers__opinions' => [
                     [
                         'comment' => ' Rzadko recenzuję cokolwiek, ale dla Nanobrow robię wyjątek, bo dzięki temu serum nie musiałam robić microbladingu! Moje własne brwi są teraz naturalnie gęste: wystarczy je tylko raz na jakiś czas wyregulować. Zyskałam pewność siebie i oszczędziłam.',
@@ -1286,9 +1679,10 @@
                     
 
             ],
+            // Nanolash Lash Lift Kit 
             'nanolash-llk' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
                 'product_name' => 'Eyelash Serum',
@@ -1359,9 +1753,10 @@
                     
 
             ],
+            // Nanolash Hydrogel Eye Pathes
             'nanolash-hep' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
                 'product_name' => 'Eyelash Serum',
@@ -1432,9 +1827,10 @@
                     
 
             ],
+            // Nanolash Disposable Mascara Wands
             'nanolash-dmw' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
                 'product_name' => 'Eyelash Serum',
@@ -1505,9 +1901,10 @@
                     
 
             ],
+            // Nanolash Microbrush and Applicators
             'nanolash-maa' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
                 'product_name' => 'Eyelash Serum',
@@ -1578,9 +1975,10 @@
                     
 
             ],
+            // Nanolash Lint Free Applicaotrs
             'nanolash-lfa' => [
                 'title' => 'Najlepszy Serum do rzęs',
-                'description' => 'Poznaj najlepszy serum do rzęs w całym Radomiu - Nanolash',
+                'description' => 'Poznaj najlepszy serum do rzęs ',
 
                 'mark_name' => 'Nanolash',
                 'product_name' => 'Eyelash Serum',
@@ -1657,30 +2055,31 @@
             'nanolash-diy' => [
                 'meta-title' => 'Nanolash DIY Eyelash Extensions title',
                 'meta-description' => 'Nanolash DIY Eyelash Extensions description',
+                'title' => 'Nanolash DIY EXTENSION',
                 'grid' => [
                     "nanolash-diy-charm" => [
                         'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Heartbreaker',
+                        'description' => 'charm',
                     ],
                     "nanolash-diy-innocent" => [
                         'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Charm',
+                        'description' => 'innocent',
                     ],
                     "nanolash-diy-fantasy" => [
                         'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Innocent',
+                        'description' => 'fantasy',
                     ],
                     "nanolash-diy-classy" => [
                         'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Fantasy',
+                        'description' => 'classy',
                     ],
-                    "nanolash-diy-devine" => [
+                    "nanolash-diy-divine" => [
                         'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Classy',
+                        'description' => 'devine',
                     ],
                     "nanolash-diy-harmony" => [
                         'title' => 'DIY Eyelash Extensions',
-                        'description' => 'Devine',
+                        'description' => 'harmony',
                     ],
                     "nanolash-diy-flirty" => [
                         'title' => 'DIY Eyelash Extensions',
@@ -1694,22 +2093,26 @@
                 'title' => 'Nanolash Mascara',
                 'grid' => [
                     'nanolash-lacm' => [
-                        'title' => 'LENGHT&CURL MASCARA',
+                        'title' => 'Lenght & Curl Mascara',
                         'description' => 'cos tam cos tam mascara',
                     ],
                     'nanolash-vum' => [
-                        'title' => 'VOLUME UP MASCARA',
+                        'title' => 'Volume Up Mascara',
                         'description' => 'cos tam cos tam mascara',
                     ],
                 ],
                 'content_1' => [
                     'img_alt' => 'test alt',
-                    'section_classes' => 'product-content container mt',
+                    'section_classes' => 'container',
                     'content_classes' => '',
-                    'content_1_1' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    'content_1_1' => '<h2 class="section-title mt">SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>',
                     'content_1_2' => '',
-                ]
+                ],
+                'gallery' => [
+                    'preview' => 'Perfekcyjnemu efektowi żelowej formuły do brwi Nanobrow zaufały już tysiące kobiet na całym świecie, które są zgodne: to najlepszy żel do układania i pielęgnacji brwi! Ceniona za wygodę i precyzję w makijażu, oraz efekt elegancko i naturalnie wyglądających brwi. Pielęgnujący olejek rycynowy wzmacnia i upiększa brwi.'
+                ],
             ]
         ],
         'global' => [
@@ -1760,6 +2163,25 @@
             ],
 
             
+        ],
+
+        'products_names' => [
+            'nanolash-es' => 'Eyelash Serum',
+            'nanolash-vl' => [
+                'name' => 'Volume Lashes',
+                'variants' => ['Skręt', 'Grubość', 'Długość']
+            ],
+            'nanolash-mp' => 'Mascara Primer',
+            'nanolash-lacm' => 'Length & Curl Mascara',
+            'nanolash-vum' => 'Volume Up Mascara',
+            'nanolash-diy-charm' => 'DIY Eyelash Extension - Charm',
+            'nanolash-diy-innocent' => 'DIY Eyelash Extension - Innocent',
+            'nanolash-diy-fantasy' => 'DIY Eyelash Extension - Charm',
+            'nanolash-diy-classy' => 'DIY Eyelash Extension - Classy',
+            'nanolash-diy-divine' => 'DIY Eyelash Extension - Devine',
+            'nanolash-diy-harmony' => 'DIY Eyelash Extension - Harmony',
+            'nanolash-diy-flirty' => 'DIY Eyelash Extension - Flirty',
+            'nanolash-diy-heartbreaker' => 'DIY Eyelash Extension - Heartbreaker',
         ],
         'about' => [],
         'contact' => [],

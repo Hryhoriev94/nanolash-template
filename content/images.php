@@ -93,6 +93,10 @@ return [
         'brand_navigation' => [
             'nanolash' => '/assets/img/nanolash-logo.svg',
             'nanobrow' => '/assets/img/nanobrow-logo.svg',
+            'images' => [
+                'nanolash' => '/assets/img/nanolash-button',
+                'nanobrow' => '/assets/img/nanobrow-button'
+            ],
         ],
         'socials' => [
             'facebook' => '/assets/img/nc-facebook.svg',
@@ -100,11 +104,72 @@ return [
             'pinterest' => '/assets/img/nc-pinterest.svg',
             'tiktok' => '/assets/img/nc-tiktok.svg',
             'youtube' => '/assets/img/nc-youtube.svg'
+        ],
+        'social_wall' => [
+            0 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-1',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-1',
+            ],
+            1 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-2',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-2',
+            ],
+            2 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-3',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-3',
+            ],
+            3 => [
+                'src' => '/assets/img/social_wall/nanolash_movie-4',
+                'img_format' => '.jpg',
+                'gif' => null,
+                'video' => '/assets/img/social_wall/nanolash_movie-4',
+            ],
         ]
     ],
 
     'categories' => [
         'nanolash-diy' => [
+            'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
+            'other' => [
+                'nanolash-diy-heartbreaker' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-heartbreaker',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-charm' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-charm',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-innocent' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-innocent',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-fantasy' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-fantasy',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-classy' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-classy',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-divine' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-divine',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-harmony' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-harmony',
+                    'extension' => 'png',
+                ],
+                'nanolash-diy-flirty' => [
+                    'src' => '/assets/img/products/diy-eyelash-extensions/lash-style/nanolash-diy-eyelash-extensions-flirty',
+                    'extension' => 'png',
+                ],
+            ],
             "grid" => [
                 "nanolash-diy-charm" => [
                     'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
@@ -118,7 +183,7 @@ return [
                 "nanolash-diy-classy" => [
                     'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
                 ],
-                "nanolash-diy-devine" => [
+                "nanolash-diy-divine" => [
                     'thumb' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-grid-thumb',
                 ],
                 "nanolash-diy-harmony" => [
@@ -130,14 +195,22 @@ return [
             ]
         ],
         'nanolash-maskara' => [
+            'other' => [],
             'grid' => [
                 'nanolash-lacm' => [
-                    'thumb' => '/assets/img/products/lenght-curl-mascara/nanolash-length-curl-mascara-grid-thumb',
+                    'thumb' => '/assets/img/products/length-and-curl-mascara/nanolash-length-and-curl-mascara-grid-thumb',
                 ],
                 'nanolash-vum' => [
                     'thumb' => '/assets/img/products/volume-up-mascara/nanolash-volume-up-mascara-grid-thumb',
                 ],
-            ]
+            ],
+            'first_order' => [
+                'background' => [
+                    'src' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-order-bg',
+                    'extension' => 'jpg'
+                ]
+            ],
+            'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         ],
     ],
 
@@ -515,24 +588,8 @@ return [
             2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
             3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
         ],
-        'first_order_section' => [
-            'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
-            ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
-        ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
-        'second_order_section' => [
+        'order_section' => [
             'background' => [
                 'src' => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-order-bg',
                 'extension' => 'jpg'
@@ -732,68 +789,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -820,68 +876,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -908,68 +963,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -996,68 +1050,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -1084,68 +1137,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -1166,74 +1218,73 @@ return [
             ]
         ]
     ],
-    'nanolash-diy-devine' => [
+    'nanolash-diy-divine' => [
         'critical' => "",
         'hero' => [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -1260,68 +1311,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [
@@ -1348,68 +1398,67 @@ return [
             'dots' => [
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-1'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-1'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-2'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-2'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-3'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-3'
                 ],
                 [
                     'type' => 'image',
-                    'src' => '/assets/img/products/eyelash-serum/hero/dots/nanolash-eyelash-serum-header-4'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/dots/nanolash-diy-eyelash-extensions-header-4'
                 ],
             ],
-
             'slides' => [
                 [
                     'alt' => 'test1',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-1/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-1/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test2',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-2/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-2/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test3',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-3/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-3/nanolash-diy-eyelash-extensions-header'
                 ],
                 [
                     'alt' => 'test4',
                     'extension' => 'png',
-                    'src' => '/assets/img/products/eyelash-serum/hero/slides/slide-4/nanolash-eyelash-serum-header'
+                    'src' => '/assets/img/products/diy-eyelash-extensions/classy/hero/slides/slide-4/nanolash-diy-eyelash-extensions-header'
                 ],
-
             ],
 
+            'content_1' => [
+                'src' => [
+                    'small' => '/assets/products/diy-eyelash-extensions/classy/',
+                    'big' => ''
+                ]
+            ]
+
         ],
-        'icons' => [
-            0 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-1',
-            1 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-2',
-            2 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-3',
-            3 => '/assets/img/products/eyelash-serum/nanolash-eyelash-serum-icon-4',
+        'steps' => [
+            'extension' => 'gif',
+            'steps' => [
+                0 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-apply',
+                1 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-bond',
+                2 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-seal',
+                3 => '/assets/img/products/diy-eyelash-extensions/classy/steps/nanolash-diy-eyelash-extensions-secure',
+            ],
         ],
-        'first_order_section' => [
+        'order_section' => [
             'background' => [
-                'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                'extension' => 'png'
+                'src' => '/assets/img/products/diy-eyelash-extensions/classy/nanolash-diy-eyelash-extensions-main-order-bg',
+                'extension' => 'jpg'
             ],
-            'parallax' => [
-                'front' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-front',
-                    'extension' => 'png'
-                ],
-                'back' => [
-                    'src' => '/assets/img/products/eyelash-serum/parallax/nanolash-eyelash-serum-parallax-back',
-                    'extension' => 'png'
-                ],
-            ],
+            'background_color' => 'light',
         ],
         'gallery' => '/assets/img/products/eyelash-serum/gallery/nanolash-eyelash-serum-gallery',
         'second_order_section' => [

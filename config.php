@@ -5,6 +5,7 @@
             'order'   => 'order.php',
             'category' => 'category.php',
             'product' => 'product.php',
+            'product-category' => 'product-category.php',
             'contact' => 'contact.php',
             'result'  => 'result.php',
             'pdf'     => 'pdf.php',
@@ -28,10 +29,10 @@
                 'alias' => 'nanolash-maskara',
                 'products' => [
                     'length-and-curl-mascara' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-lacm'
+                        'template' => 'product-category', 'type' => 'normal', 'alias' => 'nanolash-lacm'
                     ],
                     'volume-up-mascara' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-vum'
+                        'template' => 'product-category', 'type' => 'normal', 'alias' => 'nanolash-vum'
                     ],
                 ]
             ],
@@ -43,28 +44,28 @@
                 'alias' => 'nanolash-diy',
                 'products' => [
                     'diy-eyelash-extension-heartbreaker' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-heartbreaker'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-heartbreaker'
                     ],
                     'diy-eyelash-extension-charm' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-charm'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-charm'
                     ],
                     'diy-eyelash-extension-innocent' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-innocent'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-innocent'
                     ],
                     'diy-eyelash-extension-fantasy' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-fantasy'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-fantasy'
                     ],
                     'diy-eyelash-extension-classy' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-classy'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-classy'
                     ],
-                    'diy-eyelash-extension-devine' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-devine'
+                    'diy-eyelash-extension-divine' => [
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-divine'
                     ],
                     'diy-eyelash-extension-harmony' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-harmony'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-harmony'
                     ],
                     'diy-eyelash-extension-flirty' => [
-                        'template' => 'product', 'type' => 'category', 'alias' => 'nanolash-diy-flirty'
+                        'template' => 'product-category', 'type' => 'category', 'alias' => 'nanolash-diy-flirty'
                     ],
                 ],
             ],
@@ -92,11 +93,9 @@
         'products' => [
             'nanolash-es' => [
                 'id' => '11',
-                'type' => 'product',
+                'type' => 'product-category',
                 'price' => [
                     'pln' => 214,
-                    'usd' => 69,
-                    'eur' => 52
                 ],
             ],
             'nanolash-vl' => [
@@ -104,37 +103,79 @@
                 'type' => 'product-variant',
                 'price' => [
                     'pln' => 189,
-                    'usd' => 59,
-                    'eur' => 45
                 ]
             ],
             'nanolash-mp' => [
                 'id' => '13',
-                'type' => 'product',
+                'type' => 'product-category',
                 'price' => [
                     'pln' => 115,
-                    'usd' => 22,
-                    'eur' => 19
                 ],
             ],
             'nanolash-lacm' => [
                 'id' => '14',
-                'type' => 'product',
+                'type' => 'product-category',
                 'price' => [
                     'pln' => 115,
-                    'usd' => 22,
-                    'eur' => 19
                 ],
             ],
             'nanolash-vum' => [
                 'id' => '15',
-                'type' => 'product',
+                'type' => 'product-category',
                 'price' => [
                     'pln' => 168,
-                    'usd' => 22,
-                    'eur' => 19
                 ],
             ],
+            'nanolash-diy-charm' => [
+                'id' => '100',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 214,
+                ],
+            ],
+            'nanolash-diy-innocent' => [
+                'id' => '101',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 301,
+                ],
+            ],
+            'nanolash-diy-fantasy' => [
+                'id' => '102',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 105,
+                ],
+            ],
+            'nanolash-diy-classy' => [
+                'id' => '103',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 67,
+                ],
+            ],
+            'nanolash-diy-divine' => [
+                'id' => '104',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 112,
+                ]
+            ],
+            'nanolash-diy-harmony' => [
+                'id' => '105',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 179,
+                ],
+            ],
+            'nanolash-diy-flirty' => [
+                'id' => '106',
+                'type' => 'product-category',
+                'price' => [
+                    'pln' => 213,
+                ],
+            ],
+
         ]
     ];
 

@@ -1,6 +1,9 @@
 <?php 
-$media = getImages(getAlias())['social_wall']; 
+$media = getImages(getAlias())['social_wall'] ?? getImages('global')['social_wall'];
+$socials = getContent('global')['socials']; 
+$socials_images = getImages('global')['socials']; 
 ?>
+
 
 <section class="socials">
     <div class="container">
@@ -28,11 +31,9 @@ $media = getImages(getAlias())['social_wall'];
                 <img src="<?= getImage('/assets/img/follow_us.svg') ?>" alt="" />
                 </div>
                 <div class="socials__links__links">
-                    <?php $socials = getContent('global')['socials']; ?>
-                    <?php $socials_images = getImages('global')['socials']; ?>
-                    <?php foreach($socials as $social_name => $social_value): ?>
 
-                        <a href="<?=$social_value['src'] ?>"><img src="<?= getImage($socials_images[$social_name]) ?>" alt="<?=$social_value['alt'] ?>" /></a>
+                    <?php foreach($socials as $social_name => $social_value): ?>
+                        <a href="<?=$social_value['link'] ?>"><img src="<?= getImage($socials_images[$social_name]) ?>" alt="<?=$social_value['alt'] ?>" /></a>
                     <?php endforeach; ?>
                 </div>
             </div>

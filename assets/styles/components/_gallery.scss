@@ -26,6 +26,9 @@
         text-align: center;
         width: 80%;
         margin: 3rem auto 0;
+        &.preview {
+            margin: 1.5rem auto 3rem;
+        }
     }
 }
 

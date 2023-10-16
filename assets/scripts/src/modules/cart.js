@@ -3,6 +3,10 @@ export default () => {
     changeInputValueHandler();
 }
 
+
+
+
+
 const cartButtonHandler = () => {
     const cartButton = document.querySelector('[data-cart__button]');
     const cartComponent = document.querySelector('.nav__cart');
@@ -76,7 +80,7 @@ class AddToCartForm {
         this.addToCartBlock.querySelector('input.add-to-cart__quantity');
         this.newPrice = this.addToCartBlock.querySelector('.new-price .sum');
         this.oldPrice = this.addToCartBlock.querySelector('.old-price .sum');
-        this.productName = document.querySelector('[data-product-name]').getAttribute('data-product-name');
+        // this.productName = document.querySelector('[data-product-name]').getAttribute('data-product-name');
         this.currency = currency;
         this.name = this.add
         this.variantForm = variantForm;
@@ -278,11 +282,32 @@ class VariantForm {
 
 class Cart {
     constructor() {
+
         this.cart = this.loadCart();
         this.currency = this.getCurrency();
+        this.allProducts = {};
         this.updateCartView();
         this.addEventListeners();
+        // setTimeout(() => {
+        //     console.log(this.allProducts);
+        // }, 5000)
     }
+
+    // testGetData() {
+    //     console.log(111);
+    //     try {
+    //         const data = AjaxHelper.fetchData('/getData.php', { getAllData : true });
+    //         if (data && !data.error) {
+    //             this.allProducts = data;
+    //         } else {
+    //             console.error('Product not found', data.error);
+    //             return null;
+    //         }
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //         return null;
+    //     }
+    // }
 
     loadCart() {
         const cart = localStorage.getItem('cart');
@@ -359,7 +384,6 @@ class Cart {
         });
     }
     
-
     updateCartView() {
         this.updateCartSummary();
         const cartDetails = document.querySelector('.nav__cart__details');
@@ -413,7 +437,6 @@ class Cart {
         }
     }
     
-
     getTotalPrice() {
         return this.cart.reduce((total, item) => total + (item.price * item.quantity), 0);
     }

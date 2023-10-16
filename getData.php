@@ -19,9 +19,10 @@ $domains = [
     ]
 ];
 
+
 $alias = $_POST['alias'] ?? null;
 $domain = $_POST['domain'] ?? null;
-
+$getAllData = $_POST['getAllData'] ?? null;
 $response = [];
 
 if ($domain && isset($domains[$domain])) {
@@ -34,6 +35,10 @@ if($alias) {
     } else {
         $response['error'] = 'Product not found';
     }
+}
+
+if($getAllData) {
+    $response['products'] = $products;
 }
 
 echo json_encode($response);

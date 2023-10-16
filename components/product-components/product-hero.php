@@ -1,3 +1,6 @@
+<?php $otherProducts = isset($other) && $other ? $other : false ?>
+<?php $routing = CONFIG['routing']; ?>
+<?php $alias = getAlias(); ?>
 <div class="container padding-top-element">
     <div class="hero">
         <div class="hero__images">
@@ -26,6 +29,26 @@
                     <?php endforeach; ?>
                 <?php endforeach; ?>
             <?php endif; ?>
+            <?php if($otherProducts) : ?>
+                <div class="others">
+                    <?php foreach($otherProducts as $otherKey => $otherProducts): ?>
+                        <?php if($otherKey === $alias): ?>
+                            <div class="other-block active">
+                                <picture>
+                                    <img alt="" src="<?= getImage($otherProducts['src'] . '.' . $otherProducts['extension'])?>">
+                                </picture>
+                            </div>
+                        <?php else: ?>
+                            <a class="other-block" href="<?= getRouteByAlias($otherKey, $routing); ?>">
+                                <picture>
+                                    <img alt="" src="<?= getImage($otherProducts['src'] . '.' . $otherProducts['extension'])?>">
+                                </picture>
+                            </a>
+                        <?php endif;?>
+                        
+                    <?php endforeach; ?>
+                </div>
+            <?php endif;?>
             <div class="product-form">
                 <?php if (isset($content['product_variants'])): ?>
                     <div class="product__variants">
