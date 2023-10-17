@@ -34,6 +34,10 @@ body {
             display: block;
         }
     }
+    &.menu-open {
+        position: fixed;
+        overflow: hidden;
+    }
 }
 
 img {
@@ -104,4 +108,119 @@ span.product-name {
 
 .mt {
     margin-top: 2rem !important;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .container {
+        transition: opacity 300ms;
+    }
+    &.close {
+        display: none;
+        .container {
+            opacity: 0;
+        }
+    }
+    &.open {
+        display: block;
+        background-color: rgba(#e8e8e8, 0.94);
+        .container {
+            opacity: 1;
+        }
+    }
+    &.animation-open {
+        display: block;
+        animation: openMenu 0.3s forwards;
+        .container {
+            opacity: 1;
+        }
+    }
+    &.animation-close {
+        display: block;
+        animation: closeMenu 0.3s forwards;
+        .container {
+            opacity: 0;
+        }
+    }
+
+    &-elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-element {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        &__title {
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            font-family: Lato;
+            max-width: 80%;
+        }
+        &:before {
+            content: '';
+            display: block;
+            bottom: 0;
+            position: absolute;
+            height: 1px;
+            background-color: rgba($black, 0.15);
+            left: -100%;
+            right: -100%;
+        }
+        &--subelement {
+            max-height: 0;
+            overflow: hidden;
+        }
+        .open {
+            .menu-element--subelement {
+                max-height: auto;
+            }
+        }
+    }
+    .links {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:after {
+            font-size: 34px;
+            position: absolute;
+            font-weight: 100;
+            right: 0;
+        }
+        &-close {
+            &:after {
+                content: '+';
+            }
+        }
+        &-open {
+            &:after {
+                content: '–';
+            }
+        }
+    }
+}
+
+@keyframes openMenu {
+    0% {
+        background-color: rgba(#e8e8e8, 0);
+    }
+    100% {
+        background-color: rgba(#e8e8e8, 0.94);
+    }
+}
+
+@keyframes closeMenu {
+    0% {
+        background-color: rgba(#e8e8e8, 0.94);
+    }
+    100% {
+        background-color: rgba(#e8e8e8, 0);
+    }
 }

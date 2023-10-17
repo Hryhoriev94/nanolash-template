@@ -232,6 +232,23 @@
         padding: 0;
         border: none;
         background: none;
+        &--open {
+            .hamburger {
+                &__line {
+                    &:nth-child(1) {
+                        top: calc(50% - 1px);
+                        transform: rotateZ(45deg);
+                    }
+                    &:nth-child(3) {
+                        bottom: calc(50% - 1px);
+                        transform: rotateZ(-45deg);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
         &__line {
             position: absolute;
             right: 0;
@@ -240,6 +257,7 @@
             height: 2px;
             background-color: $white;
             border-radius: 1px;
+            transition: 0.3s;
             &:nth-child(1) {
                 top: 0;
             }

@@ -1,3 +1,4 @@
+import {Menu} from './menuHandler';
 const navbarActions = () => {
     const navbar = document.querySelector('.nav');
     const nextElement = navbar.nextElementSibling; // Получение следующего элемента
@@ -17,6 +18,8 @@ const navbarActions = () => {
     window.addEventListener('resize', () => {
       modifyNavbar(navbar, nextElement);
     });
+
+    const menu = new Menu();
   };
   
   const isScrolled = () => window.scrollY > 50;
@@ -54,6 +57,6 @@ const navbarActions = () => {
       }
     }
   };
-  
+
   export default navbarActions;
   

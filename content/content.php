@@ -2116,6 +2116,44 @@
             ]
         ],
         'global' => [
+            'menu' => [
+                [
+                    'title' => 'Pielegnacja rzęs',
+                    'links' => [
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                    ],
+                ],
+                [
+                    'title' => 'Stylizacja rzęs',
+                    'links' => [
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                    ],
+                ],
+                [
+                    'title' => 'Akcesoria do rzęs',
+                    'links' => [
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                    ],
+                ],
+                [
+                    'title' => 'Pięlegnacja brwi',
+                    'links' => [
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                    ],
+                ],
+                [
+                    'title' => 'Stylizacja brwi',
+                    'links' => [
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                    ],
+                ],
+                [
+                    'title' => 'Akcesoria do brwi',
+                    'links' => [
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                    ],
+                ],
+            ],
             'brand_navigation' => [
                 'nanolash' => [
                     'title' => 'POZNAJ NASZE PRODUKTY DO RZĘS',
@@ -2166,22 +2204,24 @@
         ],
 
         'products_names' => [
-            'nanolash-es' => 'Eyelash Serum',
+            'nanolash-es' => ['name' => 'Eyelash Serum'],
             'nanolash-vl' => [
                 'name' => 'Volume Lashes',
                 'variants' => ['Skręt', 'Grubość', 'Długość']
             ],
-            'nanolash-mp' => 'Mascara Primer',
-            'nanolash-lacm' => 'Length & Curl Mascara',
-            'nanolash-vum' => 'Volume Up Mascara',
-            'nanolash-diy-charm' => 'DIY Eyelash Extension - Charm',
-            'nanolash-diy-innocent' => 'DIY Eyelash Extension - Innocent',
-            'nanolash-diy-fantasy' => 'DIY Eyelash Extension - Charm',
-            'nanolash-diy-classy' => 'DIY Eyelash Extension - Classy',
-            'nanolash-diy-divine' => 'DIY Eyelash Extension - Devine',
-            'nanolash-diy-harmony' => 'DIY Eyelash Extension - Harmony',
-            'nanolash-diy-flirty' => 'DIY Eyelash Extension - Flirty',
-            'nanolash-diy-heartbreaker' => 'DIY Eyelash Extension - Heartbreaker',
+            'nanolash-labs' => ['name' => 'Lash & Brow Shampoo',],
+            'nanolash-llk' => ['name' => 'Lash Lift Kit',],
+            'nanolash-mp' => ['name' => 'Mascara Primer',],
+            'nanolash-lacm' => ['name' => 'Length & Curl Mascara',],
+            'nanolash-vum' => ['name' => 'Volume Up Mascara',],
+            'nanolash-diy-charm' => ['name' => 'DIY Eyelash Extension - Charm',],
+            'nanolash-diy-innocent' => ['name' => 'DIY Eyelash Extension - Innocent',],
+            'nanolash-diy-fantasy' => ['name' => 'DIY Eyelash Extension - Charm',],
+            'nanolash-diy-classy' => ['name' => 'DIY Eyelash Extension - Classy',],
+            'nanolash-diy-divine' => ['name' => 'DIY Eyelash Extension - Devine',],
+            'nanolash-diy-harmony' => ['name' => 'DIY Eyelash Extension - Harmony',],
+            'nanolash-diy-flirty' => ['name' => 'DIY Eyelash Extension - Flirty',],
+            'nanolash-diy-heartbreaker' => ['name' => 'DIY Eyelash Extension - Heartbreaker',],
         ],
         'about' => [],
         'contact' => [],
