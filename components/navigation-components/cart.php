@@ -22,7 +22,7 @@
             </div>
             <div class="nav-cart__footer">
                 <div class="nav-cart__shipping">Darmowa dostawa od 100 PLN</div>
-                <a href="https://nanobrow.pl/zamow" class="nav-cart__button">Zamawiam</a>
+                <a href="<?= getRouteByAlias('order') ?>" class="nav-cart__button">Zamawiam</a>
             </div>
         </div>
         <div class="nav-cart__wrapper">

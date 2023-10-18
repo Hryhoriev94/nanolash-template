@@ -16,7 +16,7 @@
     
         'routing' => [
             '/' => ['template' => 'home', 'alias' => 'home'],
-            'order' => ['template' => 'order', 'alias' => 'order'],
+            'zamow' => ['template' => 'order', 'alias' => 'order'],
             'contact' => ['template' => 'contact', 'alias' => 'contact'],
             'payment-error' => ['template' => 'result', 'alias' => 'payment-error'],
             'payment-success' => ['template' => 'result', 'alias' => 'payment-success'],

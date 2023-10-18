@@ -1,7 +1,7 @@
 // файл grid.js
 import { AjaxHelper } from './ajaxHelper.js';
 // import { Modal } from './modal.js';
-import cartInstance from './cart.js';
+import cartInstance from './cartManager.js';
 
 export class Grid {
     #productData = new Map();  // Приватное свойство для хранения данных продукта

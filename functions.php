@@ -72,7 +72,7 @@ function getImages($key) {
     return $data;
 }
 
-function getRouteByAlias($alias, $routing) {
+function getRouteByAlias($alias, $routing = CONFIG['routing']) {
     foreach ($routing as $route => $info) {
         // Проверка алиаса для текущего маршрута
         if (isset($info['alias']) && $info['alias'] === $alias) {
