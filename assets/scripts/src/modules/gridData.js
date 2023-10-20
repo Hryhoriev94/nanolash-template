@@ -1,7 +1,7 @@
 // файл grid.js
 import { AjaxHelper } from './ajaxHelper.js';
-// import { Modal } from './modal.js';
-import cartInstance from './cartManager.js';
+import { cart as cartInstance } from './cartManager.js';
+
 
 export class Grid {
     #productData = new Map();  // Приватное свойство для хранения данных продукта
@@ -9,7 +9,6 @@ export class Grid {
     constructor() {
         this.gridElement = document.querySelector('.products__grid');
         this.initEventListeners();
-        // this.modal = new Modal();
         this.init();
     }
 
@@ -35,27 +34,9 @@ export class Grid {
                 if (!productItem) return;  // Добавлена проверка
     
                 const alias = productItem.dataset.type;
-                // this.showProductModal(alias);
             }
         });
     }
-    
-
-    // showProductModal(alias) {
-    //     const productInfo = this.getProductInfo(alias);
-    //     if (!productInfo) {
-    //         console.error('Product info not found:', alias);
-    //         return;
-    //     }
-
-    //     const contentStructure = [
-    //         { tag: 'h1', text: productInfo.name },
-    //         { tag: 'p', text: `Price: ${productInfo.price} ${productInfo.currency}` },
-    //         { tag: 'p', text: `Quantity: ${productInfo.quantity}` },
-    //     ];
-
-    //     this.modal.open(contentStructure);
-    // }
 
     fetchProductData(alias, domain, productItem) {
         AjaxHelper.fetchData('/getData.php', { alias, domain })

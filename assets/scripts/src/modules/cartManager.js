@@ -5,13 +5,16 @@ let cartInstance;
 
 
 class CartManager {
-    constructor() {
+    constructor(cartInstance) {
+        this.cartInstance = cartInstance;
         this.cartButton = document.querySelector('[data-cart__button]');
         this.cartComponent = document.querySelector('.nav__cart');
+        this.productsName = JSON.parse(document.querySelector('#products-name').textContent);
+
         this.init();
     }
 
-    init() {
+    async init() {
         this.cartButton.addEventListener('click', this.toggleCart.bind(this));
         document.addEventListener('click', this.closeCartIfClickedOutside.bind(this));
         this.cartComponent.addEventListener('click', this.preventEventBubbling.bind(this));
@@ -34,10 +37,9 @@ class CartManager {
     }
 }
 
-export const cart = async () => {
+export const cart = async (cartManagerInstance) => {
     cartInstance = await Cart.createInstance();
-    const cartManagerInstance = new CartManager();
+    cartManagerInstance = new CartManager(cartInstance);
     new ProductFormManager(cartInstance);
-    document.addEventListener('click', cartManagerInstance.closeCartIfClickedOutside.bind(cartManagerInstance));
 }
 

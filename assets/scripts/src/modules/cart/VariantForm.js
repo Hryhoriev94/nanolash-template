@@ -4,6 +4,7 @@ export class VariantForm {
         this.rows = this.form.querySelectorAll('.product__variant');
         this.variants = this.form.querySelectorAll('.product__variant__block');
         this._variantId = null;
+        this._variantParameters = [];
         this._activeVariants = [];
         this.variantName = '';
         this.init();
@@ -77,16 +78,28 @@ export class VariantForm {
     }
 
 
-
     get variantId() {
         return this._variantId;
     }
 
     set variantId(activeVariants) {
         const id = [];
+        this.variantParameters = activeVariants
         activeVariants.forEach(activeVariant => {
             id.push(activeVariant.getAttribute('data-id'));
         });
         this._variantId = id.join('');
+    }
+
+    get variantParameters() {
+        return this._variantParameters;
+    }
+
+    set variantParameters(activeVariants) {
+        const parameters = [];
+        activeVariants.forEach(activeVariant => {
+            parameters.push(activeVariant.getAttribute('data-id'))
+        });
+        this._variantParameters = parameters;
     }
 }

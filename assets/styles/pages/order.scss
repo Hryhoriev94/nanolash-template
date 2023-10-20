@@ -81,4 +81,171 @@
             }
         }
     }
+    &__result {
+        padding: 10px 0;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        text-transform: uppercase;
+        justify-content: space-around;
+        align-items: flex-end;
+        #cart-summary__result {
+
+            font-size: 20px;
+        }
+    }
+}
+
+.order-form {
+    margin-top: 40px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: start;
+    .section-title {
+        text-align: center;
+        font-weight: 400;
+    }
+    &__element {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-bottom: 3px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+    }
+    &__input {
+        padding: 13px 10px 3px;
+        font-size: 14px;
+        width: 100%;
+        background-color: transparent;
+        line-height: 1;
+        font-weight: 300;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px #000 solid;
+    }
+    &__label {
+        position: absolute;
+        top: calc(50% - 0.5em);
+        left: 10px;
+        font-size: 1.1rem;
+        line-height: 1;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: 300ms ease;
+        opacity: .5;
+        z-index: -1;
+        font-size: 12px;
+    }
+    &__select {
+        &+.order-form__label {
+            font-size: 9px;
+            top: 3px;
+        }
+        appearance: none;
+        background: rgba(0,0,0,0) url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Warstwa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 10' style='enable-background:new 0 0 20 10;' xml:space='preserve'%3e%3cg id='layer1' transform='translate(0,-294.35415)'%3e%3cpath id='rect4522' d='M18.7,294.4L10,303l-8.7-8.7l-1.3,0l10,10l10-10L18.7,294.4z'/%3e%3c/g%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        word-wrap: normal;
+        text-transform: none;
+        padding: 13px 10px 3px;
+        font-size: 14px;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px #000 solid;
+        background-position: calc(100% - 10px) center;
+        color: #000;
+        background-size: 14px;
+    }
+    &__info {
+        font-size: 9px;
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+}
+
+.transaction {
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__group {
+        &-label {
+            min-width: 200px;
+            min-height: 36px;
+            padding: 5px 0;
+            border: 1px solid #000;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            i {
+                display: flex;
+                justify-content: center;
+                border-right: 1px solid #000;
+                align-items: center;
+                flex: none;
+                width: 36px;
+            }
+            span {
+                font-size: 16px;
+                flex: auto;
+                padding: 0 15px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__wrapper {
+        margin-top: 20px;
+    }
+    &__element {
+        grid-template-columns: 10px 1fr 10px;
+        grid-template-areas:
+            "checkbox image ."
+            "checkbox details details";
+        gap: 10px;
+        padding: 20px 0;
+        position: relative;
+        display: grid;
+        cursor: pointer;
+        align-items: center;
+        &--selected, &--selected:hover {
+            border-color: #ee7330;
+            background-color: #ee7330;
+        }
+    }
+    &__checkbox {
+        position: relative;
+        grid-area: checkbox;
+        width: 0.5em;
+        height: 1em;
+        font-size: 20px; 
+        span {
+            border-color: #ee7330;
+            background-color: #ee7330;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1em;
+            height: 1em;
+            border: 1px solid #000;
+        }
+    }
+    &__image {
+        grid-area: image;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 72px;
+            height: 40px;
+            width: auto;
+            height: auto;
+        }
+    }
 }

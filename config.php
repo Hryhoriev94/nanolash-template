@@ -93,90 +93,69 @@
         'products' => [
             'nanolash-es' => [
                 'id' => '11',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 214,
-                ],
+                'type' => 'product',
+                'price' => 214,
             ],
             'nanolash-vl' => [
                 'id' => '12',
-                'type' => 'product-variant',
-                'price' => [
-                    'pln' => 189,
-                ]
+                'type' => 'product',
+                'variants' => true,
+                'price' => 189
             ],
             'nanolash-mp' => [
                 'id' => '13',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 115,
-                ],
+                'type' => 'product',
+                'price' => 111,
             ],
             'nanolash-lacm' => [
                 'id' => '14',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 115,
-                ],
+                'type' => 'product',
+                'price' => 115,
             ],
             'nanolash-vum' => [
                 'id' => '15',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 168,
-                ],
+                'type' => 'product',
+                'price' => 168,
             ],
             'nanolash-diy-charm' => [
                 'id' => '100',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 214,
-                ],
+                'type' => 'product',
+                'price' => 214,
             ],
             'nanolash-diy-innocent' => [
                 'id' => '101',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 301,
-                ],
+                'type' => 'product',
+                'price' => 301,
             ],
             'nanolash-diy-fantasy' => [
                 'id' => '102',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 105,
-                ],
+                'type' => 'product',
+                'price' => 105,
             ],
             'nanolash-diy-classy' => [
                 'id' => '103',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 67,
-                ],
+                'type' => 'product',
+                'price' => 67,
             ],
             'nanolash-diy-divine' => [
                 'id' => '104',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 112,
-                ]
+                'type' => 'product',
+                'price' => 112,
             ],
             'nanolash-diy-harmony' => [
                 'id' => '105',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 179,
-                ],
+                'type' => 'product',
+                'price' => 179,
             ],
             'nanolash-diy-flirty' => [
                 'id' => '106',
-                'type' => 'product-category',
-                'price' => [
-                    'pln' => 213,
-                ],
+                'type' => 'product',
+                'price' => 213,
             ],
 
-        ]
+        ],
+        'currency' => 'pln',
+        'free_shipping' => 250,
     ];
 
 

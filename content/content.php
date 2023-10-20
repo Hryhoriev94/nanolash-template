@@ -2169,6 +2169,16 @@
             ],
             'cart' => [
                 'add_to_cart' => 'Dodaj do koszyka',
+                'products' => 'Produkty',
+                'quantity' => 'Ilość',
+                'price' => 'Cena',
+                'delete' => 'Usuń',
+                'summary' => 'Razem',
+                'empty_cart' => 'Brak produktów w koszyku',
+                'shipping_price' => 'Darmowa dostawa od ',
+                'free_shipping' => 'Darmowa dostawa',
+                'order' => 'Zamawiam',
+                'added_to_cart' => 'Dodano do koszyka',
             ],
             'slider' => [
                 'next' => 'Następny slide',
@@ -2207,7 +2217,12 @@
             'nanolash-es' => ['name' => 'Eyelash Serum'],
             'nanolash-vl' => [
                 'name' => 'Volume Lashes',
-                'variants' => ['Skręt', 'Grubość', 'Długość']
+                'variants' => ['Skręt', 'Grubość', 'Długość'],
+                'variants_data' => [
+                    ['C' => 'C', 'D' => 'D'],
+                    ['005' => '0.05', '007' => '0.07', '010' => '0.10', '012' => '0.12', '015' => '0.15'],
+                    ['M0613' => 'Mixed 6mm-13mm','09' => '9mm','10' => '10mm','11' => '11mm'],
+                ],
             ],
             'nanolash-labs' => ['name' => 'Lash & Brow Shampoo',],
             'nanolash-llk' => ['name' => 'Lash Lift Kit',],
