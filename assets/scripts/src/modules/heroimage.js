@@ -99,3 +99,5 @@ export const heroimage = () => {
 
     window.addEventListener('resize', handleResize);
 }
+
+

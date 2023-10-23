@@ -15,30 +15,19 @@
     }
     &__element {
         margin-bottom: 10px;
-        grid-template-rows: 1fr 0;
         overflow: hidden;
         transition: 300ms;
-        &[open] {
-            .faq__answer {
-                animation: faqOpen 300ms;
-            }
+        &.open {
             .faq__question {
                 &:before {
                     transform: rotate(90deg);
-                }
-            }
-            .faq__question {
-                &:hover {
-                    &:before {
-                        transform: none;
-                    }
                 }
             }
         }
     }
     &__question {
         font-size: 14px;
-        line-height: 28px;
+        line-height: 16px;
         position: relative;
         padding-left: 20px;
         cursor: pointer;
@@ -64,19 +53,18 @@
 
     }
     &__answer {
-        font-size: 12px;
-        line-height: 14px;
-        transition: 300ms;
-        animation: faqClose 300ms;
+        display: none;
+        margin-top: 5px;
+        padding-left: 20px;
     }
 }
 
-@keyframes faqOpen {
-    0% {opacity: 0; top: -100%;}
-    100% {opacity: 1; top: 0;}
-}
+// @keyframes faqOpen {
+//     0% {opacity: 0; top: -100%;}
+//     100% {opacity: 1; top: 0;}
+// }
 
-@keyframes faqClose {
-    0% {opacity: 1; top: 0;}
-    100% {opacity: 0; top: -100%;}
-}
+// @keyframes faqClose {
+//     0% {opacity: 1; top: 0;}
+//     100% {opacity: 0; top: -100%;}
+// }

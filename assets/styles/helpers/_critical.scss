@@ -179,28 +179,29 @@ span.product-name {
             right: -100%;
         }
         &__links {
-            overflow: hidden;
-            max-height: 0;
-            max-width: 100vw;
-            transition: max-height 300ms;
-            margin: 0;
-            width: 100vw;
-            position: relative;
-            left: -0.75rem;
-            padding-left: 1.5rem;
-            flex-direction: column;
-            gap: 5px 0;
+            display: none;
+            // overflow: hidden;
+            // max-height: 0;
+            // max-width: 100vw;
+            // transition: max-height 300ms;
+            // margin: 0;
+            // width: 100vw;
+            // position: relative;
+            // left: -0.75rem;
+            // padding-left: 1.5rem;
+            // flex-direction: column;
+            // gap: 5px 0;
             a {
                 color: inherit;
                 text-decoration: none;
             }
-            &.animate {
-                display: flex;
-            }
-            &.open {
-                display: flex;
-                max-height: unset;
-            }
+            // &.animate {
+            //     display: flex;
+            // }
+            // &.open {
+            //     display: flex;
+            //     max-height: unset;
+            // }
             .menu-element--subelement {
                 padding: 5px 0;
                 position: relative;

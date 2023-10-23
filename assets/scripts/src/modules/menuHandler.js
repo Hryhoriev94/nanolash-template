@@ -1,4 +1,5 @@
 import { debounce } from "./debounce";
+import { slideDown, slideUp } from "./helpers";
 
 export class Menu {
     constructor() {
@@ -57,47 +58,27 @@ export class Menu {
     closeSubmenu(element) {
         const container = element.closest('.menu-element-container');
         const submenu = container.querySelector('.menu-element__links');
-        if(!submenu.classList.contains('open')) {
-            return
-        }
-        const currentHeight = submenu.scrollHeight;
 
-        // Устанавливаем текущую высоту в px, чтобы была начальная точка для анимации
-        submenu.style.maxHeight = `${currentHeight}px`;
-
-        requestAnimationFrame(() => {
-        // Устанавливаем max-height обратно в 0, чтобы начать анимацию
-        submenu.style.maxHeight = '0px';
-        
-        submenu.addEventListener('transitionend', () => {
-            submenu.classList.remove('open');
-            submenu.removeAttribute('style');
-        }, { once: true });  // Обработчик будет удален после первого срабатывания
-    });
+        slideUp(submenu, 300);
     
 
-    element.classList.remove('links-open');
-    element.classList.add('links-close');
+        element.classList.remove('links-open');
+        element.classList.add('links-close');
     }
 
     openSubmenu(element) {
-        this.menuElements.forEach(otherElement => {
-            this.closeSubmenu(otherElement)
-        }) 
         const container = element.closest('.menu-element-container');
         const submenu = container.querySelector('.menu-element__links');
-        submenu.classList.add('animate');
-        const submenuElements = submenu.querySelectorAll('.menu-element--subelement');
-        let height = 0;
-        submenuElements.forEach(subElement => {
-            height += subElement.offsetHeight
-        });
-        submenu.style.maxHeight = height + 'px';
-        submenu.addEventListener('transitionend', () => {
-            submenu.classList.add('open');
-            submenu.classList.remove('animate');
-            submenu.removeAttribute('style');
-        })
+        this.menuElements.forEach(otherElement => {
+            if(!otherElement === element) {
+                this.closeSubmenu(otherElement)
+            }
+        }) 
+
+        submenu.classList.add('open');
+        slideDown(submenu, 300);
+
+
         element.classList.remove('links-close');
         element.classList.add('links-open');
     }
