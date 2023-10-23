@@ -1,7 +1,7 @@
 @import "../helpers/_mixins";
 @import '../helpers/_normalize';
 @import './fonts';
-
+@import '../components/footer.scss';
 @include generate-display-classes;
 
 * {

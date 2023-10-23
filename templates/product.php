@@ -106,4 +106,7 @@ getComponent('product-components/product-order', [
 <?php getComponent('faq', ['title' => $faq_content['title'], 'faq_list' => $faq_content['questions']]) ?>
 
 <div style="display:none" data-product-name="<?= $content['product_name'] ?>"></div>
+
+
+<?php getComponent('footer'); ?>
 </body>

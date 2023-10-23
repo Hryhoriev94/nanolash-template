@@ -65,5 +65,5 @@ getComponent('gallery', [
 ?>
 
 
-
+<?php getComponent('footer'); ?>
 </body>

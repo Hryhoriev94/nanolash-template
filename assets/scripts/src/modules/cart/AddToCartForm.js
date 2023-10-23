@@ -1,9 +1,9 @@
-export class AddToCartForm {
+import {CustomSelect} from '../customSelect';
+export class AddToCartForm {firstOption
     constructor(cartInstance, addToCartBlock, variantForm) {
-
         this.initializeProperties(cartInstance, addToCartBlock, variantForm);
-        this.price = this.product.price;
         this.init();
+
     }
 
     initializeProperties(cartInstance, addToCartBlock, variantForm) {
@@ -34,7 +34,7 @@ export class AddToCartForm {
         return this.addToCartBlock.querySelector(selector);
     }
 
-    async init() {
+    init() {
         if (this.customSelect) {
             this.initializeWithCustomSelect();
         } else {
@@ -42,7 +42,7 @@ export class AddToCartForm {
         }
     }
     
-    async initializeWithCustomSelect() {
+    initializeWithCustomSelect() {
         this.customSelectInstance = new CustomSelect(this.customSelect);
         this.updatePriceBasedOnSelect();
         this.customSelectInstance.options.forEach(option => {
@@ -50,14 +50,15 @@ export class AddToCartForm {
         });
     }
 
-    async initializeWithoutCustomSelect() {
+    initializeWithoutCustomSelect() {
         this.listeners();
         this.initPrice();
     }
 
-    async updatePriceBasedOnSelect() {
+    updatePriceBasedOnSelect() {
         if (!this.customSelect) return;
         this.alias = this.customSelectInstance.activeOption.getAttribute('data-alias');
+        this.product = this.cartInstance.products[this.alias];
         this.listeners();
         this.initPrice();
     }
@@ -89,6 +90,7 @@ export class AddToCartForm {
     }
 
     initPrice() {
+        this.price = this.product.price;
         this.newPrice.textContent = this.getQuantity() * this.price;
         this.oldPrice.textContent = this.getQuantity() * this.price * 1.2;
     }

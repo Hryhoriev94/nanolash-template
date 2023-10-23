@@ -268,5 +268,5 @@ $content = getContent($alias);
             </div>
         </div>
     </section>
-
+    <?php getComponent('footer'); ?>
 </body>

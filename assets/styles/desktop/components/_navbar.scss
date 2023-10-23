@@ -86,7 +86,8 @@
                     width: auto;
                 }
                 &__links {
-                    max-height: unset !important;
+                    display: block;
+                    margin: 0;
                 }
                 &-container {
                     display: inline-flex;

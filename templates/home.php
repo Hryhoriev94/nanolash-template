@@ -60,5 +60,5 @@ $images = getImages($alias);
             'faq_list' => $faq_content['questions']
         ]) ?>
     </main>
-
+    <?php getComponent('footer'); ?>
 </body>

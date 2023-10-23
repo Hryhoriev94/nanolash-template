@@ -57,7 +57,7 @@ function getContent($alias) {
     $json = file_get_contents($filename);
     $data =  preg_replace('/\s+/', ' ', $json);
     $data = json_decode($data, true);
-
+    
     return $data;
 }
 

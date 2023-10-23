@@ -16,7 +16,6 @@ export class Menu {
     }
     init() {
         window.addEventListener('scroll', debounce(() => {
-            console.log(1);
             this.handleScroll();
         }, 20));
 
@@ -43,11 +42,10 @@ export class Menu {
             })
         });
 
-        
-
         this.menuButtonHamburger.addEventListener('click', () => {
             this.clickBurgerHandler();
-        })
+        });
+        
         window.addEventListener('resize', () => {
             this.calcNavbarHeight();
             this.menu.style.top = `${this.navbarHeight}px`;
@@ -147,8 +145,6 @@ export class Menu {
         for (let i = 3; i < elements.length; i += 3) {
             const thisGroup = [elements[i], elements[i + 1], elements[i + 2]];
             const prevGroup = [elements[i - 3], elements[i - 2], elements[i - 1]];
-
-            console.log(prevGroup);
 
             let maxHeight = Math.max(
                 ...prevGroup.map(el => el ? el.offsetHeight : 0)
