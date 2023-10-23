@@ -4,13 +4,10 @@
 			<?php include __DIR__ . '/navigation-components/hamburger.php'; ?>
 			<?php include __DIR__ . '/navigation-components/logo.php'; ?>
 
-			<div class="nav__products" style="display: none">
-				<button type="button">Poznaj produkty</button>
+			<div class="nav__products">
+				<button type="button" data-menu-button>Poznaj produkty</button>
 			</div>
 
-			<div class="nav__blog" style="display: none">
-				<a class="nav-link" href="#">Blog</a>
-			</div>
 			
 			<div class="nav__flag">
 				<button type="button" title="Nanobrow Polska" class="flag flag--pl">PL</button>

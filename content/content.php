@@ -2120,13 +2120,13 @@
                 [
                     'title' => 'Pielegnacja rzęs',
                     'links' => [
-                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                        'nanolash-es', 'nanolash-mp',
                     ],
                 ],
                 [
                     'title' => 'Stylizacja rzęs',
                     'links' => [
-                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                        'nanolash-es', 'nanolash-mp', 'nanolash-labs',
                     ],
                 ],
                 [
@@ -2144,7 +2144,7 @@
                 [
                     'title' => 'Stylizacja brwi',
                     'links' => [
-                        'nanolash-es', 'nanolash-mp', 'nanolash-labs', 'nanolash-llk',
+                        'nanolash-es', 'nanolash-mp',
                     ],
                 ],
                 [
@@ -2211,6 +2211,17 @@
             ],
 
             
+        ],
+        'order' => [
+            'meta-title' => 'Strona zamówienia',
+            'meta-description' => 'Zloż zamówienie',
+            'title' => '<strong>Odkryj piękno</strong> swoich rzęs<br> <strong>z Nanolash</strong>',
+            'delivery_section' => 'Adres dostawy',
+            'delivery_payment_section' => 'Dostawa i płatność',
+            'delivery' => 'Dostawa',
+            'payment' => 'Płatność',
+            'summary' => 'Podsumowanie zamówienia',
+            'accept' => 'Wyrażam zgodę na przetwarzanie moich danych osobowych w celach marketingowych oraz handlowych.',
         ],
 
         'products_names' => [

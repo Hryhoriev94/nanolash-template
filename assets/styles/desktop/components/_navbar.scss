@@ -3,6 +3,7 @@
         padding: var(--nav-padding) 0;
         transition: padding 300ms ease-out;
         &__logo {
+            width: 200px;
             img {
                 width: auto;
                 height: 45px;
@@ -32,7 +33,9 @@
                 min-width: 600px;
             }
         }
+
     }
+
 }
 
 @include media-up(992px) {
@@ -40,6 +43,76 @@
         &__cart {
             left: calc(50% + 415px);
         }
+        &__row {
+            grid-template-columns: min-content 5fr 3.5rem 3.5rem;
+        }
+        &__products {
+            display: block;
+            margin: auto;
+            button {
+                background: none;
+                color: #b4b4b4;
+                border: none;
+                text-transform: uppercase;
+                line-height: 32px;
+                font-weight: 900;
+                letter-spacing: 2px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        .menu {
+            bottom: unset;
+            background-color: transparent !important;
+            &.open, .animation-open {
+                background-color: transparent;
+            }
+            .container {
+                background-color: #fff;
+                overflow: hidden;
+            }
+            &-elements {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: baseline;
+                gap: 0;
+            }
+            &-element {
+                justify-content: center;
+                background-color: #f1f1f1;
+                &__title {
+                    max-width: unset;
+                    width: auto;
+                }
+                &__links {
+                    max-height: unset !important;
+                }
+                &-container {
+                    display: inline-flex;
+                    flex-direction: column;
+                    height: max-content;
+                    width: calc(100% / 3);
+                    position: relative;
+                    &:after {
+                        content: '';
+                        display: block;
+                        background: rgba(28, 28, 28, 0.15);
+                        right: 0;
+                        height: 100vh;
+                        width: 1px;
+                        position: absolute;
+                    }
+                    
+                }
+                &--subelement {
+                    text-align: center;
+                }
+                &:before, &:after {
+                    content: none;
+                }
+            }
+        } 
     }
 }
 
@@ -55,6 +128,11 @@
     .nav {
         &__cart {
             left: calc(50% + 595px);
+        }
+        &__products {
+            button {
+                font-size: 24px;
+            }
         }
     }
 }

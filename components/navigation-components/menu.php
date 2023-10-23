@@ -13,7 +13,7 @@
                         <ul class="menu-element__links">
                         <?php foreach($menu_element_value['links'] as $alias): ?>
                             <li class="menu-element--subelement">
-                                <?= getContent('products_names')[$alias]['name'] ?>
+                                <a href="<?= getRouteByAlias($alias); ?>"><?= getContent('products_names')[$alias]['name'] ?></a>
                             </li>
                         <?php endforeach;?>
                         </ul>

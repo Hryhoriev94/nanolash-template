@@ -241,7 +241,7 @@ export class Cart {
                 productDiv.setAttribute('data-id', cartElement.id);
                 productDiv.innerHTML = `
                 <div class="cart-summary__image">
-                    <img src="https://placehold.co/60x95">
+                    <img src="https://placehold.co/100x157">
                 </div>
                 <div class="cart-summary__details">
                     <div class="cart-summary__name">${name}</div>

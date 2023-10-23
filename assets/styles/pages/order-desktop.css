@@ -1,1 +1,189 @@
-/*# sourceMappingURL=order-desktop.css.map */
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: var(--nav-padding) 0;
+    transition: padding 300ms ease-out;
+  }
+  .nav__logo {
+    width: 200px;
+  }
+  .nav__logo img {
+    width: auto;
+    height: 45px;
+    transition: 300ms ease-out;
+  }
+  .nav--scrolled .nav__logo img {
+    height: 38px;
+  }
+  .nav__cart {
+    left: calc(50% + 348px);
+    font-size: 16px;
+  }
+  .nav__cart:before {
+    right: -12px;
+    border-width: 0 12px 12px 12px;
+  }
+  .nav__cart__width-container {
+    max-width: 52px;
+    max-height: calc(100% - 15px);
+  }
+  .nav__cart__wrapper {
+    width: auto;
+    min-width: 600px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav__cart {
+    left: calc(50% + 415px);
+  }
+  .nav__row {
+    grid-template-columns: min-content 5fr 3.5rem 3.5rem;
+  }
+  .nav__products {
+    display: block;
+    margin: auto;
+  }
+  .nav__products button {
+    background: none;
+    color: #b4b4b4;
+    border: none;
+    text-transform: uppercase;
+    line-height: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .menu {
+    bottom: unset;
+    background-color: transparent !important;
+  }
+  .nav .menu.open, .nav .menu .animation-open {
+    background-color: transparent;
+  }
+  .nav .menu .container {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .nav .menu-elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0;
+  }
+  .nav .menu-element {
+    justify-content: center;
+    background-color: #f1f1f1;
+  }
+  .nav .menu-element__title {
+    max-width: unset;
+    width: auto;
+  }
+  .nav .menu-element__links {
+    max-height: unset !important;
+  }
+  .nav .menu-element-container {
+    display: inline-flex;
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+    width: 33.3333333333%;
+    position: relative;
+  }
+  .nav .menu-element-container:after {
+    content: "";
+    display: block;
+    background: rgba(28, 28, 28, 0.15);
+    right: 0;
+    height: 100vh;
+    width: 1px;
+    position: absolute;
+  }
+  .nav .menu-element--subelement {
+    text-align: center;
+  }
+  .nav .menu-element:before, .nav .menu-element:after {
+    content: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__cart {
+    left: calc(50% + 505px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nav__cart {
+    left: calc(50% + 595px);
+  }
+  .nav__products button {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .order-summary__voucher .voucher__button {
+    flex: unset;
+    min-width: 160px;
+  }
+  .cart-summary__product {
+    grid-template-columns: 100px 1fr;
+  }
+  .cart-summary__details {
+    grid-template-columns: 1fr min-content minmax(min-content, 100px) min-content;
+    gap: 10px;
+    align-items: center;
+  }
+  .cart-summary__name {
+    font-size: 24px;
+  }
+  .cart-summary__quantity {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .cart-summary__price {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-size: 20px;
+    text-align: center;
+  }
+  .cart-summary__remove {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+}
+@media screen and (min-width: 992px) {
+  .order-summary__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .order-summary__details {
+    order: 1;
+  }
+  .order-summary__voucher {
+    order: 2;
+  }
+  .order-summary__button {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-left: auto;
+  }
+  .order-summary .send-order__wrapper {
+    justify-content: flex-end;
+    padding-right: 5rem;
+  }
+  .order-summary .send-order__wrapper:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 0.5px);
+    right: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    height: 1px;
+    background-color: #2d2d2d;
+  }
+  .order-summary .send-order__button {
+    min-width: 300px;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=order-desktop.css.map */
